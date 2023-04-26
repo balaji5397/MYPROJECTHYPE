@@ -7,7 +7,7 @@
         <div class="container" style="padding-top:200px">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>balaji</h1>
+                    <h1>Dashboard</h1>
                 </div>
 
             </div>
