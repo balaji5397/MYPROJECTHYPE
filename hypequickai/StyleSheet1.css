@@ -1,0 +1,81 @@
+﻿.container1 {
+    max-width: 720px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.foot {
+    background-color: #303030;
+    color: silver;
+}
+
+.foot-bottom {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.botf {
+    padding-left: 15px;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.sect1 {
+
+    padding-top: 65px;
+    padding-bottom: 65px
+}
+#pw{
+position: absolute;
+right: 15px;
+display: inline-block;
+font-size: 14.7px;
+top: 50%;
+transform: translateY(-51%);
+border-radius: 4px;
+font-weight: 600;
+color: #333;
+background-color: #f0f0f0;
+}
+.subcontainer {
+    display: inline-block;
+    background-color: #444444;
+    margin: 0;
+    padding: 25px 42px;
+    line-height: 23px;
+}
+.icon {
+    /*border-left: 4px solid rgba(255, 255, 255, .3);*/
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.suhome {
+    color: whitesmoke;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+        .suhome a:hover {
+            color: white;
+        }
+.req {
+    background-color: #184698;
+    font-size:12px;
+}
