@@ -3,9 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="padding-top:35px;padding-bottom:35px;background-color:#f9f9f9">
+    <div>
+    <div style="padding-top:35px;padding-bottom:35px;background-color:#f9f9f9;z-index:-20">
     <div class="container" style="padding-top:150px;background-color:#f9f9f9">
-        <div class="row" >
+        <div class="row"  >
             <div class="col-md-6" >
                 <H1>Forgot Password?</H1><span></span>
                 </div>
@@ -20,7 +21,7 @@
         </div>
 
     </div>
-        </div>
+       
      <div class="container" style="padding-top:45px;padding-bottom:50px">
         <div class="row" >
             <div class="col-md-6 mx-auto" style="font-size:26px">
@@ -49,6 +50,6 @@
 
 
          
-
-
+         </div>
+</div>
 </asp:Content>

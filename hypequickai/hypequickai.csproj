@@ -2147,7 +2147,7 @@
     <Content Include="Web.config" />
     <Content Include="signuppage.aspx" />
     <Content Include="forgotpassword.aspx" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="dashboard.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homepage.aspx.cs">
@@ -2186,12 +2186,12 @@
     <Compile Include="forgotpassword.aspx.designer.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

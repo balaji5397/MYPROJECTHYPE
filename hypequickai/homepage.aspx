@@ -5,22 +5,12 @@
     <div style="padding-top:160px">
                 <center><img src="photos/Ailogo.png" width="180" height="180" />
 
-                    <%--<h1 class="gi text_gradient_animation">
-                            <strong>Best AI Content Writer</strong>
-                        </h1>--%>
-
-
 
                           <p style="font-weight:bold;font-size:52px">Best AI Content Writer </p>
                     <p>Create SEO-optimized and unique content for your blogs, ads, emails,                                              
                         and website 10X faster & save hours of work.</p>
                     <a href="https://localhost:44368/signuppage.aspx" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff">Get Started for Free →</a>
-                  <%-- %><a href="loginpage.aspx"><button style="background-color:#1832ac;color:white;width:190px;
-              height:50px;text-align:center;border-radius:8px;font-weight:bold;box-shadow: 6px 6px;
-              border-color:white" >Get Started for Free →</button></a>--%>
-
-                    <%--<a href="loginpage.aspx"><asp:Button class="btn btn-primary" ID="Button2" runat="server" 
-                        Text="Get Started for Free →" />--%>
+                 
        <p style="font-size:10px;padding-top:5px">No Credit card Required</p>
                     </center>
             </div>

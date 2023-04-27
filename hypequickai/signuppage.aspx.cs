@@ -107,6 +107,8 @@ namespace hypequickai
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
+
+       
     }
 
 }

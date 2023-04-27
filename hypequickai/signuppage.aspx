@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <div class="container" >
-    <div class="col-md-6 mx-auto" style="padding-top=180px">
+     <div class="container" style="z-index:-2" >
+         <div style="padding-top:120px"></div>
+    <div class="col-md-6 mx-auto" style="padding-top:50px">
                   <div class="row">
 
                       <div class="col">
