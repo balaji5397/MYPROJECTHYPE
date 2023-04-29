@@ -2131,6 +2131,7 @@
     <Content Include="fonts\svgs\solid\yin-yang.svg" />
     <Content Include="fonts\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="JavaScript.js" />
     <Content Include="loginpage.aspx" />
     <Content Include="photos\AIlogo.png" />
     <Content Include="photos\file1.png" />
@@ -2143,7 +2144,10 @@
     <Content Include="photos\logo-carousel-05.png" />
     <Content Include="photos\logo-carousel-06.png" />
     <Content Include="photos\logo.png" />
+    <Content Include="photos\signeduser.png" />
+    <Content Include="photos\userimg.png" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="dashboardss.css" />
     <Content Include="Web.config" />
     <Content Include="signuppage.aspx" />
     <Content Include="forgotpassword.aspx" />
