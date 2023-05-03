@@ -1,0 +1,173 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+#langbtn {
+    width: 120px;
+    height: 35px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+}
+
+ #langbtn:hover {
+        background-color: #184698;
+  }
+
+option {
+    background-color: #ffff;
+    color: black;
+    line-height: 2.5em;
+    font-size: 14px;
+    height: 180%;
+}
+
+.dropdown-menu ul li {
+    padding-top: 8px;
+}
+
+.drp {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    padding: 4px 4px;
+    width: 100%;
+}
+
+.toogle i {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.use {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+    .use img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+    }
+
+.topbar {
+    position: fixed;
+    background: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    width: 100%;
+    height: 85px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 9fr 1fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+/*sidebar*/
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background: #e0e0e0;
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+    .sidebar ul {
+        margin-top: 15px;
+    }
+
+        .sidebar ul li {
+            width: 80%;
+            list-style: none;
+        }
+
+            .sidebar ul li a {
+                width: 100%;
+                text-decoration: none;
+                color: #707070;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                transition: 0.3s;
+            }
+
+    .sidebar li :hover {
+        color: #184698;
+    }
+
+
+.bar {
+    width: 300px;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+
+
+
+.sidebar ul li a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+.dropdown-menu a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+    .dropdown-menu li :hover {
+        color: #184698;
+    }
+
+/*main styling*/
+.main {
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 200px;
+    min-height: calc(100vh -60px);
+    background-color:red;
+}
+
+.frm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    padding-top: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 120%;
+}

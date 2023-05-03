@@ -27,7 +27,7 @@
              
                     <div class="col-md-4">
                         <center> 
-                        <img  width="85px"src="photos/layer.png" />                       
+                        <img  width="85"src="photos/layer.png" />                       
                           <h1 style="font-size:35px;padding-top:3px">Select a template</h1>
                             <br />
                             <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
@@ -37,7 +37,7 @@
                 
                     <div class="col-md-4">
                         <center> 
-                            <img width="85px" src="photos/folderi.png" />
+                            <img width="85" src="photos/folderi.png" />
                           <h1 style="font-size:35px;padding-top:3px">Fill the form</h1>
                             <br />
                             <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
@@ -48,7 +48,7 @@
                 
                     <div class="col-md-4">
                         <center> 
-                        <img  width="85px"src="photos/file1.png" />                       
+                        <img  width="85"src="photos/file1.png" />                       
                           <h1 style="font-size:35px;padding-top:3px">Get Your content</h1>
                             <br />
                             <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
