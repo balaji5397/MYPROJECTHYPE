@@ -10,7 +10,7 @@ body {
 }
 
 #langbtn {
-    min-width:35px;
+    min-width: 35px;
     height: 50px;
     padding: 10px;
     background-color: #444;
@@ -18,7 +18,7 @@ body {
     border-radius: 10px;
 }
 
-   #langbtn:hover {
+    #langbtn:hover {
         background-color: #184698;
     }
 
@@ -81,13 +81,6 @@ option {
     z-index: 1;
 }
 
-/*<%--menu bar--%>*/
-.bar {
-    width: 300px;
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
 .dropdown-menu a i {
     min-width: 10px;
     font-size: 15px;
@@ -102,43 +95,71 @@ option {
         color: #184698;
     }
 
+.Everify {
+    padding: 10px;
+    height: 70px;
+    background-color: #fdf9e7;
+    align-content: center;
+    padding-left: 80px;
+    position: page;
+    width: 100%;
+}
+
+.Everifybutton {
+    background-color: #666;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+}
+/* Top Bar Ends*/
+
+
+/*<%--menu bar--%>*/
+.bar {
+    width: 300px;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
 .side {
     top: 40px;
-    width: 170px;
+    width: 100px;
     overflow-x: hidden;
-    background: #e0e0e0;
-    
-    height: calc(100%-7opx);
-    position:relative;
+    background-color: #e0e0e0;
+    overflow-y: scroll;
+    position: relative;
+    height: calc(100% - 60px);
 }
+
     .side ul li a {
         text-decoration: none;
         color: #707070;
         height: 45px;
         display: flex;
-        align-items:center;
-        width:100%;
+        align-items: center;
+        width: 100%;
     }
 
-.side ul li {
-    width: 80%;
-    font-size: 14px;
-    list-style: none;
-}
+    .side ul li {
+        width: 80%;
+        font-size: 14px;
+        list-style: none;
+    }
 
-.side  :hover {
-    color: #184698;
-    
-}
-.side ul li i{
-    padding-right:6px;
-}
+    .side :hover {
+        color: #184698;
+    }
 
-.side ul li a i {
-    min-width: 60px;
-    font-size: 15px;
-    text-align: center;
-}
+    .side ul li i {
+        padding-right: 6px;
+    }
+
+    .side ul li a i {
+        min-width: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
 
 
 
@@ -190,73 +211,66 @@ option {
         color: white;
         text-decoration: none;
     }
+
 .avatar {
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
 }
-.account{
-    margin-right:20px;
-    margin-top:50px;
-    margin-left:20px;
-   
-    box-shadow: 1px 0 3px 2px rgba(0, 0 ,0, 0.08);
-    background-color:#fff;
-   
+
+.account {
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: 1px 0 3px 2px rgba(0, 0,0, 0.08);
+    background-color: #fff;
 }
+
 .upload {
     padding-left: 30px;
 }
-.txtbox{
-    width:95%;
+
+.txtbox {
+    width: 95%;
 }
 
 .accountbutton {
     background-color: #184698;
-    color:#fff;
-    height:45px;
-    width:140px;
-    border-radius:8px;
-    border:none;
-    margin-left:35px;
-    margin-top:20px;
-    margin-bottom:50px;
+    color: #fff;
+    height: 45px;
+    width: 140px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.accounthead{
-    font-size:18px;
+.accounthead {
+    font-size: 18px;
 }
 
-.accountbox{
-    padding-top:20px;
-    padding-bottom:20px;
+.accountbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .scrollable {
     overflow-y: auto;
 }
-.accountdropdown{
+
+.accountdropdown {
+    width: 95%;
+    height: 35px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+/*table
+*/
+
+table{
     width:95%;
-    height:35px;
-    padding-left:20px;
-    margin-top:20px;
-    margin-bottom:35px;
-}
-
-.Everify {
-    padding: 10px;
-    height:70px;
-    background-color: #fdf9e7;
-    align-content:center;
-    padding-left:80px;
-   position:page; 
-    width:100%;
-}
-Everifybutton{
-    background-color:#666;
-    font-size:16px;
-    color:white;
-    border-radius:8px;
-
+    height:200px;
 }

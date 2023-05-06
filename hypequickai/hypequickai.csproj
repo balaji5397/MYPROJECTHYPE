@@ -2137,6 +2137,8 @@
     <Content Include="homepage.aspx" />
     <Content Include="JavaScript.js" />
     <Content Include="loginpage.aspx" />
+    <Content Include="membership plan.css" />
+    <Content Include="membership.css" />
     <Content Include="photos\AIlogo.png" />
     <Content Include="photos\file1.png" />
     <Content Include="photos\folderi.png" />
@@ -2161,6 +2163,8 @@
     <Content Include="Templates.aspx" />
     <Content Include="AI Chat.aspx" />
     <Content Include="AI Code.aspx" />
+    <Content Include="membership.aspx" />
+    <Content Include="membershipplan.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI Images.aspx.cs">
@@ -2247,6 +2251,20 @@
     </Compile>
     <Compile Include="AI Code.aspx.designer.cs">
       <DependentUpon>AI Code.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership.aspx.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership.aspx.designer.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membershipplan.aspx.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membershipplan.aspx.designer.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

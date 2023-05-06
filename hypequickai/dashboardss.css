@@ -1,4 +1,4 @@
-﻿*{
+﻿.container{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -11,8 +11,8 @@ body{
 }
 
 #langbtn {
-    width: 150px;
-    height: 60px;
+   min-width: 35px;
+    height: 40px;
     padding: 10px;
     background-color: #444;
     color:white;
@@ -27,12 +27,12 @@ option {
     background-color: #ffff;
     color: black;
    line-height:2.5em;
-    font-size:20px;
+    font-size:14px;
     height:180%;
 }
 
 .dropdown-menu ul li{
-    padding-top:15px;
+    padding-top:4px;
 }
 
 .drp {
@@ -40,7 +40,7 @@ option {
     color: #666;
     font-size: 16px;
     padding: 4px 4px;
-    width: 100%;
+    width: 80%;
 }
 
 .toogle i{
@@ -56,16 +56,16 @@ option {
 
     .use {
         position: relative;
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
         .use img {
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
-            width: 100%;
+            height: 40%;
+            width: 40%;
             object-fit: cover;
         }
 
@@ -85,7 +85,7 @@ option {
     .sidebar {
         position: fixed;
         top: 60px;
-        width: 300px;
+        width: 270px;
         height: calc(100% - 60px);
         background: #e0e0e0;
         overflow-x: hidden;
@@ -97,7 +97,8 @@ option {
     }
 
     .sidebar ul li{
-        width:100%;
+        width:80%;
+        font-size:12px;
         list-style:none;
     }
 
@@ -105,7 +106,7 @@ option {
             width: 100%;
             text-decoration: none;
             color: #707070;
-            height: 60px;
+            height: 45px;
             display: flex;
             align-items: center;
             transition: 0.3s;
@@ -114,8 +115,11 @@ option {
     .sidebar  li :hover {
         color:#184698;
     }
+    .sidebar i{
+        padding-right:6px;
+    }
 
-
+/*    menu icon */
 .bar {
     width:300px;
     transition: margin-left .5s;
@@ -137,16 +141,20 @@ option {
 
         .sidebar ul li a i{
             min-width:60px;
-            font-size:24px;
+            font-size:15px;
             text-align:center;
         }
 
 
 
 .dropdown-menu  a i {
-    min-width: 60px;
-    font-size: 24px;
+    min-width: 10px;
+    font-size: 14px;
     text-align: center;
+}
+
+.dropdown-menu a i {
+ padding-left:4px;
 }
 .dropdown-menu li{
     list-style:none;
@@ -201,12 +209,13 @@ option {
             padding:30px;
             padding-top:0;
         }
+        
         .chart{
             background:#fff;
             padding: 20px;
             border-radius:10px;
             box-shadow : 0 7px 25px rgba(0, 0, 0, 0.08);
-            width:120%;
+            width:100%;
         }
         @media (max-width:1115px){
             .sidebar{width:60px;
@@ -216,3 +225,34 @@ option {
                 width:calc(100% -60px);
             }
         }
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }

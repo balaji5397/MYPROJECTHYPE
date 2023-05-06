@@ -22,7 +22,7 @@ namespace hypequickai
         //sign up button click event
         protected void Button1_Click(object sender, EventArgs e)
         {
-            // Response.Write("<script>alert('Enter Data to Store');</script>");
+        
 
             if (checkuserexists())
             {
