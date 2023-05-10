@@ -102,44 +102,56 @@ option {
         color: #184698;
     }
 
-.side {
-    top: 40px;
-    width: 170px;
+
+/*sidebar*/
+.sidebar {
+    position: fixed;
+    top: 85px;
+    width: 250px;
+    height: calc(100% - 85px);
+    background: #fff;
     overflow-x: hidden;
-    background: #e0e0e0;
-    
-    height: calc(100%-7opx);
-    position:relative;
+    box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
 }
-    .side ul li a {
-        text-decoration: none;
-        color: #707070;
-        height: 45px;
-        display: flex;
-        align-items:center;
-        width:100%;
+
+    .sidebar ul {
+        margin-top: 20px;
+        width: 100%;
     }
 
-.side ul li {
-    width: 80%;
-    font-size: 14px;
-    list-style: none;
+        .sidebar ul li {
+            width: 100%;
+            list-style: none;
+            margin-left: -20px;
+            margin-right: 0px;
+            padding-top: 18px;
+        }
+
+            .sidebar ul li a {
+                margin-left: -20px;
+                margin-right: 0px;
+                width: 100%;
+                text-decoration: none;
+                color: grey;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+            }
+
+                .sidebar ul li a i {
+                    min-width: 60PX;
+                    font-size: 15PX;
+                    text-align: center;
+                }
+
+h11 {
+    font-size: 12px;
 }
 
-.side  :hover {
-    color: #184698;
-    
+.sidebar ul li a:hover {
+    color: #184698
 }
-.side ul li i{
-    padding-right:6px;
-}
-
-.side ul li a i {
-    min-width: 60px;
-    font-size: 15px;
-    text-align: center;
-}
-
 
 
 /*main styling*/
@@ -250,10 +262,9 @@ option {
     background-color: #fdf9e7;
     align-content:center;
     padding-left:80px;
-   position:page; 
     width:100%;
 }
-Everifybutton{
+.Everifybutton{
     background-color:#666;
     font-size:16px;
     color:white;

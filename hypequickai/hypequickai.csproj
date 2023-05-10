@@ -2135,6 +2135,7 @@
     <Content Include="fonts\svgs\solid\yin-yang.svg" />
     <Content Include="fonts\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="homepagecss.css" />
     <Content Include="JavaScript.js" />
     <Content Include="loginpage.aspx" />
     <Content Include="membership plan.css" />
@@ -2150,21 +2151,26 @@
     <Content Include="photos\logo-carousel-05.png" />
     <Content Include="photos\logo-carousel-06.png" />
     <Content Include="photos\logo.png" />
+    <Content Include="photos\recentblog.png" />
     <Content Include="photos\signeduser.png" />
     <Content Include="photos\userimg.png" />
     <Content Include="Speech to text.aspx" />
     <Content Include="StyleSheet1.css" />
-    <Content Include="dashboardss.css" />
+    <Content Include="dashboard.css" />
+    <Content Include="transactions.css" />
     <Content Include="Web.config" />
     <Content Include="signuppage.aspx" />
     <Content Include="forgotpassword.aspx" />
-    <Content Include="dashboard.aspx" />
     <Content Include="Account setting.aspx" />
     <Content Include="Templates.aspx" />
     <Content Include="AI Chat.aspx" />
     <Content Include="AI Code.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="membershipplan.aspx" />
+    <Content Include="transactions.aspx" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="Testimonals.aspx" />
+    <Content Include="blog.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI Images.aspx.cs">
@@ -2209,13 +2215,6 @@
     </Compile>
     <Compile Include="forgotpassword.aspx.designer.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="dashboard.aspx.cs">
-      <DependentUpon>dashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="dashboard.aspx.designer.cs">
-      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account setting.aspx.cs">
       <DependentUpon>Account setting.aspx</DependentUpon>
@@ -2265,6 +2264,34 @@
     </Compile>
     <Compile Include="membershipplan.aspx.designer.cs">
       <DependentUpon>membershipplan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transactions.aspx.cs">
+      <DependentUpon>transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transactions.aspx.designer.cs">
+      <DependentUpon>transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonals.aspx.cs">
+      <DependentUpon>Testimonals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonals.aspx.designer.cs">
+      <DependentUpon>Testimonals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

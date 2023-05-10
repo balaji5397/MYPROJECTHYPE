@@ -4,15 +4,37 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title><meta name="viewport" content="width=device-width, initial-scale=1"/>     <%--bootstrap css--%>    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />    <%--datatab --%>    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />    <%--Fonts--%>    <link href="fonts/css/all.css" rel="stylesheet" />        <%--js query--%>    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>    <%--Pop js--%>    <script src="bootstrap/js/popper.min.js"></script>    <%--bootstrap--%>    <script src="bootstrap/js/bootstrap.min.js"></script>    <script src="bootstrap/js/bootstrap.min.js"></script>           <meta charset="UTF-8"/>
+    <title></title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatab --%>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--Fonts--%>
+    <link href="fonts/css/all.css" rel="stylesheet" />
+
+    
+
+    <%--js query--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+
+    <%--Pop js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+           <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>    <link href="accountsettings.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+   <link href="accountsettings.css" rel="stylesheet" />
 </head>
 <body>
+
     <form id="form1" runat="server">
   
-            <div class="container-fluid" style="padding: 0px; margin: 0px">
-                <div class="row Everify">
+            <div class="container-fluid" style="padding: 0px; margin: 0px;margin-right:-15px;position:sticky;top:0px;z-index:1">
+                <div class="row Everify" >
                     <div class="col-md-8 col-xl-8">
                         <i class="fa-solid fa-lock"></i><span>Your email address is not verified. Please verify your email address to use all the features.</span>
                     </div>
@@ -74,66 +96,68 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 side" id="sidebar">
-                    <div id="mysidenav">
+              <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
+                    <div class="sidebar" id="mysidenav">
                         <ul>
-                            <%--<a href="javascript:void(0)" class="closebtn" onclick="myLinkButtonClick();" style="padding-top:50px">&times;</a>--%>
-                            <li style="padding-top: 60px"><a href="#">
+                            
+                            <li ><a href="#">
                                 <div style="color: #184698; padding-left: 30px">My account</div>
                             </a></li>
                             <li><a href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>
-                                <div>Dashboard</div>
+                                <div>&nbsp; Dashboard</div>
                             </a></li>
                             <li><a href="#"><i class="fa-solid fa-file-lines"></i>
-                                <div>My Documents</div>
+                                <div>&nbsp; My Documents</div>
                             </a></li>
                             <li><a href="#">
-                                <div style="color: #184698; padding-left: 30px">Orgaanise and Manage</div>
+                                <div style="color: #184698; padding-left: 8px">&nbsp; Organise and Manage</div>
                             </a></li>
                             <li><a href="#"><i class="fa-solid fa-layer-group"></i>
-                                <div>Templates</div>
+                                <div>&nbsp; Templates</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-regular fa-image"></i>
-                                <div>AI Images</div>
+                            <li><a href="AI Images.aspx"><i class="fa-regular fa-image"></i>
+                                <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-comment"></i>
-                                <div>AI Chat</div>
+                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                                <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="#"><i class="fa-solid fa-headphones"></i>
-                                <div>Speech to Text</div>
+                                <div>&nbsp; Speech to Text</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-code"></i>
+                            <li><a href="AI Code"><i class="fa-solid fa-code"></i>
                                 <div>AI Code</div>
                             </a></li>
                             <li><a href="#">
                                 <div style="color: #184698; padding-left: 30px">Account</div>
                             </a></li>
                             <li><a href="#"><i class="fa-solid fa-share-nodes"></i>
-                                <div>Affiliate Program</div>
+                                <div>&nbsp; Affiliate Program</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-gift"></i>
-                                <div>Membership</div>
+                            <li><a href="membership.aspx"><i class="fa-solid fa-gift"></i>
+                                <div>&nbsp; Membership</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-file-lines"></i>
-                                <div>Transactions</div>
+                            <li><a href="transactions.aspx"><i class="fa-solid fa-file-lines"></i>
+                                <div>&nbsp; Transactions</div>
                             </a></li>
                             <li><a href="Account setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                <div>Account Setting</div>
+                                <div>&nbsp; Account Setting</div>
                             </a></li>
                             <li><a href="#"><i class="fa-solid fa-power-off"></i>
-                                <div>Logout</div>
+                                <div>&nbsp;Logout</div>
                             </a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9 scrollable" id="main">
+
+                <div class="col-md-10" id="main1" >
                     <div class="row" style="padding-top: 150px">
                         <div class="col-md-6" style="padding-top: 12px; padding-left: 50px">
                             <h1 style="padding-left: 25px; font-size: 18px">Account Setting</h1>
                         </div>
                         <div class="col-md-6" style="padding-left: 220px">
                             <div class="  subcontainer">
-                                <span class="suhome"><a href="homepage.aspx">Home</a></span>                            <span class="icon"></span><span style="color: white">Account Setting</span>
+                                <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                            <span class="icon"></span><span style="color: white">Account Setting</span>
                             </div>
                         </div>
 
@@ -730,11 +754,12 @@
            
     </form>   
     
-     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>    <script type="text/javascript">
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
 
         $("#btnHeader").on("click", function () {
-            $("#sidebar").toggle();
-            $("#main").toggleClass('col-lg-12 full-width');
+            $("#side1").toggle();
+            $("#main").toggleClass('col-md-12 full-width');
            
         });
 

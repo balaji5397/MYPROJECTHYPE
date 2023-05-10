@@ -23,31 +23,121 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
         <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <style>
+#langbtn {
+    min-width: 35px;
+    height: 45px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+    text-align:center;
 
+}
+
+    #langbtn:hover {
+        background-color: #184698;
+    }
+
+option {
+    background-color: #ffff;
+    color: black;
+    line-height: 2.5em;
+    font-size: 14px;
+    height: 180%;
+}
+
+.dropdown-menu ul li {
+    padding-top: 4px;
+}
+
+.drp {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    padding: 4px 4px;
+    width: 80%;
+}
+
+
+
+.topbar {
+    position: fixed;
+    background: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    width:100%;
+    height: 90px;
+    padding: 0 0 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 9fr 1fr 1fr;
+    align-items: center;
+    z-index: 5;
+}
+
+.dropdown-menu a i {
+    min-width: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.dropdown-menu a i {
+    padding-left: 4px;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+    .dropdown-menu li :hover {
+        color: #184698;
+    }
+
+
+
+    </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
 
-        <div style="position:fixed;width:100%;height:82px;z-index:+1" class="header" >
-    <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">
-     <a   href="https://localhost:44368/homepage.aspx"><img  src="photos/logo.png" height="42"  /></a>
-    </div>
-        <div style="float:right;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;"> 
-           
-   <button type="button" class="btn btn-primary" style="background-color: #333;border-radius: 4px;color: #fff;border-color:#fff" >English </button>
-       <%--  --%>
-                </div>
+           <div class="topbar">
+            <div class="logo" style ="border-right: 2px solid #e0e0e0;height:82px;line-height:85px">
+                <img src="photos/logo.png" />
+            </div>
             
+               <div></div>
+<div style="float:right;padding-right:25px;border-left: 2px solid #e0e0e0;line-height:20px;padding-left:30px;height:82px;align-items:center;padding-top:20px">
 
-            <div style="float:right;padding-right:30px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:30px;height:82px;">
-
-        <asp:Button ID="Button1" runat="server" Text="Join Now" class="btn btn-primary btn-block " OnClick="Button1_Click" Width="109px"/>
+        <asp:Button ID="Button1" runat="server" Text="Join Now" class="btn btn-primary btn-block "  style=" background-color:#184698;color:white;border-style:none"   OnClick="Button1_Click" Width="109px"/>
              </div>      
-</div>
 
-         
+                <div style="border-left: 2px solid #e0e0e0;padding-left:25px;padding-right:20px;line-height:85px">
+                <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                    <option value="EN">English </option>
+                    <option value="AR">Arabic</option>
+                    <option value="BA">Bangali</option>
+                    <option value="CH">Chinese</option>
+                    <option value="FR">French</option>
+                    <option value="Ge">German</option>
+                    <option value="HE">Hebrew</option>
+                    <option value="HI">Hindi</option>
+                    <option value="IT">Italian</option>
+                    <option value="JA">Japanese</option>
+                    <option value="RO">Romanian</option>
+                    <option value="RU">Russian</option>
+                    <option value="Sa">Spanish</option>
+                    <option value="SE">Swedish</option>
+                    <option value="TH">Thai</option>
+                    <option value="TU">Turkish</option>
+                </select>
+            </div>
+</div>
+           
+           
+      
+
+
                  
         
         <%--Main content place holder--%>
@@ -92,7 +182,7 @@
                                     <u1>
  <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
                                    
-<li style="list-style:none;padding-bottom:5px"><a href="https://localhost:44368/signuppage.aspx">Testimonals</a></li>
+<li style="list-style:none;padding-bottom:5px"><a href="testimonals.aspx">Testimonals</a></li>
                                     </u1>
                                       </div>
                                     </div>

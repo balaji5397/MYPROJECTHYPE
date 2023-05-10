@@ -13,5 +13,15 @@ namespace hypequickai
         {
 
         }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

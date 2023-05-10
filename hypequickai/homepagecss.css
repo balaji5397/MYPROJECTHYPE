@@ -1,0 +1,100 @@
+﻿/*Membership plan starts*/
+.radbtn {
+   
+    cursor: pointer;
+    font-size:18px;
+    padding-left:100px;
+}
+
+.account {
+    margin-top: 50px;
+    margin-left: 60px;
+    padding-top: 40px;
+    padding-left: 30px;
+    box-shadow: 3px 4px 5px 3px rgba(0, 0,0, 0.08);
+    background-color: #ffff;
+}
+
+.labl {
+    background: #f6f6f6;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    line-height: 24px;
+    padding: 15px;
+    margin: 22px 0;
+    width: 100%;
+}
+
+.planlist ul {
+    list-style: none;
+    line-height: 30px;
+    text-align: left;
+}
+
+.planList u1 li {
+    text-align: left;
+}
+
+.planbutton {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #184698;
+    
+}
+
+    .planbutton:hover {
+        background-color: #184698;
+        color: white;
+    }
+
+/*    carousel */
+.carcard {
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px;
+    width: 850px;
+    height: 300px;
+    border: none !important;
+    color: #666;
+   padding:35px;
+}
+
+
+.caroprev {
+    color: white;
+    background-color: #666;
+    height: 50px; 
+    width: 50px;
+    margin-left: 150px; 
+    margin-top: 190px;
+    z-index:1;
+}
+
+.caronext {
+
+  color: white; 
+  background-color: #666; 
+  height: 50px; 
+  width: 50px; 
+  margin-right: 150px;
+  margin-top: 190px;
+  z-index:1;
+}
+
+.caroprev :hover{
+    background-color:#184698;
+    color:white;
+    width:50px;
+    height:50px;
+}
+
+.caronext :hover {
+    background-color: #184698;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
