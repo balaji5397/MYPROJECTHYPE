@@ -170,7 +170,7 @@ option {
                                 <div>
                                 <h1 style="padding-bottom:5px">Helpful Links</h1>
                                     <u1>
-                         <li style="list-style:none;padding-bottom:8px"><a href="#">Blog</a></li>          
+                         <li style="list-style:none;padding-bottom:8px"><a href="blog.aspx">Blog</a></li>          
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
                          <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
                                     </u1>

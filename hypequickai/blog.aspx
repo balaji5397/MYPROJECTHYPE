@@ -46,7 +46,7 @@
                 <h6>Recent Blog</h6>
                 </div>
             <div class="col-md-4"></div>
-            <div class=" col-md-2 subcontainer" style="background-color:#444;padding:20px;text-align:center;border-radius:10px;width=30px">
+            <div class=" col-md-2 subcontainer" style="background-color:#444;padding:20px;text-align:center;border-radius:10px;width:30px">
             <span class="suhome"><a href="homepage.aspx">Home</a></span>
             <span class="icon"></span>
             <span style="color:white">Blog</span>
@@ -66,7 +66,7 @@
                 </div>
         </div>
             <div class="col-xl-4 col-lg-4" style="margin-top:40px;margin-bottom:40px">
-                <div style="position: relative; display: inline-block;">
+                <div >
                     <input type="text" placeholder="Search" style="width: 300px; height: 50px; border: 1px solid #e0e0e0; border-radius: 5px">
                     <i style="position: absolute; right: 15px; top: 15px; margin: 3px 0;"
                         class="fa-solid fa-magnifying-glass"></i>

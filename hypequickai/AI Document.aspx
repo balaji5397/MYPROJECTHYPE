@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="hypequickai.WebForm13" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI Document.aspx.cs" Inherits="hypequickai.AI_Document" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title>hype dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatab --%>
@@ -14,8 +13,7 @@
     <%--Fonts--%>
     <link href="fonts/css/all.css" rel="stylesheet" />
 
-    <%--cus Stylesheet--%>
-    <link href="StyleSheet1.css" rel="stylesheet" />
+    
 
     <%--js query--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
@@ -26,19 +24,17 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-        <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+           <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+    <link href="AI%20Document.css" rel="stylesheet" />
 
-    <%--dashboard Style Sheet--%>
-    <link href="dashboard.css" rel="stylesheet" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
     <form id="form1" runat="server">
-
-        <div class="container-fluid" style="padding: 0px; margin: 0px;position:sticky;top:0px;z-index:1">
-                <div class="row Everify" >
+          <div class="container-fluid" style="padding: 0px; margin: 0px;margin-right:-15px;position:sticky;top:0px;z-index:1">
+                <div class="row Everify">
                     <div class="col-md-8 col-xl-8">
                         <i class="fa-solid fa-lock"></i><span>Your email address is not verified. Please verify your email address to use all the features.</span>
                     </div>
@@ -47,23 +43,21 @@
                     </div>
                 </div>
             </div>
-        <div class="topbar">
-            <div class="logo">
-                <img src="photos/logo.png" />
-            </div>
-            <div id="bar">
+            <div class="topbar">
+                <div class="logo">
+                    <img src="photos/logo.png" style="width: 60px; height: 45px" />
+                </div>
+                <div id="bar">
 
-                <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
-                <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
-            </div>
-
-            <div class="dropdown show drp use">
-                <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="False">
-                    <img src="photos/userimg.png" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding-left: -30px; object-fit: cover;" />
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <ul>
+                    <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
+                    <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
+                </div>
+                <div class="dropdown show drp use">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
+                        <img src="photos/userimg.png" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding-left: -30px; object-fit: cover;" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                         <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
@@ -75,33 +69,33 @@
                         <li><a class="dropdown-item" href="Account setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                     </ul>
-
+                    </div>
+                </div>
+                <div>
+                    <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                        <option value="EN">English </option>
+                        <option value="AR">Arabic</option>
+                        <option value="BA">Bangali</option>
+                        <option value="CH">Chinese</option>
+                        <option value="FR">French</option>
+                        <option value="Ge">German</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="Sa">Spanish</option>
+                        <option value="SE">Swedish</option>
+                        <option value="TH">Thai</option>
+                        <option value="TU">Turkish</option>
+                    </select>
                 </div>
             </div>
-            <div>
-                <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
-                    <option value="EN">English </option>
-                    <option value="AR">Arabic</option>
-                    <option value="BA">Bangali</option>
-                    <option value="CH">Chinese</option>
-                    <option value="FR">French</option>
-                    <option value="Ge">German</option>
-                    <option value="HE">Hebrew</option>
-                    <option value="HI">Hindi</option>
-                    <option value="IT">Italian</option>
-                    <option value="JA">Japanese</option>
-                    <option value="RO">Romanian</option>
-                    <option value="RU">Russian</option>
-                    <option value="Sa">Spanish</option>
-                    <option value="SE">Swedish</option>
-                    <option value="TH">Thai</option>
-                    <option value="TU">Turkish</option>
-                </select>
-            </div>
-        </div>
-        <div class="container-fluid">
+
+         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
+                   <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
                     <div class="sidebar" id="mysidenav">
                         <ul>
                             
@@ -164,75 +158,56 @@
                     </div>
                 </div>
                 <div class="col-md-10" id="main1">
-                    <%-- Right Side bar --%>
-                    <div class="main">
-                        <div class="row" style="padding-top: 150px">
-                            <div class="col-md-6" style="padding-top: 12px; padding-left: 50px">
-                                <h1 style="padding-left: 25px; font-size: 18px">Dashboard</h1>
-                            </div>
-                            <div class="col-md-6" style="padding-left: 220px">
-                                <div class="  subcontainer">
-                                    <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                                    <span class="icon"></span><span style="color: white">Dashboard</span>
-                                </div>
-                            </div>
+                    <div class="row" style="padding-top: 150px">
+                        <div class="col-md-6" style="padding-top: 28px; padding-left: 35px;display:flex;">
+                            <h2 style="padding-left: 25px; padding-top:12px;padding-right:12px;font-size: 18px">All Documents</h2>
 
+                            <p style="background-color:rgb(24 70 152 / 7%);color:#184698;width:270px;height:45px;padding:10px 20px;border-radius:40px;text-align:center"> <i class="fa-solid fa-chart-simple" style="color: #184698;"></i> &nbsp;0/10,000 <b>Words used</b></p>
                         </div>
-                          <%--    Cards Starts here--%>
-                        <div class="row">
-                            <div class="cards" style="margin: 30px">
-                                <div class="col-md-04">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <div class="detail">Words Used</div>
-                                            <div class="count">0/10,000</div>
-                                        </div>
-                                        <div class="icon-box1">
-                                            <i class="fa-solid fa-arrow-trend-up" style="color: #b81b7f;"></i>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-04">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <div class="detail">Image Used</div>
-                                            <div class="count">0/100</div>
-                                        </div>
-                                        <div class="icon-box2">
-                                          <i class="fa-solid fa-chart-simple" style="color: #36bd78;"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-04">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <div class="detail">Speech To Text</div>
-                                            <div class="count">0/0</div>
-                                        </div>
-                                        <div class="icon-box3">
-                                            <i class="fa-solid fa-headphones"  style="color: #efa80f;"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-6" style="padding-left: 220px">
+                            <div class="  subcontainer">
+                                <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                            <span class="icon"></span><span style="color: white">All Documents</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="charts">
-                        <div class="chart">
-                            <center>
-                                <h4>Word used this month</h4>
-                                <div>
-                                    <canvas id="myChart"></canvas>
-                                </div>
 
-                            </center>
-                        </div>
+
                     </div>
+                  <div class="account">
+                        <div class="avatar">
+                            <i class="fa-solid fa-file-lines" style="color: #0f3880"></i>
+                        
+                            <p>&nbsp;&nbsp; All Documents</p>
+                        </div>
+                        <hr style="border-top: dotted 1px" />
+                        <div class="upload">
+                            <div>
+                                <table style=" width:95%; margin-left:40PX !important;height:200px;">
+                                    <tr style="background-color:#666;color:white;height:25px;align-content:space-evenly;border-radius:8px">
+                                        <td style="padding-left:20px">Document</td>
+                                        <td style="padding-left:20px">Content</td>
+                                        <td style="padding-left:20px">Date</td>
+                                        <td style="padding-left:20px">Action</td>
+                                    </tr>
+                                    <tr style="height:40px;background-color:#f8f0f0">
+                                        <td style= "padding-left:20px"></td>
+                                        <td style= "padding-left:20px"></td>
+                                        <td  style= "padding-left:20px">No Documents Found</td>
+                                        <td  style= "padding-left:20px"></td>
+                                    </tr>
+                                   
+                                </table>
+                                 <br />
+                                
+                                    
+                                </div>
+                       
+                    </div>
+
+                   
                 </div>
-            </div>
-        </div>
-        <footer>
+                    <%--Footer--%>
+                      <footer>
             <hr style="border-top: dotted 1px; margin-top: 20px; margin-bottom: 0rem" />
             <div class="container">
                 <div class="row">
@@ -253,46 +228,20 @@
             </div>
 
         </footer>
+            </div>
+        </div>
+        
+             </div>
     </form>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript">
+
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
 
         $("#btnHeader").on("click", function () {
             $("#side1").toggle();
-            $("#main1").toggleClass('col-md-12 ');
+            $("#main1").toggleClass('col-md-12 full-width');
+
         });
-
-</script>
-<script>
-         const ctx = document.getElementById('myChart');
-
-         new Chart(ctx, {
-             type: 'line',
-             data: {
-                 labels: ["01 May", "02 May", "03 May", "04 May", "05 May", "06 May", "07 May", "08 May", "09 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"],
-
-                 datasets: [{
-                     label: "Words Used",
-                     backgroundColor: '#18469815',
-                     borderColor: '#184698',
-                     borderWidth: "3",
-                     data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                     pointRadius: 5,
-                     pointHoverRadius: 5,
-                     pointHitRadius: 10,
-                     pointBackgroundColor: "#fff",
-                     pointHoverBackgroundColor: "#fff",
-                     pointBorderWidth: "2",
-                 }]
-             },
-             options: {
-                 scales: {
-                     y: {
-                         beginAtZero: true
-                     }
-                 }
-             }
-         });
-     </script>
+    </script>
 </body>
 </html>

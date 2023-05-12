@@ -11,7 +11,7 @@ namespace hypequickai
 {
 
 
-    public partial class WebForm18
+    public partial class Aiiamges
     {
 
         /// <summary>

@@ -1,16 +1,17 @@
-﻿body {
-    background-color:#fff;
-}
-
-.container-fluid {
+﻿.container-fluid {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background: #f9f9f9;
+}
+
 #langbtn {
     min-width: 35px;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     background-color: #444;
     color: white;
@@ -38,7 +39,7 @@ option {
     color: #666;
     font-size: 16px;
     padding: 4px 4px;
-    width: 80%;
+    width: 100%;
 }
 
 .toogle i {
@@ -72,21 +73,18 @@ option {
     background: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
     width: 100%;
-    height: 100px;
+    height: 85px;
     padding: 0 20px;
     display: grid;
     grid-template-columns: 2fr 9fr 1fr 1fr;
     align-items: center;
     z-index: 1;
 }
-.dropdown-menu a i {
-    min-width: 10px;
-    font-size: 14px;
-    text-align: center;
-}
 
 .dropdown-menu a i {
-    padding-left: 4px;
+    min-width: 10px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .dropdown-menu li {
@@ -97,15 +95,33 @@ option {
         color: #184698;
     }
 
+.Everify {
+    padding: 10px;
+    height: 70px;
+    background-color: #fdf9e7;
+    align-content: center;
+    padding-left: 80px;
+    position: page;
+    width: 100%;
+}
 
-/*    menu icon */
+.Everifybutton {
+    background-color: #666;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+}
+/* Top Bar Ends*/
+
+
+/*<%--menu bar--%>*/
 .bar {
     width: 300px;
     transition: margin-left .5s;
     padding: 16px;
 }
 
-/*sidebar*/
+
 .sidebar {
     position: fixed;
     top: 85px;
@@ -126,7 +142,7 @@ option {
             list-style: none;
             margin-left: -20px;
             margin-right: 0px;
-            padding-top:18px;
+            padding-top: 18px;
         }
 
             .sidebar ul li a {
@@ -152,8 +168,25 @@ h11 {
 }
 
 .sidebar ul li a:hover {
-  
     color: #184698
+}
+
+
+/*main styling*/
+
+
+.frm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    padding-top: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 120%;
 }
 
 .icon {
@@ -188,81 +221,68 @@ h11 {
         text-decoration: none;
     }
 
-.cards {
-    width: 100%;
-    padding: 20px 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+.avatar {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
-    .cards .card {
-        height: 150px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
-    }
-
-.icon-box1 i {
-    font-size: 50px;
-    position: static;
-    background: #b81b7f12;
-    padding: 10px;
+.account {
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: 1px 0 3px 2px rgba(0, 0,0, 0.08);
+    background-color: #fff;
 }
 
-.icon-box2 i {
-    font-size: 50px;
-    position: static;
-    background-color: #36bd7812;
-    padding: 10px;
+.upload {
+    padding-left: 30px;
 }
 
-.icon-box3 i {
-    font-size: 50px;
-    position: static;
-    background-color: #efa80f12;
-    padding: 10px;
+.txtbox {
+    width: 95%;
 }
 
-.count {
-    text-align: center;
-    font-weight: 900;
-}
-
-.icon-box i {
-    font-size: 80px;
-}
-
-.charts {
-    width: calc(100%-250px);
-    position: relative;
-}
-
-.chart {
-    width: calc(100%-250px);
-    position: relative;
-}
-
-.Everify {
-    padding: 10px;
-    height: 70px;
-    background-color: #fdf9e7;
-    align-content: center;
-    padding-left: 80px;
-    width: 100%;
-}
-
-.Everifybutton {
-    background-color: #666;
-    font-size: 16px;
-    color: white;
+.accountbutton {
+    background-color: #184698;
+    color: #fff;
+    height: 45px;
+    width: 140px;
     border-radius: 8px;
+    border: none;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.sidedrop{
-    border-style:none !important;
+
+.accounthead {
+    font-size: 18px;
 }
+
+.accountbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.accountdropdown {
+    width: 95%;
+    height: 35px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+/*table
+*/
+
+.table {
+    width: 95%;
+    margin-left: 90PX !important;
+    height: 200px;
+}
+
+.

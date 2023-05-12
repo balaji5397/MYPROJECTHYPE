@@ -11,7 +11,7 @@
                 <H1>Forgot Password?</H1><span></span>
                 </div>
             <div class="col-md-4"></div>
-            <div class=" col-md-2 subcontainer" style="background-color:#444;padding:20px;text-align:center;border-radius:10px;width=30px">
+            <div class=" col-md-2 subcontainer" style="background-color:#444;padding:20px;text-align:center;border-radius:10px;width:30px">
             <span class="suhome"><a href="homepage.aspx">Home</a></span>
             <span class="icon"></span>
             <span style="color:white">Register</span>

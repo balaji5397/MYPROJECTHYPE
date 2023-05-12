@@ -1,10 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="membership.aspx.cs" Inherits="hypequickai.WebForm9" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Aiiamges.aspx.cs" Inherits="hypequickai.Aiiamges" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title></title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+      <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <%--datatab --%>
@@ -12,7 +13,7 @@
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--Fonts--%>
     <link href="fonts/css/all.css" rel="stylesheet" />
-
+    <link href="Aiiimages.css" rel="stylesheet" />
     
 
     <%--js query--%>
@@ -27,7 +28,7 @@
            <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
- <link href="membership.css" rel="stylesheet" />
+   
 </head>
 <body>
     <form id="form1" runat="server">
@@ -95,7 +96,7 @@
             <div class="row">
                    <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
                     <div class="sidebar" id="mysidenav">
-                        <ul>
+                       <ul>
                             
                             <li ><a href="#">
                                 <div style="color: #184698; padding-left: 30px">My account</div>
@@ -157,59 +158,57 @@
                 </div>
                 <div class="col-md-10" id="main1">
                     <div class="row" style="padding-top: 150px">
-                        <div class="col-md-6" style="padding-top: 12px; padding-left: 50px">
-                            <h1 style="padding-left: 25px; font-size: 18px">Current Plan</h1>
+                        <div class="col-md-6" style="padding-top: 10px; padding-left: 35px;display:flex;">
+                            <h2 style="padding-left: 25px; padding-top:8px;padding-right:12px;font-size: 18px">All Documents</h2>
+
+                            <p style="background-color:rgb(24 70 152 / 7%);color:#184698;width:270px;height:45px;padding:10px 20px;border-radius:40px;text-align:center"> <i class="fa-solid fa-chart-simple" style="color: #184698;"></i> &nbsp;0/10,000 <b>Images used</b></p>
                         </div>
                         <div class="col-md-6" style="padding-left: 220px">
                             <div class="  subcontainer">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                            <span class="icon"></span><span style="color: white">Current Plan</span>
+                            <span class="icon"></span><span style="color: white">Al Images</span>
                             </div>
                         </div>
-
-
+                        <br />
+                        <p style="padding-left:60px">Start with a detailed description.<span><strong style="color:#184698">Try an Example</strong></span></p>
+                        
                     </div>
-                  <div class="account">
-                        <div class="avatar">
-                           <i class="fa-solid fa-gift" style="color: #0f3880;"></i>
-                            <p>&nbsp;&nbsp; Current Plan</p>
-                        </div>
-                        <hr style="border-top: dotted 1px" />
-                        <div class="upload">
-                            <div>
-                                <table style=" width:95%;
-    margin-left:40PX !important;
-    height:200px;">
-                                    <tr style="background-color:#666;color:white;height:40px;align-content:space-evenly;border-radius:8px">
-                                        <td style="padding-left:20px">Membership</td>
-                                        <td style="padding-left:20px">Payment Mode</td>
-                                        <td style="padding-left:20px">Start Date</td>
-                                        <td style="padding-left:20px">End Date</td>
-                                    </tr>
-                                    <tr style="height:40px;align-content:space-evenly">
-                                        <td style= "padding-left:20px">free Plan</td>
-                                        <td style= "padding-left:20px">One Time</td>
-                                        <td  style= "padding-left:20px">-</td>
-                                        <td  style= "padding-left:20px">-</td>
-                                    </tr>
-                                    <tr style="background-color:#e0e0e0;height:90px">
-                                        <td></td>
-                                         <td></td>
-                                         <td></td>
-                                        <td>
-                                            <asp:Button ID="Button1" Class="accountbutton " runat="server" Text="Change Plan" OnClick="Button1_Click" />
-                                        </td>
-                                    </tr>
-                                </table>
-                                 <br />
-                                
-                                    
-                                </div>
+                    <div style="margin-left:55px;display:flex">
+                            <input type="text" style="background-color:#ffffff;color:grey;padding:6px;height:48px;font-size: 15px;width:1000px;border-radius:20px;border-style:none;overflow-y:scroll" placeholder="Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting" />
+                        <button style="background-color: #184698;
+    color: #fff;
+    height: 35px;
+    width: 140px;
+    border-radius: 25px;
+    border: none;float:right;">Generate →</button>
                        
                     </div>
+                 <br />
+                        <p style="color:#184698;font-size:13px;padding-left:60px">Advanced <span>+</span></p>
+                                 <hr style="border-top: dotted 1px; margin-top: 20px; "/>
+                               <%--footer--%>
 
-                   
+                      <footer>
+           
+            <div class="container" style="margin-top:60px;">
+                <div class="row" style="z-index:2">
+                    <div class="col-xl-12" style="padding-top: 50px">
+                        <span style="padding-left:60px">2023 Socius IGB Pvt Ltd, All right reserved</span>
+                        <span style="float: right">
+                            <u1>
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook botf"></i></a>
+                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter botf"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram botf"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin botf"></i></a>
+                                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest botf"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube botf"></i></a>
+                            </u1>
+                        </span>
+                    </div>
                 </div>
+            </div>
+
+        </footer>
 
             </div>
         </div>
@@ -225,6 +224,6 @@
             $("#main1").toggleClass('col-md-12 full-width');
 
         });
-        </script>
+    </script>
 </body>
 </html>

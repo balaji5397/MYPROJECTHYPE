@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace hypequickai
 {
-    public partial class AI_Images : System.Web.UI.Page
+    public partial class WebForm18 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
