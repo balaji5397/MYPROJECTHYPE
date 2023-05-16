@@ -7,7 +7,7 @@
    <title>hype dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -167,10 +167,10 @@
                     <%-- Right Side bar --%>
                     <div class="main">
                         <div class="row" style="padding-top: 150px">
-                            <div class="col-md-6" style="padding-top: 12px; padding-left: 50px">
+                            <div class="col-md-8" style="padding-top: 12px; padding-left: 50px">
                                 <h1 style="padding-left: 25px; font-size: 18px">Dashboard</h1>
                             </div>
-                            <div class="col-md-6" style="padding-left: 220px">
+                            <div class="col-md-4" style="float:right">
                                 <div class="  subcontainer">
                                     <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                     <span class="icon"></span><span style="color: white">Dashboard</span>

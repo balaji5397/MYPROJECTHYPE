@@ -7,7 +7,8 @@
   
       <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
+   
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -49,7 +50,7 @@
                 <div id="bar">
 
                     <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
-                    <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
+                  
                 </div>
                 <div class="dropdown show drp use">
                     <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
@@ -159,7 +160,7 @@
                 <div class="col-md-10" id="main1">
                     <div class="row" style="padding-top: 150px">
                         <div class="col-md-6" style="padding-top: 10px; padding-left: 35px;display:flex;">
-                            <h2 style="padding-left: 25px; padding-top:8px;padding-right:12px;font-size: 18px">All Documents</h2>
+                            <h2 style="padding-left: 25px; padding-top:8px;padding-right:12px;font-size: 18px">All Images</h2>
 
                             <p style="background-color:rgb(24 70 152 / 7%);color:#184698;width:270px;height:45px;padding:10px 20px;border-radius:40px;text-align:center"> <i class="fa-solid fa-chart-simple" style="color: #184698;"></i> &nbsp;0/10,000 <b>Images used</b></p>
                         </div>
@@ -175,8 +176,7 @@
                     </div>
                     <div style="margin-left:55px;display:flex">
                             <input type="text" style="background-color:#ffffff;color:grey;padding:6px;height:48px;font-size: 15px;width:1000px;border-radius:20px;border-style:none;overflow-y:scroll" placeholder="Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting" />
-                        <button style="background-color: #184698;
-    color: #fff;
+                        <button style="background-color: #184698;color: #fff;
     height: 35px;
     width: 140px;
     border-radius: 25px;

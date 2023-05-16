@@ -266,3 +266,15 @@ h11 {
 .sidedrop{
     border-style:none !important;
 }
+
+/*Medida Query*/
+@media(max-width:990px){
+    .sidebar{
+        width:0px;
+    }
+    .cards{
+        grid-template-columns:repeat(1,1fr);
+        padding:0px;
+       margin-right:10px;
+    }
+}

@@ -7,7 +7,8 @@
    
       <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
+
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />

@@ -72,7 +72,7 @@
     <Content Include="AI Document.aspx" />
     <Content Include="Aiiamges.aspx" />
     <Content Include="Aiiimages.css" />
-    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\bootstrap.min %281%29.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
@@ -2163,6 +2163,7 @@
     <Content Include="dashboard.css" />
     <Content Include="AI Document.css" />
     <Content Include="AI Images.css" />
+    <Content Include="templates.css" />
     <Content Include="transactions.css" />
     <Content Include="Web.config" />
     <Content Include="signuppage.aspx" />
@@ -2180,6 +2181,10 @@
     <Content Include="upgrademembership.aspx" />
     <Content Include="WebForm16.aspx" />
     <Content Include="AI Images.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="innerfeed.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI Document.aspx.cs">
@@ -2329,6 +2334,34 @@
     </Compile>
     <Compile Include="AI Images.aspx.designer.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="innerfeed.aspx.cs">
+      <DependentUpon>innerfeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="innerfeed.aspx.designer.cs">
+      <DependentUpon>innerfeed.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

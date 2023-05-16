@@ -4,7 +4,41 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="homepagecss.css" rel="stylesheet" />
     <link href="homepagecss2.css" rel="stylesheet" />
-   
+
+    <script type="text/javascript"
+        src="//code.jquery.com/jquery-1.9.1.js">
+    </script>
+
+
+    <script type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet"
+        type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+        type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- JavaScript for adding
+    slider for multiple images
+    shown at once-->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".carousel .item").each(function() {
+                var i = $(this).next();
+                i.length || (i = $(this).siblings(":first")),
+                i.children(":first-child").clone().appendTo($(this));
+                 
+                for (var n = 0; n < 3; n++)(i = i.next()).length ||
+                (i = $(this).siblings(":first")),
+                i.children(":first-child").clone().appendTo($(this))
+            })
+        });
+    </script>
+
+
+
+
     <div style="padding-top: 160px">
         <center>
             <img src="photos/Ailogo.png" width="180" height="180" />
@@ -23,7 +57,7 @@
 
     <div style="background-color: #f9f9f9" class="sect1">
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <center>
@@ -83,9 +117,12 @@
             </ul>
         </div>
         <div class="row">
+
+           <%-- Articles and Blogs--%>
+            <div class="row">
             <div class="col-md-12">
-                <p>Article and Blogs</p>
-                <hr  style="border-bottom:dashed;color: #4e4b4b; "/>
+                <p style="border-bottom:1px dashed #4e4b4b ">Article and Blogs</p>
+            
             </div>
            
             <div class="col-md-4 col-1g-4">
@@ -189,19 +226,541 @@
                     </div>
                 </div>
             </div>
-          
+          </div>
+
+<%--Ads and Marketing--%>
+                <div class="row">
+            <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">Ads and Marketing Tools</p>
+               
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                        <i class="fa-brands fa-facebook" style="color: #184698;"></i>
+                        <h6>Facebook Ads</h6>
+                        <p>Facebook ad copies that make your ads truly stand out.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                          <i class="fa-brands fa-facebook" style="color: #184698;"></i>
+                        <h6>>Facebook Ads Headlines</h6>
+                        <p>Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                        <i class="fa-brands fa-google" style="color: #184698;"></i>
+                        <h6>Google Ad Lines</h6>
+                        <p>Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-google" style="color: #184698;"></i>
+                        <h6>Google Ad Descriptions</h6>
+                        <p>The best-performing Google ad copy converts visitors into customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-linkedin-in" style="color: #184698;"></i>
+                        <h6>LinkedIn Ad Headlines</h6>
+                        <p>Attention-grabbing, click-inducing, and high-converting ad headlines for Linkedin.</p>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-linkedin-in" style="color: #184698;"></i>
+                        <h6>LinkedIn Ad Description</h6>
+                        <p>Professional and eye-catching ad descriptions that will make your product shine.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-bell" style="color: #184698;"></i>
+                        <h6>App and SMS Notifications</h6>
+                        <p>Notification messages for your apps, websites, and mobile devices that keep users coming back for more.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+          <%--  general Writing--%>
+           <div class="row">
+          <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">General writing</p>
+             
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-text-width" style="color: #184698;"></i>
+                        <h6>Facebook Ads</h6>
+                        <p>Facebook ad copies that make your ads truly stand out.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-text-width" style="color: #184698;"></i>
+                        <h6>Facebook Ads Headlines</h6>
+                        <p>Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-quora" style="color: #184698;"></i>
+                        <h6>Google Ad Lines</h6>
+                        <p>Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-child-reaching" style="color: #184698;"></i>
+                        <h6>Google Ad Descriptions</h6>
+                        <p>The best-performing Google ad copy converts visitors into customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-heart" style="color: #184698;"></i>
+                        <h6>LinkedIn Ad Headlines</h6>
+                        <p>Attention-grabbing, click-inducing, and high-converting ad headlines for Linkedin.</p>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-list" style="color: #184698;"></i>
+                        <h6>LinkedIn Ad Description</h6>
+                        <p>Professional and eye-catching ad descriptions that will make your product shine.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                          <i class="fa-solid fa-bars-progress"  style="color: #184698"></i>
+                        <h6>Definitions</h6>
+                        <p>Notification messages for your apps, websites, and mobile devices that keep users coming back for more.</p>
+                    </div>
+                </div>
+            </div>
               
-           
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-circle-check" style="color: #184698;"></i>
+                        <h6>Answers</h6>
+                        <p>Instant, quality answers to any questions or concerns that your audience might have.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-solid fa-circle-question" style="color: #184698;"></i>
+                        <h6>Question</h6>
+                        <p>A tool to create engaging questions and polls that increase audience participation and engagement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                         <i class="fa-solid fa-arrow-down-a-z" style="color: #184698"></i>
+                        <h6>Passive and Active Voices</h6>
+                        <p>Easy and quick solution to converting your passive voice sentences into active voice sentences.</p>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+             <i class="fa-solid fa-key" style="color: #184698;"></i>
+                        <h6>Pros and Cons</h6>
+                        <p>List of the main benefits versus the most common problems and concerns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                             <i class="fa-solid fa-arrows-rotate" style="color: #184698;"></i>
+                        <h6>Rewrite with Keywords</h6>
+                        <p>Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-envelope" style="color: #184698;"></i>
+                        <h6>Emails</h6>
+                        <p>Professional-looking emails that help you engage leads and customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-envelope" style="color: #184698;"></i>
+                        <h6>E mail V2</h6>
+                        <p>Personalized email outreach to your target prospects that get better results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-envelope-open" style="color: #184698;"></i>
+                        <h6>E mail Subject lines</h6>
+                        <p>Powerful email subject lines that increase open rates.</p>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-bullhorn" style="color: #184698;"></i>
+                        <h6>startup name Generator</h6>
+                        <p>Generate cool, creative, and catchy names for your startup in seconds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                         <i class="fa-solid fa-file-lines"  style="color: #184698;"></i>
+                        <h6>Company Bios</h6>
+                        <p>Short and sweet company bio that will help you connect with your target audience.</p>
+                    </div>
+                </div>
+            </div>
+              
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-file-lines" style="color: #184698;"></i>
+                        <h6>Company Mission</h6>
+                        <p>A clear and concise statement of your company's goals and purpose.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                          <i class="fa-solid fa-align-left" style="color: #184698;"></i>
+                        <h6>Company Vision</h6>
+                        <p>A vision that attracts the right people, clients, and employees.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+              
+           <%--E -Commerce--%>
+         <div class="row">        
+             
+             <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">E - commerce</p>
+               
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-gift" style="color: #184698;"></i>
+                        <h6>Product  Name Generator</h6>
+                        <p>Create creative product names from examples words.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-solid fa-gift" style="color: #184698;"></i>
+                        <h6>>Product Descriptions</h6>
+                        <p>Authentic product descriptions that will compel, inspire, and influence.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-amazon" style="color: #184698;"></i>
+                        <h6>Amazon Product Titles </h6>
+                        <p>Product titles that will make your product stand out in a sea of competition.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-amazon" style="color: #184698;"></i>
+                        <h6>Amazon Product Descriptions</h6>
+                        <p>Descriptions for Amazon products that rank on the first page of the search results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-amazon" style="color: #184698;"></i>
+                        <h6>Amazon Product Features</h6>
+                        <p>Advantages and features of your products that will make them irresistible to shoppers.</p>
+                    </div>
+                </div>
+            </div>
+              </div>
+         <%--   Social Media--%>
+
+            <div class="row">       
+                <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">Social Media</p>
+                
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-facebook" style="color: #184698;"></i>
+                        <h6>Social Media Post(Personal)</h6>
+                        <p>Write a social media post for yourself to be published on any platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-facebook" style="color: #184698;"></i>
+                        <h6>Social Media Post(Business)</h6>
+                        <p>Write a post for your business to be published on any social media platform.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-brands fa-instagram" style="color: #184698;"></i>
+                        <h6>Instagram Captions</h6>
+                        <p>Captions that turn your images into attention-grabbing Instagram posts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                 <i class="fa-brands fa-instagram" style="color: #184698;"></i>
+                        <h6>Instagram Hashtags</h6>
+                        <p>Trending and highly relevant hashtags to help you get more followers and engagement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-twitter" style="color: #184698;"></i>
+                        <h6>Twitter Tweets  </h6>
+                        <p>Generate tweets using AI, that are relevant and on-trend.</p>
+                    </div>
+                </div>
+            </div>
+
+                
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-youtube" style="color: #184698;"></i>
+                        <h6>Youtube Titles</h6>
+                        <p>Catchy titles that attract more views and increase the number of shares.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-youtube" style="color: #184698;"></i>
+                        <h6>Youtube Descriptions</h6>
+                        <p>Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-brands fa-youtube" style="color: #184698;"></i>
+                        <h6>Youtube Outlines </h6>
+                        <p>Video outlines that are a breeze to create and uber-engaging.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+              <i class="fa-brands fa-linkedin" style="color: #184698;"></i>
+                        <h6>LinkedIn Posts </h6>
+                        <p>Inspiring LinkedIn posts that will help you build trust and authority in your industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-solid fa-film" style="color: #184698;"></i>
+                        <h6>TikTok Video Scripts</h6>
+                        <p>Video scripts that are ready to shoot and will make you go viral.</p>
+                    </div>
+                </div>
+            </div>
             
             </div>
+         <%--   Website--%>
+              <div class="row">       
+                <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">Website</p>
+                
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-google" style="color: #184698;"></i>
+                        <h6>SEO Meta Tags(Blog Post)</h6>
+                        <p>A set of optimized meta title and meta description tags that will boost your search rankings for your blog.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-google" style="color: #184698;"></i>
+                        <h6>SEO Meta Tags (Home Page)</h6>
+                        <p>A set of optimized meta title and meta description tags that will boost your search rankings for your home page.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-google" style="color: #184698;"></i>
+                        <h6>SEO Meta Tags (Product Page) </h6>
+                        <p>A set of optimized meta title and meta description tags that will boost your search rankings for your product page.</p>
+                    </div>
+                </div>
+            </div>
+
 
 
            
         </div>
+
+      <%--      others--%>
+
+            <div class="row">
+             <div class="col-md-12">
+                <p style="border-bottom:1px dashed #4e4b4b ">Others</p>
+                
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-arrows-rotate" style="color: #184698;"></i>
+                        <h6>Tone Changer</h6>
+                        <p>Change the tone of your writing to match your audience and copy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-solid fa-music" style="color: #184698;"></i>
+                        <h6>Song Lycrics</h6>
+                        <p>Unique song lyrics that will be perfect for your next hit song.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                 <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
+                        <h6>Translate</h6>
+                        <p>Translate your content into any language you want.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
+                        <h6>FAQS</h6>
+                        <p>Generate frequently asked questions based on your product description.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
+                        <h6>FAQS Answers</h6>
+                        <p>Generate creative answers to questions (FAQs) about your business or website.</p>
+                    </div>
+                </div>
+            </div>
+
+                
+             <div class="col-md-4 col-1g-4">
+                <div style="width:100%">
+                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-solid fa-star-half-stroke" style="color: #184698;"></i>
+                        <h6>Testimonals and Reviews</h6>
+                        <p>Add social proof to your website by generating user testimonials.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+
     </div>
+        </div>
 
 <%--    Membership--%>    <%--plans Starts here--%>
-    <div style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px;width:100%">
+    <div class="container" style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px;width:100%">
         <h1 style="text-align: center">Membership Plans</h1>
 
         <div class="radbtn">
@@ -264,7 +823,7 @@
                             <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Support</li>
                         </ul>
                     </div>
-                    <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="planbutton" />
+                    <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button2_Click" />
                 </div>
                 <br />
 
@@ -291,7 +850,7 @@
                             <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Support</li>
                         </ul>
                     </div>
-                    <asp:Button ID="Button4" Style="background-color: #184698; color: #fff" runat="server" Text="Upgrade" CssClass="planbutton" />
+                    <asp:Button ID="Button4" Style="background-color: #184698; color: #fff" runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button4_Click" />
                 </div>
                 <br />
             </div>
@@ -349,7 +908,12 @@
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
               officia deserunt mollit anim id est laborum.
                         </div>
+
+                    
+
+                        
                 </div>
+
                 <a class="carousel-control-prev caroprev " href="#carouselExampleIndicators" role="button" data-slide="prev" >
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -358,11 +922,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                <ol class="carousel-indicators" >
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+              
             </div>
         </div>
     </div>
@@ -371,13 +931,14 @@
    <%-- Blogs--%>
     <div style="background-color: #ffffff; padding-top: 60px; padding-bottom: 60px">
         <div class="row">
+
         <div class="col-md-10" style="padding-bottom:25px">
          <h4 style="margin-left:50px">Recent Blog</h4>
             </div>
         <div class="col-md-2"><a href="blog.aspx"> View Blog →</a></div>
         </div>
              <div class="row" style="margin-left:50px">
-                 <img src="photos/recentblog.png"  width="380";height="499" style="background-color:#666;"/>
+                 <img src="photos/recentblog.png"  style="width:400px;height:380px"/>
                  <div style= "position:absolute;padding-top:150px">
                      <p>3 Years ago</p>
                      <h6>First Blog</h6>
@@ -386,12 +947,78 @@
        </div>
 
 
+
     <%--Carousel images--%>
     
 
     <div style="background-color: #e0e0e0; padding-top: 60px; padding-bottom: 60px">
-        <h1 style="text-align: center">Scrolling Logos</h1>
+        <div class="container">
+		<!-- bootstrap card with row name myCarousel as row 1-->
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-01.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-02.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-03.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-04.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-05.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2" style="padding-right: 80px">
+                            <a href="#">
+                                <img src="photos/logo-carousel-06.png"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
 
+                </div>
+                <a class="left carousel-control" style
+                    href="#myCarousel"
+                    data-slide="prev">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </a>
+                <a class="right carousel-control"
+                    href="#myCarousel"
+                    data-slide="next">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </a>
+
+            </div>
+        </div>
 
 
 

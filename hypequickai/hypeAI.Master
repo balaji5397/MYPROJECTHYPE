@@ -5,8 +5,10 @@
 <html>
 <head runat="server">
     <title>hype</title>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png">
     <%--bootstrap css--%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
+    
     <%--datatab --%>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--Fonts--%>
@@ -22,7 +24,8 @@
     <%--bootstrap--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <style>
 #langbtn {
     min-width: 35px;
@@ -171,8 +174,8 @@ option {
                                 <h1 style="padding-bottom:5px">Helpful Links</h1>
                                     <u1>
                          <li style="list-style:none;padding-bottom:8px"><a href="blog.aspx">Blog</a></li>          
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Feedback</a></li>
-                         <li style="list-style:none;padding-bottom:5px"><a href="#">Contact</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="feedback.aspx">Feedback</a></li>
+                         <li style="list-style:none;padding-bottom:5px"><a href="Contacts.aspx">Contact</a></li>
                                     </u1>
                                       </div>
                                     </div>
@@ -180,7 +183,7 @@ option {
                                 <div>
                                 <h1 style="padding-bottom:5px">Information</h1>
                                     <u1>
- <li style="list-style:none;padding-bottom:8px"><a href="https://localhost:44368/loginpage.aspx">FAQ</a></li>
+ <li style="list-style:none;padding-bottom:8px"><a href="FAQ.aspx">FAQ</a></li>
                                    
 <li style="list-style:none;padding-bottom:5px"><a href="testimonals.aspx">Testimonals</a></li>
                                     </u1>
@@ -229,6 +232,16 @@ option {
         </footer>
     </form>
 
-
+      <script>  
+function Map123() {  
+var mapOptions = {  
+    center:new google.maps.LatLng(12.9716,77.5946),  
+    zoom: 10,  
+    mapTypeId: google.maps.MapTypeId.HYBRID  
+}  
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+}  
+      </script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script> 
 </body>
 </html>
