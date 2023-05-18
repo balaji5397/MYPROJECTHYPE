@@ -7,6 +7,7 @@
 
 body {
     background: #f9f9f9;
+    font-family:  sans-serif;
 }
 
 #langbtn {
@@ -221,73 +222,91 @@ h11 {
         text-decoration: none;
     }
 
-.avatar {
-    display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-}
-
-.account {
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-left: 20px;
-    box-shadow: 1px 0 3px 2px rgba(0, 0,0, 0.08);
-    background-color: #fff;
-}
-
-.upload {
-    padding-left: 30px;
-}
-
-.txtbox {
-    width: 95%;
-}
-
-.accountbutton {
-    background-color: #184698;
-    color: #fff;
+.chatpara {
+    background-color: rgb(24 70 152 / 7%);
+    color: #184698;
+    width: 270px;
     height: 45px;
-    width: 140px;
-    border-radius: 8px;
-    border: none;
-    margin-left: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-align: center
 }
-
-.accounthead {
-    font-size: 18px;
-}
-
-.accountbox {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.scrollable {
-    overflow-y: auto;
-}
-
-.accountdropdown {
-    width: 95%;
-    height: 35px;
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-/*table
-*/
-
-.table {
-    width: 95%;
-    margin-left: 90PX !important;
-    height: 200px;
-}
-
-.aitextbox {
+.speechcontent1 {
+    background-color: white;
+    margin: 10px 14px;
     width: 100%;
-    padding: 5px 10px;
-  border:none;
+    padding-top: 20px;
+   
+   padding-bottom:20px;
+}
+.speechcontent2 {
+    background-color: white;
+    padding:20px;
+    margin: 10px 8px;
+   
+}
+.speechhead {
+    padding-top: 15px;
+    padding-bottom:15px;
+    padding-left:15px;
+    border-bottom: 1px solid #eaeaea;
+}
+.speechcontent1-head {
+    color: #666666;
+    font-size: 18px;
+   padding-left:15px;
+    font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+}
+.speechdesc{
+    padding:10px 15px;
+}
+ .speechdesc p {
+        padding: 10px 15px;
+        background-color: #e9f7fe;
+        color: #3184ae;
+        font-size:14px;
+    }
+
+.speechtextbox {
+    border: none;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    border-radius:4px;
+    padding:5px 4px;
+    font-size:12px;
+}
+
+.speechinput{
+    padding:10px 15px;
+}
+.speechupload {
+    background: white;
+    padding: 10px 20px;
+    border-color: #184698;
+    color: #184698;
+    border: 1px solid #184698;
+    border-radius: 4px
+}
+       
+.speechupload:hover{
+    background-color:#184698;
+    color:white;
+}
+.uploadsp {
+    padding: 10px 15px;
+}
+.speechsmall{
+   color:#666;
+   font-family:sans-serif;
+   font-size:12px;
+}
+.speechbutton{
+    background-color:#184698;
+    color:white;
+    border-radius:4px;
+    width:100%;
+    padding:10px 25px;
+    border:none;
+
 }

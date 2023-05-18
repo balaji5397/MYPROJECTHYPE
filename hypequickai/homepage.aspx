@@ -773,7 +773,7 @@
 
 
       
-        <div class="container account" style="margin-left: 100px">
+        <div class="container account" <%--style="margin-left: 100px--%>">
             <div class="row" style="align-items: center">
                 <div class="col-md-4 ">
                     <h3>Free Plan</h3>

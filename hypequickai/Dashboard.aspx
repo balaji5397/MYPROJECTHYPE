@@ -37,7 +37,7 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="container-fluid" style="padding: 0px; margin: 0px;position:sticky;top:0px;z-index:1">
+        <div class="container-fluid" style="padding: 0px; margin: 0px;position:sticky;top:0px;z-index:1;background-color: #fdf9e7;">
                 <div class="row Everify" >
                     <div class="col-md-8 col-xl-8">
                         <i class="fa-solid fa-lock"></i><span>Your email address is not verified. Please verify your email address to use all the features.</span>

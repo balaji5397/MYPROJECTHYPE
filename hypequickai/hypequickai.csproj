@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="accountsettings.css" />
     <Content Include="AI Document.aspx" />
+    <Content Include="aichat.css" />
     <Content Include="Aiiamges.aspx" />
     <Content Include="Aiiimages.css" />
     <Content Include="bootstrap\css\bootstrap.min %281%29.css" />
@@ -2163,6 +2164,8 @@
     <Content Include="dashboard.css" />
     <Content Include="AI Document.css" />
     <Content Include="AI Images.css" />
+    <Content Include="speech to text.css" />
+    <Content Include="aicodestylesheet.css" />
     <Content Include="templates.css" />
     <Content Include="transactions.css" />
     <Content Include="Web.config" />

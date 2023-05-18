@@ -9,11 +9,16 @@
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
    
+
+   
+
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--Fonts--%>
     <link href="fonts/css/all.css" rel="stylesheet" />
+
+   <%-- Custom Css Sheeet--%>
     <link href="Aiiimages.css" rel="stylesheet" />
     
 
@@ -184,7 +189,116 @@
                        
                     </div>
                  <br />
-                        <p style="color:#184698;font-size:13px;padding-left:60px">Advanced <span>+</span></p>
+                         <p data-toggle="collapse" data-target="#aiimagecollapse" style="color:#184698;font-size:13px;padding-left:60px">Advanced <span>+</span></p>
+                                
+                    <div id="aiimagecollapse" class="container collapse">
+                        
+                        
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 " >
+                                <h6 >Image Title</h6>
+                                <input type="text" placeholder="New Image"  style="width:100%;border:none;box-shadow:0 1px 4px 0 rgba(0, 0, 0, .05);" />
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <h6>Art Style</h6>
+                               <select class="form-select form-select-sm aitextbox" aria-label=".form-select-sm example">
+                                    
+                                    <option value="" selected="selected">None</option>
+                                    <option value="3d_render">3D render</option>
+                                    <option value="pixel">Pixel</option>
+                                    <option value="sticker">Sticker</option>
+                                    <option value="realistic">Realistic</option>
+                                    <option value="isometric">Isometric</option>
+                                    <option value="cyberpunk">Cyberpunk</option>
+                                    <option value="line">Line art</option>
+                                    <option value="pencil">Pencil drawing</option>
+                                    <option value="ballpoint_pen">Ballpoint pen drawing</option>
+                                    <option value="watercolor">Watercolor</option>
+                                    <option value="origami">Origami</option>
+                                    <option value="cartoon">Cartoon</option>
+                                    <option value="retro">Retro</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="renaissance">Renaissance</option>
+                                    <option value="clay">Clay</option>
+                                    <option value="vaporwave">Vaporwave</option>
+                                    <option value="steampunk">Steampunk</option>
+                                    <option value="glitchcore">Glitchcore</option>
+                                    <option value="bauhaus">Bauhaus</option>
+                                    <option value="vector">Vector</option>
+                                    <option value="low_poly">Low poly</option>
+                                    <option value="ukiyo_e">Ukiyo-e</option>
+                                    <option value="cubism">Cubism</option>
+                                    <option value="modern">Modern</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="contemporary">Contemporary</option>
+                                    <option value="impressionism">Impressionism</option>
+                                    <option value="pointillism">Pointillism</option>
+                                    <option value="minimalism">Minimalism</option>
+                                </select>
+                            </div>
+                             <div class="col-sm-3 col-md-3">
+                                <h6>Lighting Style</h6>
+                               <select class="form-select form-select-sm aitextbox" aria-label=".form-select-sm example">
+                                    
+                                   <option value="" selected="selected">None</option>
+                                    <option value="warm">Warm</option>
+                                    <option value="cold">Cold</option>
+                                    <option value="golden_hour">Golden Hour</option>
+                                    <option value="blue_hour">Blue Hour</option>
+                                    <option value="ambient">Ambient</option>
+                                    <option value="studio">Studio</option>
+                                    <option value="neon">Neon</option>
+                                    <option value="dramatic">Dramatic</option>
+                                    <option value="cinematic">Cinematic</option>
+                                    <option value="natural">Natural</option>
+                                    <option value="foggy">Foggy</option>
+                                    <option value="backlight">Backlight</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </div>
+                             <div class="col-sm-3 col-md-3 ">
+                                <h6>Mood</h6>
+                               <select class="form-select form-select-sm aitextbox" aria-label=".form-select-sm example">
+                                    
+                                    <option value="" selected="selected">None</option>
+                                    <option value="aggressive">Aggressive</option>
+                                    <option value="angry">Angry</option>
+                                    <option value="boring">Boring</option>
+                                    <option value="bright">Bright</option>
+                                    <option value="calm">Calm</option>
+                                    <option value="cheerful">Cheerful</option>
+                                    <option value="chilling">Chilling</option>
+                                    <option value="colorful">Colorful</option>
+                                    <option value="dark">Dark</option>
+                                    <option value="neutral">Neutral</option>
+                                </select>
+                            </div> 
+                             <div class="col-sm-3 col-md-3 ">
+                                <h6>Resolution</h6>
+                               <select class="form-select form-select-sm aitextbox" aria-label=".form-select-sm example">
+
+                                   <option value="256x256">Small Image (256x256)</option>
+                                   <option value="512x512">Medium Image (512x512)</option>
+                                   <option value="1024x1024">Large Image (1024x1024)</option>
+                                </select>
+                            </div>
+                             <div class="col-sm-3 col-md-3">
+                                <h6>Number of Images</h6>
+                               <select class="form-select form-select-sm  aitextbox" aria-label=".form-select-sm example">
+
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                                  <hr style="border-top: dotted 1px; margin-top: 20px; "/>
                                <%--footer--%>
 
