@@ -2166,6 +2166,11 @@
     <Content Include="AI Images.css" />
     <Content Include="speech to text.css" />
     <Content Include="aicodestylesheet.css" />
+    <Content Include="affilate program.aspx" />
+    <Content Include="affilate program style.css" />
+    <Content Include="WebForm16.aspx" />
+    <Content Include="withdrawlstyle.css" />
+    <Content Include="templatesinnerstyle.css" />
     <Content Include="templates.css" />
     <Content Include="transactions.css" />
     <Content Include="Web.config" />
@@ -2182,12 +2187,13 @@
     <Content Include="Testimonals.aspx" />
     <Content Include="blog.aspx" />
     <Content Include="upgrademembership.aspx" />
-    <Content Include="WebForm16.aspx" />
     <Content Include="AI Images.aspx" />
     <Content Include="FAQ.aspx" />
     <Content Include="Contacts.aspx" />
     <Content Include="feedback.aspx" />
     <Content Include="innerfeed.aspx" />
+    <Content Include="Templatesblogideas.aspx" />
+    <Content Include="withdrawls.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI Document.aspx.cs">
@@ -2324,13 +2330,6 @@
     <Compile Include="upgrademembership.aspx.designer.cs">
       <DependentUpon>upgrademembership.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm16.aspx.cs">
-      <DependentUpon>WebForm16.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm16.aspx.designer.cs">
-      <DependentUpon>WebForm16.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AI Images.aspx.cs">
       <DependentUpon>AI Images.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2365,6 +2364,34 @@
     </Compile>
     <Compile Include="innerfeed.aspx.designer.cs">
       <DependentUpon>innerfeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Templatesblogideas.aspx.cs">
+      <DependentUpon>Templatesblogideas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Templatesblogideas.aspx.designer.cs">
+      <DependentUpon>Templatesblogideas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="affilate program.aspx.cs">
+      <DependentUpon>affilate program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="affilate program.aspx.designer.cs">
+      <DependentUpon>affilate program.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm16.aspx.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm16.aspx.designer.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="withdrawls.aspx.cs">
+      <DependentUpon>withdrawls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="withdrawls.aspx.designer.cs">
+      <DependentUpon>withdrawls.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

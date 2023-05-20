@@ -180,7 +180,7 @@
                           </div>
                              <div class="speechinput">
                               <span>Title<span style="float:right"><small>0/100</small></span></span>
-                              <input type="text" class="speechtextbox" />
+                              <input type="text" class="speechtextbox" required/>
                                  </div>
 
                              <div class="uploadsp">
@@ -200,7 +200,7 @@
                               <br />
                                  <br />
                                  <span>Audio Description<span style="float:right"><small>0/100</small></span></span>
-                                 <textarea   rows="3" cols="25" style="width:100%"></textarea>
+                                 <textarea  class="speechtextbox"  rows="3" cols="25" style="width:100%"  required></textarea>
                                  <small class="speechsmall">Describe the speech from the file to help the AI. (Optional)</small>
                                  <br />
                                  <br />

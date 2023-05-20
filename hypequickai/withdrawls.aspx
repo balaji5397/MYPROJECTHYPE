@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI Code.aspx.cs" Inherits="hypequickai.WebForm8" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="withdrawls.aspx.cs" Inherits="hypequickai.WebForm23" %>
 
 <!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>AI Code</title>
+    <title>Withdrawals-Hype</title>
 
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
@@ -31,8 +31,7 @@
            <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
-    <link href="aicodestylesheet.css" rel="stylesheet" />
-    
+    <link href="withdrawlstyle.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -154,14 +153,14 @@
                 <div class="col-md-10"  id="main1"> 
                     <div class="row" style="padding-top: 150px; margin-left: 40px; margin-right: 40px">
                         <div class="col-md-6 col-sm-12" style="padding-top: 10px; display: flex;">
-                            <h2 style="padding-top: 8px; padding-right: 12px; font-size: 18px">AI Code</h2>
+                            <h2 style="padding-top: 8px; padding-right: 12px;font-family: Nunito; font-size:22px">Withdrawals</h2>
 
-                            <p class="chatpara"><i class="fa-solid fa-chart-simple" style="color: #184698;"></i>&nbsp;0/10,000 <b>Words used</b></p>
+                           
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="  subcontainer" style="float: right">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                                <span class="icon"></span><span style="color: white">AI Code</span>
+                                <span class="icon"></span><span style="color: white">Withdrawals</span>
                             </div>
                         </div>
                         <br />
@@ -169,59 +168,86 @@
                         <br />
                     </div>
 
-                    <div class="row" style="margin-left: 20px; margin-right: 30px">
-                        <div class="col-md-4">
-                            <div class="speechcontent1">
-                                <div class="speechhead">
-                                    <h4 class="speechcontent1-head"><i class="fa-solid fa-code" style="color: #184698"></i>AI Code</h4>
-                                </div>
-                                <div class="speechdesc">
-                                    <p>Use this code generator to create code in any programming language</p>
-                                </div>
-                                <div class="speechinput">
-                                    <span>Title<span style="float: right"><small>0/100</small></span></span>
-                                    <input type="text" class="speechtextbox"  placeholder="New Code" required />
-                                </div>
-                                <div class="uploadsp">
-                                    <br />
-                                    <span>Description<span style="color: red">*</span></h6><span style="float: right"><small>0/100</small></span></span>
-                                    <textarea rows="3" cols="25" style="width: 100%" class="speechtextbox" required  placeholder="write a javascript function to generate a random string"></textarea>
-                                    <br />
-                                    <br />
-                                    <button class="speechbutton">Generate  &#10140; </button>
-                                </div>
-                            </div>
+                <div class="row" style="margin-left:50px;margin-right:50px;padding-top:60px">
+                    <div class="withdrawalstop">
+                        
+                        <div class="withdrawalshead1"  data-toggle="collapse" data-target="#withdrawalscollapse">
+                           <div class="col-md-12">
+                               <p> <i class="fa-solid fa-bell" style="color: #184698;"></i>&nbsp;&nbsp;Request Withdrawals</p>
+                           </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="speechcontent2">
-                                <div class="speechcontent2-head">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <h5 class="speechcontent1-head"><i class="fa-solid fa-align-left" style="color: #184698;">&nbsp;&nbsp;&nbsp; </i>Generated Result</h5>
-                                        </div>
-                                        <%--<div class="col-md-8" style="float:right">
-                                   <i class="fa-regular fa-file-word" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-file-lines" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-copy" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                               </div>--%>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="speechdesc" style="padding: 25px 35px;">
-                                        <p style="padding: 35px 50px;">Generated Code Will appear here..</p>
-                                    </div>
-                                </div>
 
-                            </div>
-
-                        </div>
                     </div>
+                    <div class="withdrawalscontent collapse"  id="withdrawalscollapse">
+                        <div class="speechdesc">
+                            <p>
+                                The requested amount will be deducted from your wallet and the amount will be blocked 
+                                        until it get approved or rejected by the administrator. Once its approved, the requested 
+                                        amount will be manually pay to you.
+                            </p>
+                        </div>
+                        <br />
+                        <br />
+                        <h6>Withdrawl Amount(₹)</h6>
+                         <div >
+                              <input class="dropspinner" style="position:relative; background-color: #FFFF;max-width:100%;outline:none; padding: 8px 15px; color: #808080; font-family: sans-serif; font-size: 15px; border: none; border-style: none; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0; border-radius: 6px;"
+                                        type="number" value="200" />
+                           <i class="fa-regular fa-money-bill-1" style="color: #184698;position:absolute;font-size:35px;z-index:5;margin-left:0px;"></i>
+                         </div>
+                        <br />
+                        <span><i class="fa-solid fa-circle-info" style="color: #161717;"></i><small> Minimum withdraw amount : 50 ₹</small></span>
+                        <br />
+                        <br />
+                        <h6>Payment Method</h6>
+                        <br />
+                        <asp:RadioButtonList ID="RadioButtonList1"  runat="server" RepeatLayout="Flow">
+                             <asp:ListItem> Paypal</asp:ListItem>
+                <asp:ListItem>  Bank Deposit</asp:ListItem>
+                        </asp:RadioButtonList>
+                       <br />
+                        <br />
+                        <h5>Account Details</h5>
+                        
+                         <textarea   rows="4" cols="55" class="withdrawltextbox"  required></textarea>
+                        <br />
+                        <small style="color:#666666;font-size:13px">Write here your payment id or payment details of selected payment gateways.</small>
+                        <br />
+                        <br />
+                        <button class="withdrawlbutton">Withdraw </button>
+                    </div>
+                </div>
 
+                    <div class="row" style="margin-left: 50px; margin-right: 50px; padding-top: 60px">
+                        <div class="withdrawalstop">
+                            <div class="withdrawalshead1">
+                                <div class="col-md-12">
+                                    <p><i class="fa-solid fa-bell" style="color: #184698;"></i>&nbsp;&nbsp;Withdrawal Requests</p>
+                                </div>
+                            </div>
+                            <div>
+                                <table style="width: 95%; margin-left: 40PX !important; height: 200px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0;">
+                                    <tr style="background-color: white; color: black; height: 25px; align-content: space-evenly; border-radius: 8px; border-bottom: 1px solid black">
+                                        <td style="padding-left: 20px">Requested on</td>
+                                        <td style="padding-left: 20px">Amount</td>
+                                        <td style="padding-left: 20px">Payment Mode</td>
+                                        <td style="padding-left: 20px">Status</td>
+                                    </tr>
+                                    <tr style="height: 20px; background-color: #fff">
+                                        <td style="padding-left: 20px"></td>
+                                        <td style="padding-left: 20px"></td>
+                                        <td style="padding-left: 20px">No Documents Found</td>
+                                        <td style="padding-left: 20px"></td>
+                                    </tr>
+                                </table>
+                                <br />
+                            </div>
+                        </div>
 
+                    </div>
                      <hr style="border-top: dotted 1px; margin-top: 20px; "/>
-   <%--footer--%>
-
-                      <footer>
+                               <%--footer--%>
+        
+                    <footer>
            
             <div class="container" >
                 <div class="row" style="z-index:2">
@@ -261,4 +287,5 @@
     </script>
 </body>
 </html>
+
 

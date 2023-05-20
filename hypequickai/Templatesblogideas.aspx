@@ -1,11 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI Code.aspx.cs" Inherits="hypequickai.WebForm8" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Templatesblogideas.aspx.cs" Inherits="hypequickai.WebForm22" %>
 
 <!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>AI Code</title>
+    <title>Blog Intros-Hype</title>
 
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
@@ -31,8 +29,10 @@
            <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
-    <link href="aicodestylesheet.css" rel="stylesheet" />
-    
+    <link href="templatesinnerstyle.css" rel="stylesheet" />
+    <style>
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -154,14 +154,15 @@
                 <div class="col-md-10"  id="main1"> 
                     <div class="row" style="padding-top: 150px; margin-left: 40px; margin-right: 40px">
                         <div class="col-md-6 col-sm-12" style="padding-top: 10px; display: flex;">
-                            <h2 style="padding-top: 8px; padding-right: 12px; font-size: 18px">AI Code</h2>
+                            <h2 style="padding-top: 8px; padding-right: 12px; font-size: 18px">Blog Intros </h2>
 
                             <p class="chatpara"><i class="fa-solid fa-chart-simple" style="color: #184698;"></i>&nbsp;0/10,000 <b>Words used</b></p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="  subcontainer" style="float: right">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                                <span class="icon"></span><span style="color: white">AI Code</span>
+                                <span class="icon"></span><span style="color: white"><a href="Templates.aspx">Templates</a></span>
+                                 <span class="icon"></span><span style="color: white">Blog Intros</span>
                             </div>
                         </div>
                         <br />
@@ -173,53 +174,129 @@
                         <div class="col-md-4">
                             <div class="speechcontent1">
                                 <div class="speechhead">
-                                    <h4 class="speechcontent1-head"><i class="fa-solid fa-code" style="color: #184698"></i>AI Code</h4>
+                                    <h4 class="speechcontent1-head"><i class="fa-solid fa-comment" style="color: #184698;"></i>&nbsp;&nbsp;Blog Intros</h4>
                                 </div>
                                 <div class="speechdesc">
-                                    <p>Use this code generator to create code in any programming language</p>
-                                </div>
-                                <div class="speechinput">
-                                    <span>Title<span style="float: right"><small>0/100</small></span></span>
-                                    <input type="text" class="speechtextbox"  placeholder="New Code" required />
+                                    <p>Enticing article/blog introductions that capture the attention of the audience.</p>
                                 </div>
                                 <div class="uploadsp">
+                                    <span>What is your Blog is About<span style="color: red">*</span><span style="float: right"><small>0/400</small></span></span>
+                                    <textarea class="speechtextbox" rows="3" cols="25" style="width: 100%" required placeholder="Describe your Blog here...."></textarea>
                                     <br />
-                                    <span>Description<span style="color: red">*</span></h6><span style="float: right"><small>0/100</small></span></span>
-                                    <textarea rows="3" cols="25" style="width: 100%" class="speechtextbox" required  placeholder="write a javascript function to generate a random string"></textarea>
+
+
+                                    <h6>Language</h6>
+                                    <div>
+                                        <select id="blogdrop1">
+                                            <option class="blogoption" value="EN">English </option>
+                                            <option class="blogoption" value="AR">Arabic</option>
+                                            <option class="blogoption" value="BA">Bangali</option>
+                                            <option class="blogoption" value="CH">Chinese</option>
+                                            <option class="blogoption" value="FR">French</option>
+                                            <option class="blogoption" value="Ge">German</option>
+                                            <option class="blogoption" value="HE">Hebrew</option>
+                                            <option class="blogoption" value="HI">Hindi</option>
+                                            <option class="blogoption" value="IT">Italian</option>
+                                            <option class="blogoption" value="JA">Japanese</option>
+                                            <option class="blogoption" value="RO">Romanian</option>
+                                            <option class="blogoption" value="RU">Russian</option>
+                                            <option class="blogoption" value="Sa">Spanish</option>
+                                            <option class="blogoption" value="SE">Swedish</option>
+                                            <option class="blogoption" value="TH">Thai</option>
+                                            <option class="blogoption" value="TU">Turkish</option>
+                                        </select>
+                                    </div>
+                                    <br />
+                                    <h6>Quality Type</h6>
+                                    <div>
+                                        <select id="blogdrop2">
+                                            <option class="blogoption" value="EN">Economy</option>
+                                            <option class="blogoption" value="AR">Average</option>
+                                            <option class="blogoption" value="BA">Good</option>
+                                            <option class="blogoption" value="CH">Premium</option>
+
+
+                                        </select>
+                                    </div>
+                                    <br />
+                                    <h6>Tone of Voice<i class="fa-solid fa-circle-question" style="color: #0d0d0d;"></i></h6>
+                                    <div>
+                                        <select id="blogdrop3">
+                                            <option class="blogoption" value="EN">Funny</option>
+                                            <option class="blogoption" value="AR">Casual</option>
+                                            <option class="blogoption" value="BA">Excited</option>
+                                            <option class="blogoption" value="CH">Proffession</option>
+                                            <option class="blogoption" value="EN">Witty</option>
+                                            <option class="blogoption" value="AR">Sarcastic</option>
+                                            <option class="blogoption" value="BA">Feminine</option>
+                                            <option class="blogoption" value="CH">Masculine</option>
+                                            <option class="blogoption" value="EN">Bold</option>
+                                            <option class="blogoption" value="AR">Dramatic</option>
+                                            <option class="blogoption" value="BA">Gumpy</option>
+                                            <option class="blogoption" value="CH">Secretive</option>
+
+
+
+                                        </select>
+                                    </div>
+                                    <br />
+                                    <h6>Number of Results</h6>
+                                    <div>
+                                        <select id="blogdrop4">
+                                            <option class="blogoption" value="EN">1</option>
+                                            <option class="blogoption" value="AR">2</option>
+                                            <option class="blogoption" value="BA">3</option>
+                                            <option class="blogoption" value="CH">4</option>
+                                            <option class="blogoption" value="CH">5</option>
+                                        </select>
+                                    </div>
+                                    <br />
+
+                                    <h6>Max Results Length<i class="fa-solid fa-circle-question" style="color: #0d0d0d;"></i></h6>
+
+                                    <input class="dropspinner" style="width: 100%; background-color: #FFFF; padding: 8px 15px; color: #808080; font-family: sans-serif; font-size: 15px; border: none; border-style: none; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0; border-radius: 6px;"
+                                        type="number" value="200">
                                     <br />
                                     <br />
                                     <button class="speechbutton">Generate  &#10140; </button>
+
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-md-8">
-                            <div class="speechcontent2">
-                                <div class="speechcontent2-head">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <h5 class="speechcontent1-head"><i class="fa-solid fa-align-left" style="color: #184698;">&nbsp;&nbsp;&nbsp; </i>Generated Result</h5>
-                                        </div>
-                                        <%--<div class="col-md-8" style="float:right">
-                                   <i class="fa-regular fa-file-word" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-file-lines" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-copy" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                               </div>--%>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="speechdesc" style="padding: 25px 35px;">
-                                        <p style="padding: 35px 50px;">Generated Code Will appear here..</p>
-                                    </div>
-                                </div>
+                           <div style="background-color:#fff;border-bottom:1px solid #eaeaea;" >
+                                        <div class="row" style="padding:40px">
+                                            <div class="col-md-8">
+                                                 <h5 class="speechcontent1-head"><i class="fa-solid fa-align-left" style="color: #184698;">&nbsp;&nbsp;&nbsp; </i>Generated Result</h5>
+                                            </div>
+                                            <div class="col-md-4" style="float:right">
+                                                 <i class="fa-regular fa-file-word" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
+                                                 <i class="fa-solid fa-file-lines" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
+                                                 <i class="fa-solid fa-copy" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
 
-                            </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                           <div style="background-color:white;padding:25px 25px;">
+                               <div class="row">
+                                   <div class="col-md-11">
+                                       <input  placeholder="Untitled Document" class="texteditorhead"/>
+                                   </div>
+                                   <div class="col-md-1">
+                                       <i class="fa-solid fa-print" style="color: #184698;padding:5px 8px;color: #f4f5f6;background-color:#184698;font-size:25px;border-radius:4px"></i>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12" style="padding-top:25px" >
+                                       <input class="texteditorbody"/>
+                                   </div>
+                               </div>
+                           </div>
 
                         </div>
                     </div>
-
-
                      <hr style="border-top: dotted 1px; margin-top: 20px; "/>
-   <%--footer--%>
+                               <%--footer--%>
+
 
                       <footer>
            
@@ -260,5 +337,5 @@
         });
     </script>
 </body>
-</html>
+
 

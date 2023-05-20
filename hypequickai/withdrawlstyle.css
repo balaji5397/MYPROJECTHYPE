@@ -1,16 +1,18 @@
-﻿body {
-    background-color:#fff;
-}
-
-.container-fluid {
+﻿.container-fluid {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Nunito;
 }
+
+body {
+    background: #f9f9f9;
+    font-family: Nunito;
+}
+
 #langbtn {
     min-width: 35px;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     background-color: #444;
     color: white;
@@ -27,6 +29,7 @@ option {
     line-height: 2.5em;
     font-size: 14px;
     height: 180%;
+    font-family: Nunito;
 }
 
 .dropdown-menu ul li {
@@ -38,7 +41,7 @@ option {
     color: #666;
     font-size: 16px;
     padding: 4px 4px;
-    width: 80%;
+    width: 100%;
 }
 
 .toogle i {
@@ -71,22 +74,21 @@ option {
     position: fixed;
     background: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
-   
-    height: 100px;
+    width: 100%;
+    height: 85px;
     padding: 0 20px;
     display: grid;
     grid-template-columns: 2fr 9fr 1fr 1fr;
     align-items: center;
     z-index: 1;
-}
-.dropdown-menu a i {
-    min-width: 10px;
-    font-size: 14px;
-    text-align: center;
+    font-family: Nunito;
 }
 
 .dropdown-menu a i {
-    padding-left: 4px;
+    min-width: 10px;
+    font-size: 15px;
+    text-align: center;
+
 }
 
 .dropdown-menu li {
@@ -97,16 +99,36 @@ option {
         color: #184698;
     }
 
+.Everify {
+    padding: 10px;
+    height: 70px;
+    background-color: #fdf9e7;
+    align-content: center;
+    padding-left: 80px;
+    position: page;
+    font-family: Nunito;
+    width: 100%;
+}
 
-/*    menu icon */
+.Everifybutton {
+    background-color: #666;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+}
+/* Top Bar Ends*/
+
+
+/*<%--menu bar--%>*/
 .bar {
     width: 300px;
     transition: margin-left .5s;
     padding: 16px;
 }
 
-/*sidebar*/
+
 .sidebar {
+    font-family: Nunito;
     position: fixed;
     top: 85px;
     width: 250px;
@@ -126,11 +148,11 @@ option {
             list-style: none;
             margin-left: -20px;
             margin-right: 0px;
-            padding-top:18px;
+            padding-top: 18px;
         }
 
             .sidebar ul li a {
-                margin-left: 0px;
+                margin-left: -20px;
                 margin-right: 0px;
                 width: 100%;
                 text-decoration: none;
@@ -145,7 +167,6 @@ option {
                     min-width: 60PX;
                     font-size: 15PX;
                     text-align: center;
-                    padding-left:20px;
                 }
 
 h11 {
@@ -153,8 +174,25 @@ h11 {
 }
 
 .sidebar ul li a:hover {
-  
     color: #184698
+}
+
+
+/*main styling*/
+
+
+.frm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    padding-top: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 120%;
 }
 
 .icon {
@@ -168,6 +206,7 @@ h11 {
     border-left: 4px solid #aaa;
     font-size: 14px;
     margin-right: 12px;
+    font-family: Nunito;
 }
 
 .subcontainer {
@@ -177,11 +216,13 @@ h11 {
     line-height: 23px;
     display: inline-block;
     border-radius: 5px;
+    font-family: Nunito;
 }
 
 .suhome {
     color: white;
     padding-right: 6px;
+    font-family: Nunito;
 }
 
     .suhome a {
@@ -189,95 +230,68 @@ h11 {
         text-decoration: none;
     }
 
-.cards {
-    width: 100%;
-    padding: 20px 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+.chatpara {
+    background-color: rgb(24 70 152 / 7%);
+    color: #184698;
+    width: 270px;
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-align: center
 }
 
-    .cards .card {
-        height: 150px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
-        margin-right:30px;
-       
+.withdrawalstop {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.withdrawalshead1 {
+    padding: 20px;
+   
+    font-family: Nunito;
+   
+}
+.withdrawalscontent {
+    background-color: #fff;
+    padding:25px;
+
+}
+.speechdesc {
+    font-family: helveticaneue;
+}
+
+    .speechdesc p {
+        padding: 10px 15px;
+        background-color: #e9f7fe;
+        color: #3184ae;
+        font-size: 14px;
+        font-family: helveticaneue;
+    }
+    h6{
+        font-family:nunito;
     }
 
-.icon-box1 i {
-    font-size: 50px;
-    position: static;
-    background: #b81b7f12;
-    padding: 10px;
+.withdrawltextbox {
+    border: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+    border: 1px solid #e0e0e0;
+    outline:none;
+    border-radius: 4px;
+    padding: 5px 4px;
+    font-size: 12px;
+    max-width:100%;
 }
-
-.icon-box2 i {
-    font-size: 50px;
-    position: static;
-    background-color: #36bd7812;
-    padding: 10px;
-}
-
-.icon-box3 i {
-    font-size: 50px;
-    position: static;
-    background-color: #efa80f12;
-    padding: 10px;
-}
-
-.count {
-    text-align: center;
-    font-weight: 900;
-}
-
-.icon-box i {
-    font-size: 80px;
-}
-
-.charts {
-    width: calc(100%-250px);
-    position: relative;
-}
-
-.chart {
-    width: calc(100%-250px);
-    position: relative;
-}
-
-.Everify {
-    padding: 10px;
-    height: 70px;
-    background-color: #fdf9e7;
-    align-content: center;
-    padding-left: 80px;
-    width: 100%;
-}
-
-.Everifybutton {
-    background-color: #666;
-    font-size: 16px;
+.withdrawlbutton {
+    background-color: #184698;
     color: white;
-    border-radius: 8px;
+    border-radius: 4px;
+    
+    padding: 10px 25px;
+    border: none;
 }
-.sidedrop{
-    border-style:none !important;
+.withdrawltable{
+    padding:30px 15px;
 }
-
-/*Medida Query*/
-@media(max-width:990px){
-    .sidebar{
-        width:0px;
-    }
-    .cards{
-        grid-template-columns:repeat(1,1fr);
-        padding:0px;
-       margin-right:10px;
-    }
+.withdrawltable table tr th{
+    padding-left:25px;
+    padding-right:35px;
 }

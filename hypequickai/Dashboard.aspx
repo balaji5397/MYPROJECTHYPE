@@ -48,16 +48,23 @@
                 </div>
             </div>
         <div class="topbar">
+            <div class="row">
+                <div class="col-md-2">
             <div class="logo">
                 <img src="photos/logo.png" />
             </div>
-            <div id="bar">
+                    </div>
+
+                <div class="col-md-6">
+                     <div id="bar">
 
                 <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
                 <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
             </div>
-
-            <div class="dropdown show drp use">
+                </div>
+           
+                <div class="col-md-1">
+                       <div class="dropdown show drp use">
                 <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="False">
                     <img src="photos/userimg.png" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding-left: -30px; object-fit: cover;" />
                 </a>
@@ -78,7 +85,12 @@
 
                 </div>
             </div>
-            <div>
+
+                </div>
+         
+
+                <div class="col-md-1">    
+                       <div>
                 <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
                     <option value="EN">English </option>
                     <option value="AR">Arabic</option>
@@ -98,9 +110,14 @@
                     <option value="TU">Turkish</option>
                 </select>
             </div>
+                </div>
+          
+
+
         </div>
+            </div>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" style="margin:0px">
                 <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
                     <div class="sidebar" id="mysidenav">
                         <ul>
@@ -180,7 +197,7 @@
                         </div>
                           <%--    Cards Starts here--%>
                         <div class="row">
-                            <div class="cards" style="margin: 30px">
+                            <div class="cards" style="margin: 30px;margin-right:40px;">
                                 <div class="col-md-04">
                                     <div class="card">
                                         <div class="card-content">

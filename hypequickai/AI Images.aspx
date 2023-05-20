@@ -160,14 +160,14 @@
                 <div class="col-md-10" id="main1">
                     <div class="row" style="padding-top: 150px">
                         <div class="col-md-6" style="padding-top: 28px; padding-left: 35px;display:flex;">
-                            <h2 style="padding-left: 25px; padding-top:12px;padding-right:12px;font-size: 18px">All Documents</h2>
+                            <h2 style="padding-left: 25px; padding-top:12px;padding-right:12px;font-size: 18px">All Images</h2>
 
                             <p style="background-color:rgb(24 70 152 / 7%);color:#184698;width:270px;height:45px;padding:10px 20px;border-radius:40px;text-align:center"> <i class="fa-solid fa-chart-simple" style="color: #184698;"></i> &nbsp;0/10,000 <b>Images used</b></p>
                         </div>
                         <div class="col-md-6" style="padding-left: 220px">
                             <div class="  subcontainer">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                            <span class="icon"></span><span style="color: white">Al Images</span>
+                            <span class="icon"></span><span style="color: white">All Images</span>
                             </div>
                         </div>
 
