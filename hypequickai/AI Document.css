@@ -7,6 +7,7 @@
 
 body {
     background: #f9f9f9;
+    font-family: Nunito;
 }
 
 #langbtn {
@@ -130,6 +131,7 @@ option {
     background: #fff;
     overflow-x: hidden;
     box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
+    font-family: Nunito;
 }
 
     .sidebar ul {
@@ -140,13 +142,13 @@ option {
         .sidebar ul li {
             width: 100%;
             list-style: none;
-            margin-left: -20px;
+            margin-left: -15px;
             margin-right: 0px;
             padding-top: 18px;
         }
 
             .sidebar ul li a {
-                margin-left: -20px;
+                margin-left: 0px;
                 margin-right: 0px;
                 width: 100%;
                 text-decoration: none;
@@ -161,7 +163,9 @@ option {
                     min-width: 60PX;
                     font-size: 15PX;
                     text-align: center;
+                    padding-left: 15px;
                 }
+
 
 h11 {
     font-size: 12px;

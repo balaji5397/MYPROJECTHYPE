@@ -33,6 +33,23 @@
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+ 
+    <style>
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+</style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -47,30 +64,22 @@
                     </div>
                 </div>
             </div>
-        <div class="topbar">
-            <div class="row">
-                <div class="col-md-2">
-            <div class="logo">
-                <img src="photos/logo.png" />
-            </div>
-                    </div>
-
-                <div class="col-md-6">
-                     <div id="bar">
-
-                <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
-                <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
-            </div>
+     
+              <div class="topbar">
+                <div class="logo">
+                    <img src="photos/logo.png" style="width: 60px; height: 45px" />
                 </div>
-           
-                <div class="col-md-1">
-                       <div class="dropdown show drp use">
-                <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="False">
-                    <img src="photos/userimg.png" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding-left: -30px; object-fit: cover;" />
-                </a>
+                <div id="bar">
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <ul>
+                    <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
+                  
+                </div>
+                <div class="dropdown show drp use">
+                    <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
+                        <img src="photos/userimg.png" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; padding-left: -30px; object-fit: cover;" />
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                         <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
@@ -80,42 +89,33 @@
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
                         <li><a class="dropdown-item" href="membership.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                         <li><a class="dropdown-item" href="Account setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                        <li><a class="dropdown-item" href="homepage.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                     </ul>
-
+                    </div>
+                </div>
+                <div>
+                    <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                        <option value="EN">English </option>
+                        <option value="AR">Arabic</option>
+                        <option value="BA">Bangali</option>
+                        <option value="CH">Chinese</option>
+                        <option value="FR">French</option>
+                        <option value="Ge">German</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="Sa">Spanish</option>
+                        <option value="SE">Swedish</option>
+                        <option value="TH">Thai</option>
+                        <option value="TU">Turkish</option>
+                    </select>
                 </div>
             </div>
 
-                </div>
-         
 
-                <div class="col-md-1">    
-                       <div>
-                <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
-                    <option value="EN">English </option>
-                    <option value="AR">Arabic</option>
-                    <option value="BA">Bangali</option>
-                    <option value="CH">Chinese</option>
-                    <option value="FR">French</option>
-                    <option value="Ge">German</option>
-                    <option value="HE">Hebrew</option>
-                    <option value="HI">Hindi</option>
-                    <option value="IT">Italian</option>
-                    <option value="JA">Japanese</option>
-                    <option value="RO">Romanian</option>
-                    <option value="RU">Russian</option>
-                    <option value="Sa">Spanish</option>
-                    <option value="SE">Swedish</option>
-                    <option value="TH">Thai</option>
-                    <option value="TU">Turkish</option>
-                </select>
-            </div>
-                </div>
-          
-
-
-        </div>
-            </div>
         <div class="container-fluid">
             <div class="row" style="margin:0px">
                 <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
@@ -128,26 +128,27 @@
                             <li><a href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>
                                 <div>&nbsp; Dashboard</div>
                             </a></li>
-                            <li><a href="#"></a>
-                                <div>
-                                    <select class="popup-with-zoom-anim button ripple-effect " style="background-color:#fff;color: grey;border-color:#ffffff">
-                                        <option style="border-color:#fff;background-color:#ffffff" value="MY">&nbsp;  My Documents </option>
-                                       <a href="AI Document.aspx"></a> <option value="AD">All AI Documents</option>
-                                        <a href="AI Images.aspx"></a><option value="AI">All AI Images</option>
-                                    </select>
-                                </div>
-                            </li>
-
-
-
-                            
+                            <br />
+                           <li> 
+                               <p   style="color: grey;" data-toggle="collapse" data-target="#alldocumentcollapse" >&nbsp;&nbsp <i class="fa-solid fa-file-lines" style="color: grey;padding-left:20px;">&nbsp;&nbsp;&nbsp; </i> My Documents&nbsp;&nbsp;&nbsp; <span><i class="fa-solid fa-caret-down" style="color: #2e2f33;"></i></span> </p>
+                                   <div id="alldocumentcollapse" class="container collapse" >
+                                       <ul style="margin:0px;padding:0px">
+                                           <li><a href="AI Document.aspx"><i class="fa-solid fa-layer-group" style="padding-left:40px;"></i>
+                                <div style="font-size:14px">&nbsp; ALL Documents</div>
+                            </a></li>
+                            <li><a href="AI Images.aspx"><i class="fa-regular fa-image"  style="padding-left:40px;"></i>
+                                <div style="font-size:14px">&nbsp; ALL Images</div>
+                            </a></li>
+                                       </ul>
+                                   </div>                              
+                              </li>
                             <li><a href="#">
                                 <div style="color: #184698; padding-left: 8px">&nbsp; Organise and Manage</div>
                             </a></li>
                             <li><a href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>
                                 <div>&nbsp; Templates</div>
                             </a></li>
-                            <li><a href="AI Images.aspx"><i class="fa-regular fa-image"></i>
+                            <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
                             <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
@@ -162,9 +163,23 @@
                             <li><a href="#">
                                 <div style="color: #184698; padding-left: 30px">Account</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-share-nodes"></i>
-                                <div>&nbsp; Affiliate Program</div>
+
+                             <li> 
+                               <p   style="color: grey;" data-toggle="collapse" data-target="#affilatecollapse" >&nbsp;&nbsp <i class="fa-solid fa-share-nodes" style="color: grey;padding-left:20px;">&nbsp;&nbsp;&nbsp; </i> Affiliate Program&nbsp; <span><i class="fa-solid fa-caret-down" style="color: #2e2f33;"></i></span> </p>
+                                   <div id="affilatecollapse" class="container collapse" >
+                                       <ul style="margin:0px;padding:0px">
+                                           <li><a href="affilate program.aspx"><i class="fa-solid fa-share-nodes" style="padding-left:40px;"></i>    
+                                <div style="font-size:14px">&nbsp; Affilate  Program </div>
                             </a></li>
+                            <li><a href="withdrawls.aspx"><i class="fa-solid fa-money-bill-1" style=" padding-left:40px"></i>
+                                <div style="font-size:14px">&nbsp; Withdrawls</div>
+                            </a></li>
+                                       </ul>
+                                   </div>                              
+                              </li>
+
+
+
                             <li><a href="membership.aspx"><i class="fa-solid fa-gift"></i>
                                 <div>&nbsp; Membership</div>
                             </a></li>
@@ -246,10 +261,8 @@
                             </center>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <footer>
+
+                     <footer>
             <hr style="border-top: dotted 1px; margin-top: 20px; margin-bottom: 0rem" />
             <div class="container">
                 <div class="row">
@@ -270,6 +283,11 @@
             </div>
 
         </footer>
+
+                </div>
+            </div>
+        </div>
+       
     </form>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
@@ -311,5 +329,16 @@
              }
          });
      </script>
+
+<script>
+    $(document).ready(function () {
+
+        //all documents //
+        $("#btn1").click(function () {
+            $("#div22").toggle();
+        });
+    });
+</script>
+
 </body>
 </html>

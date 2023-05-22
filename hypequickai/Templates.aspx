@@ -101,9 +101,9 @@
 
          <div class="container-fluid">
             <div class="row">
-                   <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
+                <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
                     <div class="sidebar" id="mysidenav">
-                       <ul>
+                        <ul>
                             
                             <li ><a href="#">
                                 <div style="color: #184698; padding-left: 30px">My account</div>
@@ -111,26 +111,27 @@
                             <li><a href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>
                                 <div>&nbsp; Dashboard</div>
                             </a></li>
-                            <li><a href="#"></a>
-                                <div>
-                                    <select class="popup-with-zoom-anim button ripple-effect " style="background-color:#fff;color: grey;border-color:#ffffff">
-                                        <option style="border-color:#fff;background-color:#ffffff" value="MY">&nbsp;  My Documents </option>
-                                       <a href="AI Document.aspx"></a> <option value="AD">All AI Documents</option>
-                                        <a href="AI Images.aspx"></a><option value="AI">All AI Images</option>
-                                    </select>
-                                </div>
-                            </li>
-
-
-
-                            
+                            <br />
+                           <li> 
+                               <p   style="color: grey;" data-toggle="collapse" data-target="#alldocumentcollapse" >&nbsp;&nbsp <i class="fa-solid fa-file-lines" style="color: grey;padding-left:20px;">&nbsp;&nbsp;&nbsp; </i> My Documents&nbsp;&nbsp;&nbsp; <span><i class="fa-solid fa-caret-down" style="color: #2e2f33;"></i></span> </p>
+                                   <div id="alldocumentcollapse" class="container collapse" >
+                                       <ul style="margin:0px;padding:0px">
+                                           <li><a href="AI Document.aspx"><i class="fa-solid fa-layer-group" style="padding-left:40px;"></i>
+                                <div style="font-size:14px">&nbsp; ALL Documents</div>
+                            </a></li>
+                            <li><a href="AI Images.aspx"><i class="fa-regular fa-image"  style="padding-left:40px;"></i>
+                                <div style="font-size:14px">&nbsp; ALL Images</div>
+                            </a></li>
+                                       </ul>
+                                   </div>                              
+                              </li>
                             <li><a href="#">
                                 <div style="color: #184698; padding-left: 8px">&nbsp; Organise and Manage</div>
                             </a></li>
                             <li><a href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>
                                 <div>&nbsp; Templates</div>
                             </a></li>
-                            <li><a href="AI Images.aspx"><i class="fa-regular fa-image"></i>
+                            <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
                             <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
@@ -145,9 +146,23 @@
                             <li><a href="#">
                                 <div style="color: #184698; padding-left: 30px">Account</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-share-nodes"></i>
-                                <div>&nbsp; Affiliate Program</div>
+
+                             <li> 
+                               <p   style="color: grey;" data-toggle="collapse" data-target="#affilatecollapse" >&nbsp;&nbsp <i class="fa-solid fa-share-nodes" style="color: grey;padding-left:20px;">&nbsp;&nbsp;&nbsp; </i> Affiliate Program&nbsp; <span><i class="fa-solid fa-caret-down" style="color: #2e2f33;"></i></span> </p>
+                                   <div id="affilatecollapse" class="container collapse" >
+                                       <ul style="margin:0px;padding:0px">
+                                           <li><a href="affilate program.aspx"><i class="fa-solid fa-share-nodes" style="padding-left:40px;"></i>    
+                                <div style="font-size:14px">&nbsp; Affilate  Program </div>
                             </a></li>
+                            <li><a href="withdrawls.aspx"><i class="fa-solid fa-money-bill-1" style=" padding-left:40px"></i>
+                                <div style="font-size:14px">&nbsp; Withdrawls</div>
+                            </a></li>
+                                       </ul>
+                                   </div>                              
+                              </li>
+
+
+
                             <li><a href="membership.aspx"><i class="fa-solid fa-gift"></i>
                                 <div>&nbsp; Membership</div>
                             </a></li>
@@ -163,6 +178,8 @@
                         </ul>
                     </div>
                 </div>
+                 
+
                 <div class="col-md-10" id="main1">
                     <div class="row" style="padding-top: 150px">
                         <div class="col-md-6" style="padding-top: 10px; padding-left: 35px;display:flex;">

@@ -14,6 +14,9 @@
     margin-top:20px;
     margin-bottom:50px;
 }
+.body{
+    font-family:Nunito;
+}
 </style>
 
     <div class="container" style="padding-top:120px">

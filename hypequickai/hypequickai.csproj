@@ -71,7 +71,7 @@
     <Content Include="accountsettings.css" />
     <Content Include="AI Document.aspx" />
     <Content Include="aichat.css" />
-    <Content Include="Aiiamges.aspx" />
+    <Content Include="Aiimages.aspx" />
     <Content Include="Aiiimages.css" />
     <Content Include="bootstrap\css\bootstrap.min %281%29.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
@@ -2156,6 +2156,7 @@
     <Content Include="photos\logo-carousel-06.png" />
     <Content Include="photos\logo.png" />
     <Content Include="photos\recentblog.png" />
+    <Content Include="photos\SAP-Digital-Framework.png" />
     <Content Include="photos\signeduser.png" />
     <Content Include="photos\upgrademember.png" />
     <Content Include="photos\userimg.png" />
@@ -2169,6 +2170,8 @@
     <Content Include="affilate program.aspx" />
     <Content Include="affilate program style.css" />
     <Content Include="WebForm16.aspx" />
+    <Content Include="WebForm25.aspx" />
+    <Content Include="WebForm26.aspx" />
     <Content Include="withdrawlstyle.css" />
     <Content Include="templatesinnerstyle.css" />
     <Content Include="templates.css" />
@@ -2203,12 +2206,12 @@
     <Compile Include="AI Document.aspx.designer.cs">
       <DependentUpon>AI Document.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Aiiamges.aspx.cs">
-      <DependentUpon>Aiiamges.aspx</DependentUpon>
+    <Compile Include="Aiimages.aspx.cs">
+      <DependentUpon>Aiimages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Aiiamges.aspx.designer.cs">
-      <DependentUpon>Aiiamges.aspx</DependentUpon>
+    <Compile Include="Aiimages.aspx.designer.cs">
+      <DependentUpon>Aiimages.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -2385,6 +2388,20 @@
     </Compile>
     <Compile Include="WebForm16.aspx.designer.cs">
       <DependentUpon>WebForm16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm25.aspx.cs">
+      <DependentUpon>WebForm25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm25.aspx.designer.cs">
+      <DependentUpon>WebForm25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm26.aspx.cs">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm26.aspx.designer.cs">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
     </Compile>
     <Compile Include="withdrawls.aspx.cs">
       <DependentUpon>withdrawls.aspx</DependentUpon>

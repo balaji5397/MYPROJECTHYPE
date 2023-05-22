@@ -21,9 +21,11 @@
     }
 .templ-cont {
     padding: 20px;
-     background-color:#fff;
-     margin-bottom:26px;
+    background-color: #fff;
+    margin-bottom: 26px;
     box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    font-family:Nunito;
     border-radius: 10px;
     word-wrap: break-word;
 }
@@ -72,3 +74,5 @@ templ-pro {
     display: inline;
     overflow-wrap: break-word;
 }
+
+
