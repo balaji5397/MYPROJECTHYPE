@@ -1,4 +1,7 @@
-﻿.templ-lis {
+﻿.body{
+    font-family:nunito;
+}
+.templ-lis {
     margin: 0 115px;
     background-color: #EEEEEE;
     color: #666666;
@@ -25,11 +28,15 @@
     background-color: #fff;
     margin-bottom: 26px;
     box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    font-family: Nunito;
     border-radius: 10px;
     word-wrap: break-word;
 }
 
-
+.templ-cont h4{
+    font-size:18px;
+}
     .templ-cont i {
         padding: 8px;
         margin: 0 0 8px;
@@ -46,3 +53,59 @@
         display: inline;
         overflow-wrap: break-word;
     }
+
+.templ-pro-cont h4 {
+    font-size: 18px;
+}
+.templ-pro-cont {
+    padding: 20px;
+    background-color: #fffef7;
+    border: 1px solid #ffd400;
+    margin-bottom: 26px;
+    box-shadow: 0 7px 25px 0 rgb(0,0,0,0.08);
+    border-radius: 10px;
+    word-wrap: break-word;
+    font-family: Nunito;
+}
+
+    .templ-pro-cont p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #6b7280;
+        display: inline;
+        overflow-wrap: break-word;
+    }
+
+.templ-pro-icon {
+    padding: 8px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    background-color: #fffef7;
+    box-shadow: 5px 7px 25px 8px rgb(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+
+.templ-cont:hover {
+    transform: translateY(-10px);
+}
+
+.templ-pro-cont:hover {
+    transform: translateY(-10px);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #184698;
+}
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-right: 10px;
+    }
+}

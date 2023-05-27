@@ -51,6 +51,7 @@ background-color: #f0f0f0;
     margin: 0;
     padding: 25px 42px;
     line-height: 23px;
+    border-radius:10px;
 }
 .icon {
     /*border-left: 4px solid rgba(255, 255, 255, .3);*/
@@ -81,4 +82,7 @@ background-color: #f0f0f0;
     background-color: #184698;
     font-size:12px;
 }
-
+.form-outline{
+ 
+    padding:5px 15px;
+}

@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    
-    <title>Membership plan</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Transactions</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
     <%--datatab --%>

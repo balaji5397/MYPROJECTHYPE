@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         body{
-            font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+            font-family: nunito;
             color:#666;
         }
         .ucard{
@@ -17,37 +17,69 @@
             border:solid 0.5px;
         }
         .upgradebutton {
-    background-color: #184698;
-    color: #fff;
-    height: 45px;
-    width: 140px;
-    border-radius: 8px;
-    border: none;
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+            background-color: #184698;
+            color: #fff;
+            height: 45px;
+            width: 140px;
+            border-radius: 8px;
+            border: none;
+            margin-left: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
 }
 
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+    .suhome a {
+        color: white;
+        text-decoration: none;
+    }
+    .upgrademain{
+   
+        margin-right:50px;
+    }
     </style>
+    <div class="container">
+        <div class="row" style="padding-top: 150px">
+                            <div class="col-md-8" style="padding-top: 12px; padding-left: 50px">
+                                <h1 style="padding-left: 25px; font-size: 18px">Upgrade Membership</h1>
+                            </div>
+                            <div class="col-md-4" style="float:right">
+                                <div class="  subcontainer">
+                                    <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                                    <span class="icon"></span><span style="color: white">Upgrade Membership</span>
+                                </div>
+                            </div>
 
-     <div class="container-fluid" style="padding-top:150px;padding-left:60px;padding-right:60px;padding-bottom:60px;background-color:#f9f9f9">
-        <div class="row"  >
-            <div class="col-md-6" >
-                <h5>Upgrade Membership</h5><span></span>
-                </div>
-            <div class="col-md-4"></div>
-            <div class=" col-md-2 subcontainer" style="background-color:#f0f0f0;padding:20px;text-align:center;border-radius:10px;width:30px">
-            <span class="suhome" ><a  style="color:black" href="homepage.aspx">Home</a></span>
-            <span class="icon"></span>
-            <span style="color:black">Upgrade</span>
-        </div>        
+                        </div>
         </div>
-
-        </div>
-
 
     <div class="container-fluid" style="background-color:#fff;">
-    <div class="row " >
+    <div class="row upgrademain " >
         
         <div class="col-md-8 " style="padding-top:40px">
    <h6>Payment Method</h6>

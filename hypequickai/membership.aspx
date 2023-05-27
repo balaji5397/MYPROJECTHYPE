@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title></title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title> Membership</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
     <%--datatab --%>
@@ -18,7 +19,7 @@
     <%--js query--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 
-    <%--Pop js--%>
+    <%--Pop js--%>s
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>

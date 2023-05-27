@@ -95,7 +95,25 @@ option {
         color: #184698;
     }
 
+    .topbutton {
+    background-color:#184698;
+    color: #fff;
+    height: 50px;
+    width: 140px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 22px;
+  
+    margin-bottom: 40px;
+}
 
+    @media only screen and (min-width: 600px) {
+        .footericon{
+           text-align:center;
+           align-items:center;
+           justify-content:center;
+        }
+    }
 
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -112,7 +130,7 @@ option {
                <div></div>
 <div style="float:right;padding-right:25px;border-left: 2px solid #e0e0e0;line-height:20px;padding-left:30px;height:82px;align-items:center;padding-top:20px">
 
-        <asp:Button ID="Button1" runat="server" Text="Join Now" class="btn btn-primary btn-block "  style=" background-color:#184698;color:white;border-style:none"   OnClick="Button1_Click" Width="109px"/>
+        <asp:Button ID="Button1" runat="server" Text="Join Now" OnClick="Button1_Click" CssClass="topbutton"/>
              </div>      
 
                 <div style="border-left: 2px solid #e0e0e0;padding-left:25px;padding-right:20px;line-height:85px">
@@ -199,13 +217,15 @@ option {
         
                 <div class="foot" style="padding-top:15px;padding-bottom:15px">
                     <div class="container">
-                        <div class="row">
+                        <div class="row footericon">
 
-                            <div class="col-xl-12" >
+                            <div class="col-xl-8" >
                                 <div style="float:left;padding:0 40px">
                                <p>2023 Socius IGB Pvt Ltd, All right reserved</p>
                                     </div>
-                                <div style="float:right">
+                                </div>
+                            <div class="col-xl-4">
+                                <div>
                                     <u1>
                                         <div style="padding-bottom:20px">
                                       <a href="https://www.facebook.com/" ><i class="fa-brands fa-facebook botf"></i></a>
@@ -232,16 +252,8 @@ option {
         </footer>
     </form>
 
-      <script>  
-function Map123() {  
-var mapOptions = {  
-    center:new google.maps.LatLng(12.9716,77.5946),  
-    zoom: 10,  
-    mapTypeId: google.maps.MapTypeId.HYBRID  
-}  
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-}  
-      </script>  
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script> 
+  
+    
+
 </body>
 </html>

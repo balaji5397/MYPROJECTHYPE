@@ -6,7 +6,7 @@
 <head runat="server">
      <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
-   
+   <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

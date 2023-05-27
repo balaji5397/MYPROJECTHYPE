@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>AI Chat</title>
-
+       <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
 
@@ -188,30 +188,31 @@
                         </div>
                         <br />
                     </div>
+                    <div class="chatbox">
 
-                    <div class="row chatbox" style="margin-left: 40px; margin-right: 40px">
+                    <div class="row chathead" >
+
                         
-                        <div class="col-md-9 col-sm-2 ">
-                            
-                            <div> 
-                                <img src="photos/userimg.png" style="width:42px;height:42px;border-radius:50px" />
-                            </div>
+                        <div class="col-md-9 col-sm-2 ">                           
+                                <img src="photos/userimg.png" style="width:42px;height:42px;border-radius:50px" /><span>AI Chat Bot</span>                            
                         </div>
-                        <div class="col-md-3 col-sm-2" style="align-content:center;text-align:right">
-                            
-                            <i class="fa-solid fa-download" style="color: #f9fafb; background-color:#184698;padding:5px 7px;font-size:25px;border-radius:4px"></i>
-                            <i class="fa-solid fa-trash-can" style="color: #f9fafb;background-color:#DC3139;padding:5px 10px;font-size:25px;border-radius:4px"></i>
+                        <div class="col-md-3 col-sm-2" style="align-content:center;text-align:right">                            
+                            <i class="fa-solid fa-download" style="color: #f9fafb; background-color:#184698;padding:5px 7px;font-size:18px;border-radius:4px"></i>
+                            <i class="fa-solid fa-trash-can" style="color: #f9fafb;background-color:#DC3139;padding:5px 10px;font-size:18px;border-radius:4px"></i>
                         </div>
-                            <div class="chatcontent">
+                        </div></div>
+
+                            <div class="chatcontent ">
                                 
                             </div>
+                    <div class="row chatfooter">
                         <div class="col-md-10">
                             <input  type="text" placeholder="Type Message here..." class="chatinput" />
                         </div>
-                        <div class="col-md-2">
+                <div class="col-md-2">
                             <button class="chatbutton">Send</button>
                         </div>
-                    </div>
+                    </div></div>
 
 
                      <hr style="border-top: dotted 1px; margin-top: 20px; "/>
@@ -243,7 +244,7 @@
 
                 </div>
             </div>
-        </div>
+   
     </form>
 
       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

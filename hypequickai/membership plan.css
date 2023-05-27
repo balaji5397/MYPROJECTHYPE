@@ -102,6 +102,23 @@ option {
 
 
 
+.Everify {
+    padding: 10px;
+    height: 70px;
+    background-color: #fdf9e7;
+    align-content: center;
+    padding-left: 80px;
+    position: page;
+    width: 100%;
+}
+
+.Everifybutton {
+    background-color: #666;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    border-color:none;
+}
 
 
 .icon {
@@ -194,3 +211,18 @@ table {
         background-color: #184698;
         color:white;
     }
+    .radform{
+        text-align:center;
+
+    }
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-right: 10px;
+    }
+}

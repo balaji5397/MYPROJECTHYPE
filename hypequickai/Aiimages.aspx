@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-  
-      <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
+      <title>AI Images</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
    
@@ -35,6 +35,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
    
+
+
 </head>
 <body>
     <form id="form1" runat="server">

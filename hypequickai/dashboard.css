@@ -11,7 +11,7 @@
 }
 #langbtn {
     min-width: 35px;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     background-color: #444;
     color: white;
@@ -39,7 +39,7 @@ option {
     color: #666;
     font-size: 16px;
     padding: 4px 4px;
-    width: 80%;
+    width: 100%;
 }
 
 .toogle i {
@@ -72,22 +72,26 @@ option {
     position: fixed;
     background: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
-   
-    height: 100px;
+    width: 100%;
+    height: 85px;
     padding: 0 20px;
     display: grid;
     grid-template-columns: 2fr 9fr 1fr 1fr;
     align-items: center;
     z-index: 1;
 }
-.dropdown-menu a i {
-    min-width: 10px;
-    font-size: 14px;
-    text-align: center;
+
+/*<%--menu bar--%>*/
+.bar {
+    width: 300px;
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 .dropdown-menu a i {
-    padding-left: 4px;
+    min-width: 10px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .dropdown-menu li {

@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    <title>hype dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
@@ -65,14 +66,14 @@
                 </div>
             </div>
      
-              <div class="topbar">
+            <div class="topbar">
                 <div class="logo">
                     <img src="photos/logo.png" style="width: 60px; height: 45px" />
                 </div>
                 <div id="bar">
 
                     <span style="font-size: 30px; cursor: pointer" id="btnHeader">&#9776;</span>
-                  
+                    <%--  <i class="fas fa-bars" style="font-size:28px"></i>--%>
                 </div>
                 <div class="dropdown show drp use">
                     <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="True">
@@ -82,7 +83,7 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
                         <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
@@ -114,6 +115,7 @@
                     </select>
                 </div>
             </div>
+             
 
 
         <div class="container-fluid">
@@ -246,6 +248,7 @@
                                             <i class="fa-solid fa-headphones"  style="color: #efa80f;"></i>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title><meta name="viewport" content="width=device-width, initial-scale=1"/>
-     <%--bootstrap css--%>
+    <title>Account Settings     </title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
    
     <%--datatab --%>
@@ -785,7 +785,7 @@
 
         $("#btnHeader").on("click", function () {
             $("#side1").toggle();
-            $("#main").toggleClass('col-md-12 full-width');
+            $("#main").toggleClass('col-md-12 col-lg-12 full-width');
            
         });
 

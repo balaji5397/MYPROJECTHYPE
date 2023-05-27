@@ -122,7 +122,7 @@ option {
     padding: 16px;
 }
 
-
+/*sidebar*/
 .sidebar {
     position: fixed;
     top: 85px;
@@ -131,7 +131,9 @@ option {
     background: #fff;
     overflow-x: hidden;
     box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
+    font-family: Nunito;
 }
+
 
     .sidebar ul {
         margin-top: 20px;
@@ -141,13 +143,13 @@ option {
         .sidebar ul li {
             width: 100%;
             list-style: none;
-            margin-left: -20px;
+            margin-left: -15px;
             margin-right: 0px;
             padding-top: 18px;
         }
 
             .sidebar ul li a {
-                margin-left: -20px;
+                margin-left: 0px;
                 margin-right: 0px;
                 width: 100%;
                 text-decoration: none;
@@ -162,6 +164,7 @@ option {
                     min-width: 60PX;
                     font-size: 15PX;
                     text-align: center;
+                    padding-left: 15px;
                 }
 
 h11 {
@@ -434,4 +437,15 @@ h11 {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
     border: 1px solid #e0e0e0;
     border-radius: 6px;
+}
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-right: 10px;
+    }
 }

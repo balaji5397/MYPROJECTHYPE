@@ -5,7 +5,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
     <div class="container" style="padding-top:160px;padding-bottom:100px">
-    <div class="col-md-6 mx-auto">
+
+        <div class="row" >
+                        <div class="col-md-6 col-sm-12" style=" padding-left: 50px">
+                            <h4 style="padding-left: 25px">Login</h4>
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="padding-left: 220px">
+                            <div class="  subcontainer">
+                                <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                            <span class="icon"></span><span style="color: white">Login</span>
+                            </div>
+                        </div>
+
+                    </div>
+    <div class="col-md-6 mx-auto" style="margin-top:80px">
 
         <div class="card" >
               <div class="card-body">

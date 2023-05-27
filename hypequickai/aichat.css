@@ -174,7 +174,17 @@ h11 {
 .sidebar ul li a:hover {
     color: #184698
 }
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
 
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-right: 10px;
+    }
+}
 
 
 /*main styling*/
@@ -236,88 +246,52 @@ h11 {
     text-align: center
 }
 
-.speechcontent1 {
-    background-color: white;
-    margin: 10px 14px;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.speechcontent2 {
-    background-color: white;
-    padding: 20px;
-    margin: 10px 8px;
-}
-
-.speechhead {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
+.chatbox {
+    background-color: #ffff;
     border-bottom: 1px solid #eaeaea;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px
 }
 
-.speechcontent1-head {
-    color: #666666;
-    font-size: 18px;
-    padding-left: 15px;
-    font-family: nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;
+.chatnotification {
+    background-color: #ffe9e9;
+    color: #de5959;
+    padding:8px 15px
 }
-
-.speechdesc {
-    padding: 10px 15px;
+.chathead{
+    padding: 15px 25px;
+   
 }
-
-    .speechdesc p {
-        padding: 10px 15px;
-        background-color: #e9f7fe;
-        color: #3184ae;
-        font-size: 14px;
-    }
-
-.speechtextbox {
-    border: none;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
-    border: 1px solid #e0e0e0;
-    width: 100%;
-    border-radius: 4px;
-    padding: 5px 4px;
-    font-size: 12px;
+.chatcontent {
+    background-color: #ffff;
+    height: 220px;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 40px;
+    margin-right: 40px;
+   
 }
-
-.speechinput {
-    padding: 10px 15px;
+.chatfooter {
+    background-color: #ffff;
+    padding:15px 35px;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-
-.speechupload {
-    background: white;
-    padding: 10px 20px;
-    border-color: #184698;
-    color: #184698;
-    border: 1px solid #184698;
-    border-radius: 4px
-}
-
-    .speechupload:hover {
-        background-color: #184698;
-        color: white;
-    }
-
-.uploadsp {
-    padding: 10px 15px;
-}
-
-.speechsmall {
-    color: #666;
-    font-family: sans-serif;
-    font-size: 12px;
-}
-
-.speechbutton {
+.chatbutton {
     background-color: #184698;
-    color: white;
-    border-radius: 4px;
-    width: 100%;
-    padding: 10px 25px;
+    color: #fff;
+    height: 45px;
+    width: 140px;
+    border-radius: 8px;
     border: none;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.chatinput{
+    border:none;
+    outline:none;
+    padding:8px 20px;
+
 }

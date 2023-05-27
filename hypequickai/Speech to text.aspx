@@ -9,7 +9,7 @@
 
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
-
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
     <%--datatab --%>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="datatab/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -229,22 +229,35 @@
                              
                               </div>
                       </div>
-                      <div class="col-md-8">
-                       <div class="speechcontent2">
-                           <div class="row">
-                               <div class="col-md-9">
-                                    <h5 class="speechcontent1-head"> <i class="fa-solid fa-align-left" style="color: #184698;">&nbsp;&nbsp;&nbsp; </i>Generated Result</h5>
-                               </div>
-                               <div class="col-md-3" style="float:right">
-                                   <i class="fa-regular fa-file-word" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-file-lines" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
-                                    <i class="fa-solid fa-copy" style="color: #f4f5f6;background-color:#184698;padding:5px 8px;font-size:25px;border-radius:4px"></i>
+                       <div class="col-md-8">
+                           <div style="background-color:#fff;border-bottom:1px solid #eaeaea;" >
+                                        <div class="row" style="padding:40px">
+                                            <div class="col-md-8">
+                                                 <h5 class="speechcontent1-head"><i class="fa-solid fa-align-left" style="color: #184698;">&nbsp;&nbsp;&nbsp; </i>Generated Result</h5>
+                                            </div>
+                                            <div class="col-md-4" style="float:right">
+                                                 <i class="fa-regular fa-file-word" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
+                                                 <i class="fa-solid fa-file-lines" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
+                                                 <i class="fa-solid fa-copy" style="color: #f4f5f6; background-color: #184698; padding: 5px 8px; font-size: 25px; border-radius: 4px"></i>
+
+                                            </div>
+                                        </div>
+                                      </div>
+                           <div style="background-color:white;padding:25px 25px;">
+                               <div class="row">
+                                   <div class="col-md-11">
+                                       <input  placeholder="Untitled Document" required class="texteditorhead"/>
+                                   </div>
+                                   <div class="col-md-1">
+                                       <i class="fa-solid fa-print" style="color: #184698;padding:5px 8px;color: #f4f5f6;background-color:#184698;font-size:25px;border-radius:4px"></i>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12" style="padding-top:25px" >
+                                       <input class="texteditorbody"/>
+                                   </div>
                                </div>
                            </div>
-                          
-                       </div>
 
-                      </div>
+                        </div>
                   </div>
 
 

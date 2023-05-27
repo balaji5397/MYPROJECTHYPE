@@ -5,8 +5,21 @@
 
      <div class="container" style="z-index:-2" >
          <div style="padding-top:120px"></div>
-    <div class="col-md-6 mx-auto" style="padding-top:50px">
-                  <div class="row">
+
+         <div class="row" >
+                        <div class="col-md-6 col-sm-12" style="padding-top: 12px; padding-left: 50px">
+                            <h4 style="padding-left: 25px">Register</h4>
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="padding-left: 220px">
+                            <div class="  subcontainer">
+                                <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                            <span class="icon"></span><span style="color: white">Register</span>
+                            </div>
+                        </div>
+
+                    </div>
+    <div class="col-md-6 mx-auto form-outline" style="padding-top:50px">
+                  <div class="row ">
 
                       <div class="col">
                           
@@ -18,7 +31,7 @@
 <%--for inserting line--%>
                   <div class="row">
                       <div class="col">
-                          <hr />
+                      
                           </div>
                       </div>
 
@@ -59,7 +72,8 @@
                           
                           <div class="form-group">
                               <asp:Button class="btn btn-primary  btn-lg" ID="Button1" runat="server" Text="Signup" OnClick="Button1_Click" />
-                              
+                              <br />
+                              <br />
 
                           </div>
                        

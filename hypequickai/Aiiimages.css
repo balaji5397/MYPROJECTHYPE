@@ -131,6 +131,7 @@ option {
     background: #fff;
     overflow-x: hidden;
     box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.4);
+    font-family: Nunito;
 }
 
     .sidebar ul {
@@ -141,18 +142,19 @@ option {
         .sidebar ul li {
             width: 100%;
             list-style: none;
-            margin-left: -20px;
+            margin-left: -15px;
             margin-right: 0px;
             padding-top: 18px;
         }
 
             .sidebar ul li a {
-                margin-left: -20px;
+                margin-left: 0px;
                 margin-right: 0px;
                 width: 100%;
                 text-decoration: none;
                 color: grey;
                 height: 40px;
+
                 display: flex;
                 align-items: center;
                 font-size: 16px;
@@ -162,6 +164,7 @@ option {
                     min-width: 60PX;
                     font-size: 15PX;
                     text-align: center;
+                    padding-left: 15px;
                 }
 
 h11 {
@@ -171,8 +174,6 @@ h11 {
 .sidebar ul li a:hover {
     color: #184698
 }
-
-
 /*main styling*/
 
 
@@ -291,4 +292,15 @@ h11 {
     padding: 5px 10px;
   border:none;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05);
+}
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-right: 10px;
+    }
 }

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    
-      <title>AI Documents</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>All Images</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
 

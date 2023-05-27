@@ -6,6 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Withdrawals-Hype</title>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
 
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
@@ -206,7 +207,7 @@
                         <h6>Withdrawl Amount(₹)</h6>
                          <div >
                               <input class="dropspinner" style="position:relative; background-color: #FFFF;max-width:100%;outline:none; padding: 8px 15px; color: #808080; font-family: sans-serif; font-size: 15px; border: none; border-style: none; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0; border-radius: 6px;"
-                                        type="number" value="200" />
+                                        type="number" min="50" step="5" />
                            <i class="fa-regular fa-money-bill-1" style="color: #184698;position:absolute;font-size:35px;z-index:5;margin-left:0px;"></i>
                          </div>
                         <br />

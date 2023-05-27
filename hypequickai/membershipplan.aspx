@@ -6,6 +6,7 @@
 <head runat="server">
     
     <title>Membership plan</title><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
     <%--datatab --%>
@@ -93,7 +94,7 @@
             </div>
         </div>
 
-         <div class="container-fluid" style="margin:0px;padding:0px;width:100%">
+         <div class="container-fluid" style="margin-top:110px;padding:0px;width:100%">
             <div class="row">
                
                  <div class="col-md-12 " >
@@ -110,13 +111,19 @@
                 </div>
              </div>
                 </div>
-             <div class="radbtn">
-             <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" Height="51px" Width="721px">
-                 <asp:ListItem  >  Yearly</asp:ListItem>
-                 <asp:ListItem  >  Monthly</asp:ListItem>
-                 <asp:ListItem  >  Life Time</asp:ListItem>
-             </asp:RadioButtonList>
-                 </div>
+           <div class="radform">
+                    <div class="radio">
+                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" />
+                        Monthly&nbsp; &nbsp; &nbsp;
+              
+                        <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)" />
+                        Yearly&nbsp; &nbsp; &nbsp;
+              
+                        <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)" />
+                        Life Time&nbsp; &nbsp; &nbsp;
+               
+                    </div>
+                </div>
              </div>
 
         <%--plans Starts here--%>
@@ -145,6 +152,8 @@
                          </ul>
                      </div>
                      <asp:Button ID="Button1" runat="server" Text="Current Plan" CssClass="planbutton" />
+                     <br />
+                     <br />
                  </div>
                  <br />
 
@@ -177,7 +186,8 @@
                  <div class="col-md-4 ">
                      
                      <h3>Extended Plan</h3>
-                     <label class="labl" style="background-color:#184698;color:#fff"><b>5₹/ Monthly</b></label>
+                     <%--<label class="labl" style="background-color:#184698;color:#fff"><b>5₹/ Monthly</b></label>--%>
+                     <input class="labl" type="text" id="input-field" Readonly=""/>
                       <div class="planlist">
                          <strong>Features of Trial Plan</strong>
                          <ul>
@@ -198,8 +208,10 @@
                          </ul>
                      </div>
                      <asp:Button ID="Button4"  style="background-color:#184698;color:#fff"  runat="server" Text="Upgrade" CssClass="planbutton"  />
+                
                  </div>
                  <br />
+                
              </div>
 
              </div>
@@ -287,8 +299,33 @@
             </div>
         </footer>
     </form>
-
-
-    
+    <script>
+    function enableInputField(value) {
+    const radioButtons = document.getElementsByName('radio-buttons');
+    const inputField = document.getElementById('input-field');
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            inputField.disabled = false;
+            switch (value) {
+                case 5:
+                    inputField.value = "₹" + value + " /per month ";
+                    break;
+                case 50:
+                    inputField.value = "₹" + value + " /per year";
+                    break;
+                case 550:
+                    inputField.value = "₹" + value + " /lifetime";
+                    break;
+                default:
+                    inputField.value = "";
+                    break;
+            }
+            return;
+        }
+    }
+    inputField.disabled = true;
+    inputField.value = "";
+}
+    </script>  
 </body>
 </html>

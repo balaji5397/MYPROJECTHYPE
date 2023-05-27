@@ -39,10 +39,11 @@
 
 
 
+
     <div style="padding-top: 160px">
         <center>
             <img src="photos/Ailogo.png" width="180" height="180" />
-            <p style="font-weight: bold; font-size: 52px; width: 588px">Best AI Content Writer </p>
+           <center><p style="font-weight: bold; font-size: 36px;">Best AI Content Writer </p></center> 
             <p>
                 Create SEO-optimized and unique content for your blogs, ads, emails,                                              
                         and website 10X faster & save hours of work.
@@ -104,7 +105,7 @@
     <div class="container" style=" padding-top: 60px; padding-bottom: 60px">
         <h1 style="text-align: center">Templates</h1>
         <p > <center> Generate your required content with over 60+ content creation templates </center></p>
-        <div class="templ-lis">
+        <div class="templ-lis col-md-12 ">
             <ul >
                 <li><a>All Templates</a></li>
                  <li><a>Articles and Blogs</a></li>
@@ -125,25 +126,25 @@
             
             </div>
            
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4"><a style="text-decoration:none;color:black" href="Templatesblogideas.aspx">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <div class="templ-cont " style="margin-left: 10px; margin-right: 10px;height:182px">
                         <i class="fa-solid fa-comment" style="color: #184698;"></i>
                         <h4>Blog Ideas</h4>
                         <p>Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.</p>
                     </div>
-                </div>
+                </div></a>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                     <i class="fa-solid fa-align-left" style="color: #184698;"></i>
+                    <div class="templ-cont " style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-align-left " style="color: #184698;"></i>
                         <h4>Blog Intros</h4>
                         <p>Enticing article/blog introductions that capture the attention of the audience.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                        <i class="fa-sharp fa-solid fa-ellipsis" style="color: #184698;"></i>
@@ -152,35 +153,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                        <i class="fa-sharp fa-solid fa-book" style="color: #184698;"></i>
-                        <h4>Blog Section</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                        <i class="fa-sharp fa-solid fa-book templ-icon templ-pro-icon" style="color: #184698;"></i>
+                        <h6>Blog Section <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h6>
                         <p>Write a few paragraphs about a subheading of your article.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                        <i class="fa-solid fa-square-check" style="color: #184698;"></i>
+                        <i class="fa-solid fa-square-check " style="color: #184698;"></i>
                         <h4>Blog Ideas</h4>
                         <p>Create a fully complete high quality article from a title and outline text.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                        <i class="fa-solid fa-square-pen" style="color: #184698;"></i>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                        <i class="fa-solid fa-square-pen templ-pro-icon" style="color: #184698;"></i>
                         <h4>Article Writer</h4>
                         <p>Create a fully complete high quality article from a title and outline text.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                         <i class="fa-regular fa-pen-to-square" style="color: #184698;"></i>
@@ -189,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                         <i class="fa-solid fa-list" style="color: #184698;"></i>
@@ -198,29 +199,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                       <i class="fa-sharp fa-solid fa-list-ol" style="color: #184698;"></i>
-                        <h4>Talking points</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                       <i class="fa-sharp fa-solid fa-list-ol templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Talking points <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Write short, simple and informative points for the subheadings of your article</p>
                     </div>
                 </div>
             </div>
             
-              <div class="col-md-4 col-1g-4">
+              <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                       <i class="fa-solid fa-align-justify" style="color: #184698;"></i>
-                        <h4>Paragraph Writer</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                       <i class="fa-solid fa-align-justify templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Paragraph Writer <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Perfectly structured paragraphs that are easy to read and packed with persuasive words.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                       <i class="fa-solid fa-arrows-rotate" style="color: #184698;"></i>
+                       <i class="fa-solid fa-arrows-rotate " style="color: #184698;"></i>
                         <h4>Content Rephrase</h4>
                         <p>Rephrase your content in a different voice and style to appeal to different readers.</p>
                     </div>
@@ -235,44 +236,44 @@
                
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                        <i class="fa-brands fa-facebook" style="color: #184698;"></i>
+                        <i class="fa-brands fa-facebook templ-pro-icon" style="color: #184698;"></i>
                         <h4>Facebook Ads</h4>
                         <p>Facebook ad copies that make your ads truly stand out.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                           <i class="fa-brands fa-facebook" style="color: #184698;"></i>
-                        <h4>>Facebook Ads Headlines</h4>
+                        <h4>Facebook Ads Headlines</h4>
                         <p>Write catchy and convincing headlines to make your Facebook Ads stand out.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                        <i class="fa-brands fa-google" style="color: #184698;"></i>
-                        <h4>Google Ad Lines</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                        <i class="fa-brands fa-google templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Google Ad Titles <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Creating ads with unique and appealing titles that entice people to click on your ad and purchase from your site..</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                      <i class="fa-brands fa-google" style="color: #184698;"></i>
-                        <h4>Google Ad Descriptions</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-google templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Google Ad Descriptions <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>The best-performing Google ad copy converts visitors into customers.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-brands fa-linkedin-in" style="color: #184698;"></i>
@@ -282,7 +283,7 @@
                 </div>
             </div>
             
-              <div class="col-md-4 col-1g-4">
+              <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-brands fa-linkedin-in" style="color: #184698;"></i>
@@ -291,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                      <i class="fa-solid fa-bell" style="color: #184698;"></i>
@@ -309,7 +310,7 @@
              
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-solid fa-text-width" style="color: #184698;"></i>
@@ -318,7 +319,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                      <i class="fa-solid fa-text-width" style="color: #184698;"></i>
@@ -328,16 +329,16 @@
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                      <i class="fa-brands fa-quora" style="color: #184698;"></i>
-                        <h4>Quora Answers</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-brands fa-quora templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Quora Answers <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Answers to Quora questions that will position you as an authority.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                      <i class="fa-solid fa-child-reaching" style="color: #184698;"></i>
@@ -346,17 +347,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                     <i class="fa-regular fa-heart" style="color: #184698;"></i>
-                        <h4>Stories</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-heart templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Stories <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Engaging and persuasive stories that will capture your reader's attention and interest.</p>
                     </div>
                 </div>
             </div>
             
-              <div class="col-md-4 col-1g-4">
+              <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-solid fa-list" style="color: #184698;"></i>
@@ -365,7 +366,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                           <i class="fa-solid fa-bars-progress"  style="color: #184698"></i>
@@ -375,7 +376,7 @@
                 </div>
             </div>
               
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                      <i class="fa-solid fa-circle-check" style="color: #184698;"></i>
@@ -384,7 +385,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                     <i class="fa-solid fa-circle-question" style="color: #184698;"></i>
@@ -393,7 +394,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                          <i class="fa-solid fa-arrow-down-a-z" style="color: #184698"></i>
@@ -403,43 +404,43 @@
                 </div>
             </div>
             
-              <div class="col-md-4 col-1g-4">
+              <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <div class="templ-pro-cont templ-pro-icon" style="margin-left: 10px; margin-right: 10px;height:182px">
              <i class="fa-solid fa-key" style="color: #184698;"></i>
-                        <h4>Pros and Cons</h4>
+                        <h4>Pros and Cons <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>List of the main benefits versus the most common problems and concerns.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                             <i class="fa-solid fa-arrows-rotate" style="color: #184698;"></i>
-                        <h4>Rewrite with Keywords</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                             <i class="fa-solid fa-arrows-rotate templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Rewrite with Keywords <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
                     </div>
                 </div>
             </div>
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                      <i class="fa-solid fa-envelope" style="color: #184698;"></i>
-                        <h4>Emails</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-envelope templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Emails <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Professional-looking emails that help you engage leads and customers.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                     <i class="fa-solid fa-envelope" style="color: #184698;"></i>
-                        <h4>E mail V2</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-solid fa-envelope templ-pro-icon" style="color: #184698;"></i>
+                        <h4>E mail V2 <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Personalized email outreach to your target prospects that get better results.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                      <i class="fa-regular fa-envelope-open" style="color: #184698;"></i>
@@ -449,7 +450,7 @@
                 </div>
             </div>
             
-              <div class="col-md-4 col-1g-4">
+              <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-solid fa-bullhorn" style="color: #184698;"></i>
@@ -458,7 +459,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                          <i class="fa-solid fa-file-lines"  style="color: #184698;"></i>
@@ -468,20 +469,20 @@
                 </div>
             </div>
               
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                     <i class="fa-regular fa-file-lines" style="color: #184698;"></i>
-                        <h4>Company Mission</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-file-lines templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Company Mission <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>A clear and concise statement of your company's goals and purpose.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                          <i class="fa-solid fa-align-left" style="color: #184698;"></i>
-                        <h4>Company Vision</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                          <i class="fa-solid fa-align-left templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Company Vision <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>A vision that attracts the right people, clients, and employees.</p>
                     </div>
                 </div>
@@ -496,7 +497,7 @@
                
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-solid fa-gift" style="color: #184698;"></i>
@@ -505,39 +506,39 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                     <i class="fa-solid fa-gift" style="color: #184698;"></i>
-                        <h4>>Product Descriptions</h4>
+                        <h4>Product Descriptions</h4>
                         <p>Authentic product descriptions that will compel, inspire, and influence.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-brands fa-amazon" style="color: #184698;"></i>
-                        <h4>Amazon Product Titles </h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-amazon templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Amazon Product Titles <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span> </h4>
                         <p>Product titles that will make your product stand out in a sea of competition.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                  <i class="fa-brands fa-amazon" style="color: #184698;"></i>
-                        <h4>Amazon Product Descriptions</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-amazon templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Amazon Product Descriptions <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Descriptions for Amazon products that rank on the first page of the search results.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-brands fa-amazon" style="color: #184698;"></i>
-                        <h4>Amazon Product Features</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-amazon templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Amazon Product Features <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Advantages and features of your products that will make them irresistible to shoppers.</p>
                     </div>
                 </div>
@@ -551,7 +552,7 @@
                 
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                       <i class="fa-brands fa-facebook" style="color: #184698;"></i>
@@ -560,17 +561,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-brands fa-facebook" style="color: #184698;"></i>
-                        <h4>Social Media Post(Business)</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-facebook templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Social Media Post(Business) <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Write a post for your business to be published on any social media platform.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                    <i class="fa-brands fa-instagram" style="color: #184698;"></i>
@@ -579,16 +580,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                 <i class="fa-brands fa-instagram" style="color: #184698;"></i>
-                        <h4>Instagram Hashtags</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                 <i class="fa-brands fa-instagram templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Instagram Hashtags <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Trending and highly relevant hashtags to help you get more followers and engagement.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                     <i class="fa-brands fa-twitter" style="color: #184698;"></i>
@@ -599,7 +600,7 @@
             </div>
 
                 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                     <i class="fa-brands fa-youtube" style="color: #184698;"></i>
@@ -608,26 +609,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-brands fa-youtube" style="color: #184698;"></i>
-                        <h4>Youtube Descriptions</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-youtube templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Youtube Descriptions <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                   <i class="fa-brands fa-youtube" style="color: #184698;"></i>
-                        <h4>Youtube Outlines </h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-brands fa-youtube templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Youtube Outlines <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span> </h4>
                         <p>Video outlines that are a breeze to create and uber-engaging.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
               <i class="fa-brands fa-linkedin" style="color: #184698;"></i>
@@ -636,11 +637,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-solid fa-film" style="color: #184698;"></i>
-                        <h4>TikTok Video Scripts</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-solid fa-film templ-pro-icon" style="color: #184698;"></i>
+                        <h4>TikTok Video Scripts <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Video scripts that are ready to shoot and will make you go viral.</p>
                     </div>
                 </div>
@@ -654,30 +655,30 @@
                 
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                    <i class="fa-brands fa-google" style="color: #184698;"></i>
-                        <h4>SEO Meta Tags(Blog Post)</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                    <i class="fa-brands fa-google templ-pro-icon" style="color: #184698;"></i>
+                        <h4>SEO Meta Tags(Blog Post) <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>A set of optimized meta title and meta description tags that will boost your search rankings for your blog.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                  <i class="fa-brands fa-google" style="color: #184698;"></i>
-                        <h4>SEO Meta Tags (Home Page)</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-google templ-pro-icon" style="color: #184698;"></i>
+                        <h4>SEO Meta Tags (Home Page) <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>A set of optimized meta title and meta description tags that will boost your search rankings for your home page.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                  <i class="fa-brands fa-google" style="color: #184698;"></i>
-                        <h4>SEO Meta Tags (Product Page) </h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                  <i class="fa-brands fa-google templ-pro-icon" style="color: #184698;"></i>
+                        <h4>SEO Meta Tags (Product Page) <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span> </h4>
                         <p>A set of optimized meta title and meta description tags that will boost your search rankings for your product page.</p>
                     </div>
                 </div>
@@ -696,26 +697,26 @@
                 
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                      <i class="fa-solid fa-arrows-rotate" style="color: #184698;"></i>
-                        <h4>Tone Changer</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                      <i class="fa-solid fa-arrows-rotate templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Tone Changer <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Change the tone of your writing to match your audience and copy.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                   <i class="fa-solid fa-music" style="color: #184698;"></i>
-                        <h4>Song Lycrics</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-solid fa-music templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Song Lycrics <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Unique song lyrics that will be perfect for your next hit song.</p>
                     </div>
                 </div>
             </div>
 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
                     <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                  <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
@@ -724,31 +725,31 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                   <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
-                        <h4>FAQS</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-regular fa-circle-question templ-pro-icon" style="color: #184698;"></i>
+                        <h4>FAQS <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Generate frequently asked questions based on your product description.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-1g-4">
+            <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                     <i class="fa-regular fa-circle-question" style="color: #184698;"></i>
-                        <h4>FAQS Answers</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                     <i class="fa-regular fa-circle-question templ-pro-icon" style="color: #184698;"></i>
+                        <h4>FAQS Answers <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Generate creative answers to questions (FAQs) about your business or website.</p>
                     </div>
                 </div>
             </div>
 
                 
-             <div class="col-md-4 col-1g-4">
+             <div class="col-md-4 col-lg-4">
                 <div style="width:100%">
-                    <div class="templ-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
-                   <i class="fa-solid fa-star-half-stroke" style="color: #184698;"></i>
-                        <h4>Testimonals and Reviews</h4>
+                    <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
+                   <i class="fa-solid fa-star-half-stroke templ-pro-icon" style="color: #184698;"></i>
+                        <h4>Testimonals and Reviews <span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Add social proof to your website by generating user testimonials.</p>
                     </div>
                 </div>

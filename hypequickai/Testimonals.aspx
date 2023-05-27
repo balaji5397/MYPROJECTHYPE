@@ -31,6 +31,12 @@
     content: "\f10e";
     float:right;
 }
+      @media only screen and (max-width: 600px){
+          .subcontainer{
+              margin-left:40px;
+              margin-right:40px;
+          }
+      }
     </style>
 
     <div style="padding-top: 35px; padding-bottom: 35px; background-color: #f9f9f9; z-index: -20">
