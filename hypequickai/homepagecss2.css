@@ -1,5 +1,5 @@
 ﻿.templ-lis {
-    margin: 0 115px;
+   /* margin: 0 115px;*/
     background-color: #EEEEEE;
     color: #666666;
     font-size: 14px;
@@ -7,6 +7,7 @@
 }
 
     .templ-lis ul {
+        justify-content:space-between;
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -81,4 +82,20 @@
 
 .templ-pro-cont:hover{
     transform: translateY(-10px);
+}
+
+@media screen and (max-width:1000px) {
+    .templ-lis ul {
+        display: block;
+    }
+}
+.templ-cont h4 {
+    font-size: 18px;
+}
+.templ-pro-cont h4 {
+    font-size: 18px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #184698;
 }

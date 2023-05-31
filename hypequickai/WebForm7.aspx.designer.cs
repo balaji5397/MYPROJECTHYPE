@@ -11,7 +11,7 @@ namespace hypequickai
 {
 
 
-    public partial class WebForm27
+    public partial class WebForm7
     {
 
         /// <summary>

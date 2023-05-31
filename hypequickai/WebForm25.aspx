@@ -76,7 +76,7 @@ select {
 input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+
   background-color: transparent;
   width: 40px;
   height: 28px;

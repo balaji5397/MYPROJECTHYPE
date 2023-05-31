@@ -67,8 +67,8 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                        <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -135,7 +135,7 @@
                             <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -213,16 +213,16 @@
         <div class="temp-list-center">
                                 <ul class="nav nav-pills rounded-5 " id="pillNav2" role="tablist" style="background-color: #EEEEEE">
                                     <li class="" role="presentation">
-                                        <button class="nav-link active rounded-5" onclick="toggleData()" id="All-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">All Templates</button>
+                                        <button class="nav-link active rounded-5" onclick="toggleData()" id="All-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" >All Templates</button>
                                     </li>
                                     <li class="" role="presentation">
                                         <button class="nav-link rounded-5" onclick="toggleData()" id="ab-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Article and Blogs</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link rounded-5" onclick="toggleData()" id="am-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Ads and Marketing Tools</button>
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="am-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" >Ads and Marketing Tools</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link rounded-5" onclick="toggleData()" id="gw-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">General Writing</button>
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="gw-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" >General Writing</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link rounded-5" onclick="toggleData()" id="ecom-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Ecommerce</button>

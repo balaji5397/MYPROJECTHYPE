@@ -80,6 +80,7 @@ option {
     grid-template-columns: 2fr 9fr 1fr 1fr;
     align-items: center;
     z-index: 1;
+    top:0px;
 }
 
 .dropdown-menu a i {
@@ -297,4 +298,12 @@ h11 {
     margin-left:90PX !important;
     height:200px;
 }
-.
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    #main1 {
+        width: 100%;
+    }
+}

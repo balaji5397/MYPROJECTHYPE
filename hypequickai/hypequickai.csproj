@@ -44,6 +44,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -78,8 +115,9 @@
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\jquery-3.6.0.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
-    <Content Include="chartDesign.js" />
+    <Content Include="css\ai chat2.css" />
     <Content Include="css\cus.css" />
+    <Content Include="Dashboard_AI_Chat_Page2.aspx" />
     <Content Include="datatab\css\jquery.dataTables.min.css" />
     <Content Include="datatab\js\jquery.dataTables.min.js" />
     <Content Include="fonts\css\all.css" />
@@ -2174,6 +2212,8 @@
     <Content Include="WebForm16.aspx" />
     <Content Include="WebForm25.aspx" />
     <Content Include="WebForm26.aspx" />
+    <Content Include="AI Chat.aspx" />
+    <Content Include="WebForm7.aspx" />
     <Content Include="withdrawlstyle.css" />
     <Content Include="templatesinnerstyle.css" />
     <Content Include="templates.css" />
@@ -2183,7 +2223,6 @@
     <Content Include="forgotpassword.aspx" />
     <Content Include="Account setting.aspx" />
     <Content Include="Templates.aspx" />
-    <Content Include="AI Chat.aspx" />
     <Content Include="AI Code.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="membershipplan.aspx" />
@@ -2214,6 +2253,13 @@
     </Compile>
     <Compile Include="Aiimages.aspx.designer.cs">
       <DependentUpon>Aiimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_AI_Chat_Page2.aspx.cs">
+      <DependentUpon>Dashboard_AI_Chat_Page2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_AI_Chat_Page2.aspx.designer.cs">
+      <DependentUpon>Dashboard_AI_Chat_Page2.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -2271,13 +2317,6 @@
     </Compile>
     <Compile Include="Templates.aspx.designer.cs">
       <DependentUpon>Templates.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AI Chat.aspx.cs">
-      <DependentUpon>AI Chat.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AI Chat.aspx.designer.cs">
-      <DependentUpon>AI Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="AI Code.aspx.cs">
       <DependentUpon>AI Code.aspx</DependentUpon>
@@ -2405,6 +2444,19 @@
     <Compile Include="WebForm26.aspx.designer.cs">
       <DependentUpon>WebForm26.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AI Chat.aspx.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI Chat.aspx.designer.cs">
+      <DependentUpon>AI Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
     <Compile Include="withdrawls.aspx.cs">
       <DependentUpon>withdrawls.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2468,6 +2520,9 @@
     <Content Include="fonts\webfonts\fa-v4compatibility.ttf" />
     <Content Include="fonts\webfonts\fa-v4compatibility.woff2" />
     <Content Include="hypeAI.Master" />
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

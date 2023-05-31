@@ -33,5 +33,10 @@ namespace hypequickai
         {
             Response.Redirect("upgrademembership.aspx");
         }
+
+        protected void Button4_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("loginpage.aspx");
+        }
     }
 }

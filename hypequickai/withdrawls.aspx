@@ -54,8 +54,8 @@
                            <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                       <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -122,7 +122,7 @@
                                 <i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -131,7 +131,7 @@
                             <li><a href="AI Code.aspx"><i class="fa-solid fa-code"></i>
                                 <div>AI Code</div>
                             </a></li>
-                            <li><a href="#">
+                            <li><a href="homepage.aspx">
                                 <div style="color: #184698; padding-left: 30px">Account</div>
                             </a></li>
 
@@ -240,7 +240,7 @@
                                     <p><i class="fa-solid fa-bell" style="color: #184698;"></i>&nbsp;&nbsp;Withdrawal Requests</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="table-responsive">
                                 <table style="width: 95%; margin-left: 40PX !important; height: 200px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0;">
                                     <tr style="background-color: white; color: black; height: 25px; align-content: space-evenly; border-radius: 8px; border-bottom: 1px solid black">
                                         <td style="padding-left: 20px">Requested on</td>

@@ -98,14 +98,17 @@
     color: var(--bs-nav-pills-link-active-color);
     background-color: #184698;
 }
-@media(max-width:990px) {
+@@media(max-width:990px) {
     .sidebar {
         width: 0px;
     }
 
-    .cards {
-        grid-template-columns: repeat(1,1fr);
-        padding: 0px;
-        margin-right: 10px;
+    #main1 {
+        width: 100%;
     }
+}
+
+.ab-tab2::selection {
+    background-color: #184698;
+    color: white;
 }

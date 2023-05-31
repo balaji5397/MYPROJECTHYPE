@@ -19,7 +19,7 @@
     <%--js query--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 
-    <%--Pop js--%>s
+    <%--Pop js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -32,16 +32,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-          <div class="container-fluid" style="padding: 0px; margin: 0px;margin-right:-15px;position:sticky;top:0px;z-index:1">
-                <div class="row Everify">
-                    <div class="col-md-8 col-xl-8">
-                        <i class="fa-solid fa-lock"></i><span>Your email address is not verified. Please verify your email address to use all the features.</span>
-                    </div>
-                    <div class="col-md-4 col-xl-4">
-                        <asp:Button ID="Button3" CssClass="Everifybutton" runat="server" Text="Verify E-Mail" />
-                    </div>
-                </div>
-            </div>
+         
             <div class="topbar">
                 <div class="logo">
                     <img src="photos/logo.png" style="width: 60px; height: 45px" />
@@ -59,8 +50,8 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                       <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -127,7 +118,7 @@
                             <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -192,7 +183,7 @@
                         </div>
                         <hr style="border-top: dotted 1px" />
                         <div class="upload">
-                            <div>
+                            <div class="table-responsive">
                                 <table style=" width:95%;
     margin-left:40PX !important;
     height:200px;">

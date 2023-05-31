@@ -1,14 +1,21 @@
-﻿//using System;
+﻿
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
+//using System.Web.UI;
 //using System.Web.UI.WebControls;
+//using System.Net.Http.Headers;
 //using System.Net.Http;
 //using System.Threading.Tasks;
 //using System.Collections;
 //using Newtonsoft.Json;
+////using System.Net.Http.Json;
 //using System.Net;
 
 //namespace hypequickai
 //{
-//    public partial class WebForm27 : System.Web.UI.Page
+//    public partial class WebForm7 : System.Web.UI.Page
 //    {
 //        public static ArrayList userMsgs = new ArrayList();
 //        public static ArrayList apiMsgs = new ArrayList();
@@ -74,7 +81,6 @@
 //            }
 //        }
 //    }
-
 //    public class responseBody
 //    {
 //        public chatbot chatbot { get; set; }

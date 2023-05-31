@@ -55,8 +55,8 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                       <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -122,7 +122,7 @@
                             <li><a href="AI Images.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -160,7 +160,7 @@
                             <li><a href="Account setting.aspx"><i class="fa-solid fa-arrow-right-from-bracket"></i>
                                 <div>&nbsp; Account Setting</div>
                             </a></li>
-                            <li><a href="#"><i class="fa-solid fa-power-off"></i>
+                            <li><a href="homepage.aspx"><i class="fa-solid fa-power-off"></i>
                                 <div>&nbsp;Logout</div>
                             </a></li>
                         </ul>
@@ -199,7 +199,7 @@
                                 </div>
                                 <div class="uploadsp">
                                     <br />
-                                    <span>Description<span style="color: red">*</span></h6><span style="float: right"><small>0/100</small></span></span>
+                                    <span>Description<span style="color: red">*</span><span style="float: right"><small>0/100</small></span></span>
                                     <textarea rows="3" cols="25" style="width: 100%" class="speechtextbox" required  placeholder="write a javascript function to generate a random string"></textarea>
                                     <br />
                                     <br />

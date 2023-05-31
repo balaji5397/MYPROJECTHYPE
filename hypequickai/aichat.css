@@ -248,7 +248,6 @@ h11 {
 
 .chatbox {
     background-color: #ffff;
-    border-bottom: 1px solid #eaeaea;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px
@@ -266,7 +265,7 @@ h11 {
 .chatcontent {
     background-color: #ffff;
     height: 220px;
-    border-bottom: 1px solid #eaeaea;
+   
     margin-left: 40px;
     margin-right: 40px;
    
@@ -274,7 +273,7 @@ h11 {
 .chatfooter {
     background-color: #ffff;
     padding:15px 35px;
-    border-bottom: 1px solid #eaeaea;
+    
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -294,4 +293,68 @@ h11 {
     outline:none;
     padding:8px 20px;
 
+}
+#chatbox {
+    width: 100%;
+    height: 300px;
+    
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.chatMsgs {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.userMsg {
+    background-color: crimson;
+    display: block;
+    margin: 2.5%;
+    padding: 1.5%;
+    text-align: right;
+    margin-left: 55%;
+    border-radius: 2px;
+}
+
+.apiMsg {
+    background-color: #ffe9e9;
+    display: block;
+    padding: 1.5%;
+    text-align: left;
+    margin-right:50%;
+    margin-left: 0px;
+    border-radius: 2px;
+}
+.card-body{
+    background-color:#fff;
+    margin-left:50px;
+    margin-right:50px;
+}
+.chatinputbox{
+    padding:25px;
+    outline:none;
+
+}
+@media(max-width:990px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    #main1 {
+        width: 100%;
+    }
+}
+.chatinputmsg{
+    border:none;
+    padding:20px 25px;
+    outline:none;
+
+}
+.chatbuttonout{
+    background-color:#184698;
+    color:#fff;
+    border:none;
+    padding:10px 25px;
+    border-radius:8px;
 }

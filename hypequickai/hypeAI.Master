@@ -24,8 +24,9 @@
     <%--bootstrap--%>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <style>
 #langbtn {
     min-width: 35px;
@@ -37,7 +38,10 @@
     text-align:center;
 
 }
-
+.logo{
+  height:82px;
+  padding:20px
+}
     #langbtn:hover {
         background-color: #184698;
     }
@@ -95,18 +99,32 @@ option {
         color: #184698;
     }
 
-    .topbutton {
+    .topbarbutton {
     background-color:#184698;
     color: #fff;
-    height: 50px;
-    width: 140px;
+    width:auto;
+   height:auto;
+    padding:10px 15px;
     border-radius: 8px;
     border: none;
-    margin-left: 22px;
-  
-    margin-bottom: 40px;
+    text-decoration:none;
 }
-
+        .topjoin {
+            float: right;
+            padding-right: 25px;
+            border-left: 2px solid #e0e0e0;
+            line-height: 20px;
+            padding-left: 30px;
+            height: 82px;
+            align-items: center;
+            padding-top: 20px
+        }
+        .languageselection {
+            border-left: 2px solid #e0e0e0;
+            padding-left: 25px;
+            padding-right: 20px;
+            line-height: 85px
+        }
     @media only screen and (min-width: 600px) {
         .footericon{
            text-align:center;
@@ -114,7 +132,22 @@ option {
            justify-content:center;
         }
     }
-
+    @media ( max-width:990px){
+        #topbarcentre{
+           display:none;
+        }
+    }
+    @media (max-width:990px){
+        .logo{
+            width:auto;
+        }
+      .topjoin{
+          width:auto;
+      }
+      .languageselection{
+          width:auto;
+      }
+    }
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -122,18 +155,18 @@ option {
 <body>
     <form runat="server">
 
-           <div class="topbar">
-            <div class="logo" style ="border-right: 2px solid #e0e0e0;height:82px;line-height:85px">
+           <%--<div class="topbar">
+            <div class="logo">
                 <img src="photos/logo.png" />
             </div>
             
-               <div></div>
-<div style="float:right;padding-right:25px;border-left: 2px solid #e0e0e0;line-height:20px;padding-left:30px;height:82px;align-items:center;padding-top:20px">
+               <div id="topbarcentre"></div>
+              <div class="topjoin">
 
         <asp:Button ID="Button1" runat="server" Text="Join Now" OnClick="Button1_Click" CssClass="topbutton"/>
              </div>      
 
-                <div style="border-left: 2px solid #e0e0e0;padding-left:25px;padding-right:20px;line-height:85px">
+                <div class="languageselection">
                 <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
                     <option value="EN">English </option>
                     <option value="AR">Arabic</option>
@@ -153,9 +186,40 @@ option {
                     <option value="TU">Turkish</option>
                 </select>
             </div>
-</div>
+</div>--%>
            
-           
+          
+             <div class="topbar">
+                <div class="logo">
+                    <img src="photos/logo.png" style="width: 60px;height: 45px" />
+                </div>
+                <div id="topbarcentre">
+                </div>
+                <div >
+                   
+                    <asp:Button ID="Button1" CssClass="topbarbutton" runat="server" Text="Join Now" OnClick="Button1_Click1" />
+                </div>
+                <div>
+                    <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                        <option value="EN">English </option>
+                        <option value="AR">Arabic</option>
+                        <option value="BA">Bangali</option>
+                        <option value="CH">Chinese</option>
+                        <option value="FR">French</option>
+                        <option value="Ge">German</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="Sa">Spanish</option>
+                        <option value="SE">Swedish</option>
+                        <option value="TH">Thai</option>
+                        <option value="TU">Turkish</option>
+                    </select>
+                </div>
+            </div>
       
 
 

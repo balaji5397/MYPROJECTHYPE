@@ -42,6 +42,8 @@
      padding:0px;
      margin:0px;
      width:auto;
+     height:80px;
+     
     }
 
     .langdrop{
@@ -52,14 +54,19 @@
         width:auto;
     }
 
-  /*  @media(max-width:576px){
+   @media(max-width:576px){
   .topbaradjust{
       display:flex;
-      flex-direction:row !important;
+      flex-direction:row;
+   
 
   }
+  .topbarcentre{
+      display:none;
+      visibility:collapse;
+             }
 
-    }*/
+    }
 
     
 </style>
@@ -67,15 +74,16 @@
 <body>
     <div class="topbar">
     <div class="container-fluid">
-        <div class="row topbaradjust" >
-           
-            <div class="col-2">
+        <div class="row " >
+            <div class="col-lg-12">
+           <div class="row topbaradjust">
+            <div class="col-md-3 col-sm-1 col-xs-1 ">
                 <img src="photos/logo.png" width="50" height="60" />
 
             </div>
 
-             <div class="col-6 col-sm-3 col-xs-2 ">
-                 <div> <img src="photos/logo.png" width="50" height="60" /></div>
+             <div class="col-md-5 col-sm-1 col-xs-1 topcentre ">
+               
  
 
             </div>
@@ -83,12 +91,12 @@
             
 
 
-            <div class="col-1 col-sm-3 col-xs-2" >
+            <div class="col-md-2 col-sm-1 col-xs-1 " >
                 <img src="photos/recentblog.png"  style="width:50px;height:55px;border-radius:50px"/>
 
             </div>
 
-              <div class="col-3 col-sm-3 col-xs-2">
+              <div class=" col-md-2  col-sm-1 col-xs-1">
                 <div class="langdrop">
                     <select id="langbtn" class="popup-with-zoom-anim button ripple-effect">
                         <option value="EN">English </option>
@@ -112,6 +120,8 @@
                
 
             </div>
+               </div>
+                </div>
         </div>
        
     </div>

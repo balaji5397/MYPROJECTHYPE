@@ -3,7 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
+   <style>
+       .loginbutton{
+           background-color:#184698;
+           color:#fff;
+           border:none;
+           border-radius:8px;padding:10px 20px;
+           width:100%;
+       }
+   </style>
     <div class="container" style="padding-top:160px;padding-bottom:100px">
 
         <div class="row" >
@@ -42,7 +50,7 @@
                       <div class="col">
                           <label>User Name</label>
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="User Name" ></asp:TextBox>
+                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" required placeholder="User Name" ></asp:TextBox>
                          
                           </div>
                   </div>
@@ -52,7 +60,7 @@
                  <div class="row">
                       <div class="col">
                           <label>Password</label>
-                   <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                   <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" required  placeholder="Password" TextMode="Password"></asp:TextBox>
 
                          
                           </div>
@@ -61,7 +69,9 @@
                             <a href="forgotpassword.aspx">Forgot Password?</a>
                           <br />
                           <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg"  ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                              <br />
+
+                              <asp:Button class="loginbutton" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                           </div>
                          <br />
                         

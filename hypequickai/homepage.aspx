@@ -4,10 +4,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="homepagecss.css" rel="stylesheet" />
     <link href="homepagecss2.css" rel="stylesheet" />
-
+    <script src="Templatesselection.js"></script>
     <script type="text/javascript"
         src="//code.jquery.com/jquery-1.9.1.js">
     </script>
+
 
 
     <script type="text/javascript"
@@ -36,7 +37,7 @@
         });
     </script>
 
-
+    
 
 
 
@@ -102,31 +103,47 @@
     </div>
 
 <%--    Templates--%>
-    <div class="container" style=" padding-top: 60px; padding-bottom: 60px">
+   <div class="container" style=" padding-top: 60px; padding-bottom: 60px">
         <h1 style="text-align: center">Templates</h1>
         <p > <center> Generate your required content with over 60+ content creation templates </center></p>
-        <div class="templ-lis col-md-12 ">
-            <ul >
-                <li><a>All Templates</a></li>
-                 <li><a>Articles and Blogs</a></li>
-                 <li><a>Ads and Marketing Tools</a></li>
-                 <li><a>General writing</a></li>
-                <li><a>E-Commerce</a></li>
-                <li><a>Social Media</a></li>
-                <li><a>Website</a></li>
-                <li><a> Others</a></li>
-            </ul>
-        </div>
-        <div class="row">
+        <div class="temp-list-center">
+                                <ul class="nav nav-pills rounded-5 " id="pillNav2" role="tablist" style="background-color: #EEEEEE">
+                                    <li class="" role="presentation">
+                                        <button class="nav-link active rounded-5" onclick="toggleData()" id="All-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" >All Templates</button>
+                                    </li>
+                                    <li class="" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="ab-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Article and Blogs</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="am-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" >Ads and Marketing Tools</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="gw-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" >General Writing</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="ecom-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Ecommerce</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="ss-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Social Media</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="web-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Website</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-5" onclick="toggleData()" id="other-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Other</button>
+                                    </li>
+                                </ul>
+                            </div>
+      <div class="row">
 
            <%-- Articles and Blogs--%>
-            <div class="row">
+            <div class="row" id="data">
             <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">Article and Blogs</p>
             
             </div>
            
-            <div class="col-md-4 col-lg-4"><a style="text-decoration:none;color:black" href="Templatesblogideas.aspx">
+            <div class="col-md-4 col-lg-4"><a style="text-decoration:none;color:black" href="loginpage.aspx">
                 <div style="width:100%">
                     <div class="templ-cont " style="margin-left: 10px; margin-right: 10px;height:182px">
                         <i class="fa-solid fa-comment" style="color: #184698;"></i>
@@ -175,7 +192,7 @@
                 <div style="width:100%">
                     <div class="templ-pro-cont" style="margin-left: 10px; margin-right: 10px;height:182px">
                         <i class="fa-solid fa-square-pen templ-pro-icon" style="color: #184698;"></i>
-                        <h4>Article Writer</h4>
+                        <h4>Article Writer<span style="background-color:#FBF6DD;font-size:14px;border-radius:8px;padding:8px 15px;color: #a18d29"><i class="fa-solid fa-gift" style="color: #a18d29;"></i> Pro</span></h4>
                         <p>Create a fully complete high quality article from a title and outline text.</p>
                     </div>
                 </div>
@@ -230,7 +247,7 @@
           </div>
 
 <%--Ads and Marketing--%>
-                <div class="row">
+                <div class="row" id="data1">
             <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">Ads and Marketing Tools</p>
                
@@ -304,7 +321,7 @@
                 </div>
 
           <%--  general Writing--%>
-           <div class="row">
+           <div class="row" id="data2">
           <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">General writing</p>
              
@@ -490,7 +507,7 @@
             </div>
               
            <%--E -Commerce--%>
-         <div class="row">        
+         <div class="row" id="data3">        
              
              <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">E - commerce</p>
@@ -546,7 +563,7 @@
               </div>
          <%--   Social Media--%>
 
-            <div class="row">       
+            <div class="row" id="data4">       
                 <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">Social Media</p>
                 
@@ -649,7 +666,7 @@
             
             </div>
          <%--   Website--%>
-              <div class="row">       
+              <div class="row" id="data5">       
                 <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">Website</p>
                 
@@ -691,7 +708,7 @@
 
       <%--      others--%>
 
-            <div class="row">
+            <div class="row" id="data6">
              <div class="col-md-12">
                 <p style="border-bottom:1px dashed #4e4b4b ">Others</p>
                 
@@ -763,100 +780,112 @@
 <%--    Membership--%>    <%--plans Starts here--%>
     <div class="container" style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px;width:100%">
         <h1 style="text-align: center">Membership Plans</h1>
+    <center>
+         <div class="radform">
+                    <div class="radio">
+                        <input type="radio" name="radio-buttons" value="monthly" onchange="enableInputField(5)" />
+                        Monthly&nbsp; &nbsp; &nbsp;
+              
+                        <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)" />
+                        Yearly&nbsp; &nbsp; &nbsp;
+              
+                        <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)" />
+                        Life Time&nbsp; &nbsp; &nbsp;
+               
+                    </div>
+                </div>
+        </center>
+        <%--plans Starts here--%>
+        <div class="container account"  >
+             <div class="row" style="align-items:center">
+                 <div class="col-md-4 " >
+                     <h3>Free Plan</h3>
+                     <label class="labl"><b>Free</b></label>
+                     <div class="planlist">
+                         <strong>Features of Trial Plan</strong>
+                         <ul>
+                             <li><strong>61</strong>
+                                 AI Document Templates
+                             </li>
+                             <li><strong>32</strong> AI Document Templates</li>
+                             <li><strong>10,000</strong> Words per month</li>
+                             <li> <strong>100</strong> Images per month</li>
+                             <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
+                             <li><strong>0 MB</strong> Audio file size limit</li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
+                                 AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
+                             <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Setup</li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Support</li>
+                         </ul>
+                     </div>
+                     <asp:Button ID="Button1" runat="server" Text="Current Plan" CssClass="planbutton" />
+                     <br />
+                     <br />
+                 </div>
+                 <br />
 
-        <div class="radbtn">
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" Height="58px" Width="280px">
-                <asp:ListItem>  Yearly</asp:ListItem>
-                <asp:ListItem>  Monthly</asp:ListItem>
-                <asp:ListItem>  Life Time</asp:ListItem>
-            </asp:RadioButtonList>
-        </div>
+                  <div class="col-md-4 "  >
+                      <h3>Trail Plan</h3>
+                      <label class="labl"><b>Trail</b></label>
+                        <div class="planlist">
+                         <strong>Features of Trial Plan</strong>
+                         <ul>
+                             <li><strong>61</strong>
+                                 AI Document Templates
+                             </li>
+                             <li><strong>61</strong> AI Document Templates</li>
+                             <li><strong>50,000</strong> Words per month</li>
+                             <li> <strong>500</strong> Images per month</li>
+                             <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
+                             <li><strong>0 MB</strong> Audio file size limit</li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
+                                 AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
+                             <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Setup</li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Support</li>
+                         </ul>
+                     </div>
+                         <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="planbutton" />
+                      </div>
+                 <br />
 
+                 <div class="col-md-4 ">
+                     
+                     <h3>Extended Plan</h3>
+                     <%--<label class="labl" style="background-color:#184698;color:#fff"><b>5₹/ Monthly</b></label>--%>
+                     <input class="labl" type="text" style="background-color:#184698;color:#fff;border:none" placeholder="5₹ Monthly" id="input-field" Readonly=""/>
+                      <div class="planlist">
+                         <strong>Features of Trial Plan</strong>
+                         <ul>
+                             <li><strong>61</strong>
+                                 AI Document Templates
+                             </li>
+                             <li><strong>61</strong> AI Document Templates</li>
+                             <li><strong>1,00,000</strong> Words per month</li>
+                             <li> <strong>1000</strong> Images per month</li>
+                             <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
+                             <li><strong>0 MB</strong> Audio file size limit</li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
+                                 AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
+                             <li><span ><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
+                             <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
+                             <li><span ><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Setup</li>
+                             <li><span ><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Support</li>
+                         </ul>
+                     </div>
+                     <asp:Button ID="Button4"  style="background-color:#184698;color:#fff"  runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button4_Click1"  />
+                
+                 </div>
+                 <br />
+                
+             </div>
 
+             </div>
       
-        <div class="container account" <%--style="margin-left: 100px--%>">
-            <div class="row" style="align-items: center">
-                <div class="col-md-4 ">
-                    <h3>Free Plan</h3>
-                    <label class="labl"><b>Free</b></label>
-                    <div class="planlist">
-                        <strong>Features of Trial Plan</strong>
-                        <ul>
-                            <li><strong>61</strong>
-                                AI Document Templates
-                            </li>
-                            <li><strong>32</strong> AI Document Templates</li>
-                            <li><strong>10,000</strong> Words per month</li>
-                            <li><strong>100</strong> Images per month</li>
-                            <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
-                            <li><strong>0 MB</strong> Audio file size limit</li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
-                                AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
-                            <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Setup</li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Support</li>
-                        </ul>
-                    </div>
-                    <asp:Button ID="Button1" runat="server" Text="Current Plan" CssClass="planbutton" />
-                </div>
-                <br />
-
-                <div class="col-md-4 ">
-                    <h3>Trail Plan</h3>
-                    <label class="labl"><b>Trail</b></label>
-                    <div class="planlist">
-                        <strong>Features of Trial Plan</strong>
-                        <ul>
-                            <li><strong>61</strong>
-                                AI Document Templates
-                            </li>
-                            <li><strong>61</strong> AI Document Templates</li>
-                            <li><strong>50,000</strong> Words per month</li>
-                            <li><strong>500</strong> Images per month</li>
-                            <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
-                            <li><strong>0 MB</strong> Audio file size limit</li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
-                                AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
-                            <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Setup</li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>Free Support</li>
-                        </ul>
-                    </div>
-                    <asp:Button ID="Button2" runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button2_Click" />
-                </div>
-                <br />
-
-                <div class="col-md-4 ">
-
-                    <h3>Extended Plan</h3>
-                    <label class="labl" style="background-color: #184698; color: #fff"><b>5₹/ Monthly</b></label>
-                    <div class="planlist">
-                        <strong>Features of Trial Plan</strong>
-                        <ul>
-                            <li><strong>61</strong>
-                                AI Document Templates
-                            </li>
-                            <li><strong>61</strong> AI Document Templates</li>
-                            <li><strong>1,00,000</strong> Words per month</li>
-                            <li><strong>1000</strong> Images per month</li>
-                            <li><strong>0</strong> Speech to Text per month<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp;&nbsp;&nbsp; </i></li>
-                            <li><strong>0 MB</strong> Audio file size limit</li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>
-                                AI Chat<i class="fa-solid fa-circle-question" style="color: #86888d;">&nbsp; </i></li>
-                            <li><span><i class="fa-regular fa-circle-xmark" style="color: #e4453a;">&nbsp; </i></span>AI Code&nbsp;&nbsp;  <i class="fa-solid fa-circle-question" style="color: #86888d;"></i></li>
-                            <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Hide Ads   </li>
-                            <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Setup</li>
-                            <li><span><i class="fa-regular fa-circle-check" style="color: #2ed219;">&nbsp; </i></span>Free Support</li>
-                        </ul>
-                    </div>
-                    <asp:Button ID="Button4" Style="background-color: #184698; color: #fff" runat="server" Text="Upgrade" CssClass="planbutton" OnClick="Button4_Click" />
-                </div>
-                <br />
-            </div>
-            <br />
-        </div>
+       
         <br />
 
     </div>
@@ -940,10 +969,10 @@
         </div>
              <div class="row" style="margin-left:50px">
                  <img src="photos/recentblog.png"  style="width:400px;height:380px"/>
-                 <div style= "position:absolute;padding-top:150px">
+                 <div style= "position:absolute;padding-top:100px">
                      <p>3 Years ago</p>
                      <h6>First Blog</h6>
-                     <p style="width:350px;text-align:justify">Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p></div>
+                     <p style="width:200px;height:auto;text-align:justify">Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p></div>
     </div>
        </div>
 
@@ -1024,5 +1053,32 @@
 
 
     </div>
-        
+         <script>
+             function enableInputField(value) {
+                 const radioButtons = document.getElementsByName('radio-buttons');
+                 const inputField = document.getElementById('input-field');
+                 for (let i = 0; i < radioButtons.length; i++) {
+                     if (radioButtons[i].checked) {
+                         inputField.disabled = false;
+                         switch (value) {
+                             case 5:
+                                 inputField.value = "₹" + value + " /per month ";
+                                 break;
+                             case 50:
+                                 inputField.value = "₹" + value + " /per year";
+                                 break;
+                             case 550:
+                                 inputField.value = "₹" + value + " /lifetime";
+                                 break;
+                             default:
+                                 inputField.value = "";
+                                 break;
+                         }
+                         return;
+                     }
+                 }
+                 inputField.disabled = true;
+                 inputField.value = "";
+             }
+         </script>  
 </asp:Content>

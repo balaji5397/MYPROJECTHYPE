@@ -1,10 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="affilate program.aspx.cs" Inherits="hypequickai.WebForm24" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm7.aspx.cs" Inherits="hypequickai.WebForm7" %>
 
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Affilate Program</title>
-    <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
+    <title>AI Chat</title>
+       <link rel="icon" type="image/x-icon" href="/photos/logo.png" />
      <%--bootstrap css--%>
     <link href="bootstrap/css/bootstrap.min%20(1).css" rel="stylesheet" />
 
@@ -19,7 +20,6 @@
     <%--js query--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 
-
     <%--Pop js--%>
     <script src="bootstrap/js/popper.min.js"></script>
     <%--bootstrap--%>
@@ -29,7 +29,8 @@
            <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
-    <link href="affilate%20program%20style.css" rel="stylesheet" />
+    <link href="aichat.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -51,8 +52,8 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                       <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -71,7 +72,6 @@
                         <option value="FR">French</option>
                         <option value="Ge">German</option>
                         <option value="HE">Hebrew</option>
-
                         <option value="HI">Hindi</option>
                         <option value="IT">Italian</option>
                         <option value="JA">Japanese</option>
@@ -82,12 +82,11 @@
                         <option value="TH">Thai</option>
                         <option value="TU">Turkish</option>
                     </select>
-
                 </div>
             </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
+               <div class="col-md-2" id="side1" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px">
                     <div class="sidebar" id="mysidenav">
                         <ul>
                             
@@ -120,7 +119,7 @@
                             <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -162,143 +161,68 @@
                                 <div>&nbsp;Logout</div>
                             </a></li>
                         </ul>
-                    
                     </div>
                 </div>
                 <div class="col-md-10"  id="main1"> 
                     <div class="row" style="padding-top: 150px; margin-left: 40px; margin-right: 40px">
                         <div class="col-md-6 col-sm-12" style="padding-top: 10px; display: flex;">
-                            <h2 style="padding-top: 8px; padding-right: 12px;font-family: Nunito; font-size:22px">Affilate Program</h2>
+                            <h2 style="padding-top: 8px; padding-right: 12px; font-size: 18px">AI Chat</h2>
 
-                           
+                            <p class="chatpara"><i class="fa-solid fa-chart-simple" style="color: #184698;"></i>&nbsp;0/10,000 <b>Words used</b></p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="  subcontainer" style="float: right">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                                <span class="icon"></span><span style="color: white">Affilate Program</span>
+                                <span class="icon"></span><span style="color: white">Al Chat</span>
                             </div>
                         </div>
                         <br />
-                       
+                        <div class="col-md-12 col-sm-12  ">
+                            <div style="width: 100%">
+                                <div class="chatnotification">
+                                    <p>
+                                        You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.                   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <br />
                     </div>
+                    <div class="chatbox">
 
-                <div class="row affilatespace">
-                   <div class="col-md-4 col-sm-12">
-                       <div class="affilatecard">
-                           <div class="row">
-                          <div class="col-md-6 col-sm-2  affilatecardcontent">
-                              <h6 style="padding-top:15px">Wallet</h6>
-                              <h3 style="color:#666666;">0.00</h3>
+                    <div class="row chathead" >
 
-                          </div>
-                            <div class="col-md-6 col-sm-2 affilateicon">
-                               <i class="fa-brands fa-get-pocket" style="color: #b81b7f;background-color: #b81b7f12;padding:28px;font-size:48px;"></i>
-                          </div>
-                               </div>
-                       </div>
-                   </div>
-                  <div class="col-md-4 col-sm-12">
-                       <div class="affilatecard">
-                           <div class="row">
-                          <div class="col-md-6 col-sm-2 affilatecardcontent">
-                              <h6 style="padding-top:15px">Total Reffered</h6>
-                              <h3 style="color:#666666;">0</h3>
+                        
+                        <div class="col-md-9 col-sm-2 ">                           
+                                <img src="photos/userimg.png" style="width:42px;height:42px;border-radius:50px" /><span>AI Chat Bot</span>                            
+                        </div>
+                        <div class="col-md-3 col-sm-2" style="align-content:center;text-align:right">                            
+                            <i class="fa-solid fa-download" style="color: #f9fafb; background-color:#184698;padding:5px 7px;font-size:18px;border-radius:4px"></i>
+                            <i class="fa-solid fa-trash-can" style="color: #f9fafb;background-color:#DC3139;padding:5px 10px;font-size:18px;border-radius:4px"></i>
+                        </div>
+                        </div></div>
 
-                          </div>
-                            <div class="col-md-6 col-sm-2 affilateicon">
+                            <div class="chatcontent ">
+                                
+                            </div>
+               <%--    <div class="card-body">
+                            <div id="chatbox">
                                
-                                <i class="fa-solid fa-user-plus" style="color: #36bd78;background-color: #36bd7812;padding:28px;font-size:48px;"></i>
-                          </div>
-                               </div>
-                       </div>
-                   </div>
-                     <div class="col-md-4 col-sm-12">
-                       <div class="affilatecard">
-                           <div class="row">
-                          <div class="col-md-6 col-sm-2 affilatecardcontent">
-                              <h6 style="padding-top:15px">Total Earnings</h6>
-                                <h3 style="color:#666666;">0</h3>
-                             
-
-                          </div>
-                            <div class="col-md-6 col-sm-2 affilateicon">
-                               <i class="fa-solid fa-money-bill-1" style="color: #ef9e10; padding:28px;font-size:48px;background-color:#efa80f12"></i>
-                          </div>
-                               </div>
-                       </div>
-                   </div>
-                </div>
-
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="affilatecontent2">
-                                <div class="affilatehead2">
-                                    <div style="padding:18px;">
-                                         <p><i class="fa-solid fa-share-nodes" style="color: #184698;"></i> Start earning with the affiliate program</p>
-                                    </div>
-                                   
-                                </div>
-                                <div class="affilatecontent-body"> 
-                                    <p>Invite new customers to our site using your affiliate link and when they purchase any membership plan, you will get a commission.</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 affilatecontent-body1">
-                                        <h6>Current Commision Rate</h6>
-                                        <strong>30%</strong>
-                                    </div>
-                                    <div class="col-md-6 affilatecontent-body1">
-                                        <h6>Affiliate Rule</h6>
-                                        <strong>First Subscription<span><i class="fa-regular fa-circle-question" style="color: #111212;"></i></span></strong>
-                                    </div>
-                                    <br />
-                                    <br />
-                                    <div class="col-md-6 affilatecontent-body1">
-                                        <br />
-                                        <h6>Affilate URL</h6>
-                                        <input class="affilatetextbox" placeholder="hype.sociusus.com/?ref=pokps64544ef18fdc" /><span><i class="fa-solid fa-copy" style="color: #edeff2; background-color: #184698; font-size: 24px; padding: 5px 9px; border-radius: 4px; margin-left: 5px; height: 43px"></i></span>
-                                        <br />
-                                        <br />
-
-                                    </div>
-                                </div>
+                                <div  id="div1" runat="server" class="chatMsgs">
+                                </div> 
                             </div>
-
+                       <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                       <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
                         </div>
-                    </div>
+               
+                   
+                </div>--%>
 
-                    <div class="row" style="margin-left: 50px; margin-right: 50px; padding-top: 60px">
-                        <div class="withdrawalstop">
-                            <div class="withdrawalshead1">
-                                <div class="col-md-12">
-                                    <p><i class="fa-solid fa-bell" style="color: #184698;"></i>&nbsp;&nbsp;Withdrawal Requests</p>
-                                </div>
-                            </div>
-                            <div>
-                                <table style="width: 95%; margin-left: 40PX !important; height: 200px; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .05); border: 1px solid #e0e0e0;">
-                                    <tr style="background-color: white; color: black; height: 25px; align-content: space-evenly; border-radius: 8px; border-bottom: 1px solid black">
-                                        <td style="padding-left: 20px">Requested on</td>
-                                        <td style="padding-left: 20px">Amount</td>
-                                        <td style="padding-left: 20px">Payment Mode</td>
-                                        <td style="padding-left: 20px">Status</td>
-                                    </tr>
-                                    <tr style="height: 20px; background-color: #fff">
-                                        <td style="padding-left: 20px"></td>
-                                        <td style="padding-left: 20px"></td>
-                                        <td style="padding-left: 20px">No Documents Found</td>
-                                        <td style="padding-left: 20px"></td>
-                                    </tr>
-                                </table>
-                                <br />
-                            </div>
-                        </div>
 
-                    </div>
                      <hr style="border-top: dotted 1px; margin-top: 20px; "/>
                                <%--footer--%>
-        
-                    <footer>
+
+                      <footer>
            
             <div class="container" >
                 <div class="row" style="z-index:2">
@@ -324,7 +248,7 @@
 
                 </div>
             </div>
-        </div>
+   
     </form>
 
       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -337,4 +261,4 @@
         });
     </script>
 </body>
-</html>
+</html>--%>

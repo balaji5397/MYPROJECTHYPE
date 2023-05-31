@@ -61,8 +61,8 @@
                           <ul>
                         <li><a class="dropdown-item" href="dashboard.aspx"><i class="fa fa-dashboard icons"></i>DashBoard</a></li>
                         <li><a class="dropdown-item" href="Templates.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                        <li><a class="dropdown-item" href="Aiiamges.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
-                        <li><a class="dropdown-item" href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
+                        <li><a class="dropdown-item" href="Aiimages.aspx"><i class="fa-regular fa-image"></i>AI Images</a></li>
+                        <li><a class="dropdown-item" href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
                         <li><a class="dropdown-item" href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                         <li><a class="dropdown-item" href="AI Code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                         <li><a class="dropdown-item" href="AI Document.aspx"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
@@ -129,7 +129,7 @@
                             <li><a href="Aiimages.aspx"><i class="fa-regular fa-image"></i>
                                 <div>&nbsp; AI Images</div>
                             </a></li>
-                            <li><a href="AI Chat.aspx"><i class="fa-solid fa-comment"></i>
+                            <li><a href="Dashboard_AI_Chat_Page2.aspx"><i class="fa-solid fa-comment"></i>
                                 <div>&nbsp; AI Chat</div>
                             </a></li>
                             <li><a href="Speech to text.aspx"><i class="fa-solid fa-headphones"></i>
@@ -176,12 +176,12 @@
                  
                 <div class="col-md-10" id="main1">
                     <div class="row" style="padding-top: 150px">
-                        <div class="col-md-6" style="padding-top: 28px; padding-left: 35px;display:flex;">
+                        <div class="col-md-6  col-sm-12" style="padding-top: 28px; padding-left: 35px;display:flex;">
                             <h2 style="padding-left: 25px; padding-top:12px;padding-right:12px;font-size: 18px">All Documents</h2>
 
                             <p style="background-color:rgb(24 70 152 / 7%);color:#184698;width:270px;height:45px;padding:10px 20px;border-radius:40px;text-align:center"> <i class="fa-solid fa-chart-simple" style="color: #184698;"></i> &nbsp;0/10,000 <b>Words used</b></p>
                         </div>
-                        <div class="col-md-6" style="padding-left: 220px">
+                        <div class="col-md-6 col-sm-12" style="padding-left: 220px">
                             <div class="  subcontainer">
                                 <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span><span style="color: white">All Documents</span>
@@ -198,7 +198,7 @@
                         </div>
                         <hr style="border-top: dotted 1px" />
                         <div class="upload">
-                            <div>
+                            <div class="table-responsive">
                                 <table style=" width:95%; margin-left:40PX !important;height:200px;">
                                     <tr style="background-color:#666;color:white;height:25px;align-content:space-evenly;border-radius:8px">
                                         <td style="padding-left:20px">Document</td>

@@ -18,5 +18,10 @@ namespace hypequickai
         {
             Response.Redirect("loginpage.aspx");
         }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("loginpage.aspx");
+        }
     }
 }
